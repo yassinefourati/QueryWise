@@ -1,0 +1,33 @@
+# --- Secrets: never commit ---------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secret.key
+# Local app-state database (encrypted secrets, sources, history) and its key file.
+.querywise/
+# Generated source registries name environment variables, but keep local copies private anyway.
+querywise-sources.json
+pack/querywise-sources.json
+
+# --- Data: generated locally, never commit -----------------------------------
+data/
+pack/output/
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.xlsx
+*.xlsm
+
+# --- Tooling -------------------------------------------------------------------
+node_modules/
+__pycache__/
+.pytest_cache/
+.venv/
+*.tar.gz
+*.log
+eval-results.json
+test-results/
+dist/querywise-source.zip

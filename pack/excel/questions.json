@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is remaining approved funding by program?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "Which grants have no disbursements?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "Which milestones are incomplete as of 2026-10-01?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  }
+]

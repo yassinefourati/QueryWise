@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==9.1.1
+# Exercised by the test suite (Parquet, Excel and the migration pack).
+duckdb==1.5.6
+openpyxl==3.1.5

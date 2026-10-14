@@ -1,0 +1,30 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE customers (\n\tid INTEGER NOT NULL, \n\tcustomer_code VARCHAR(32) NOT NULL, \n\tsegment VARCHAR(32) NOT NULL, \n\tprovince VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_customers_0 UNIQUE (customer_code)\n)",
+      "CREATE TABLE products (\n\tid INTEGER NOT NULL, \n\tsku VARCHAR(32) NOT NULL, \n\tcategory VARCHAR(32) NOT NULL, \n\tprice_cents BIGINT NOT NULL, \n\tcost_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_products_0 CHECK (price_cents >= 0), \n\tCONSTRAINT ck_products_1 CHECK (cost_cents >= 0), \n\tCONSTRAINT uq_products_0 UNIQUE (sku)\n)",
+      "CREATE TABLE warehouses (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tlatitude NUMERIC(14, 3) NOT NULL, \n\tlongitude NUMERIC(14, 3) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE inventory (\n\tid INTEGER NOT NULL, \n\twarehouse_id INTEGER NOT NULL, \n\tproduct_id INTEGER NOT NULL, \n\ton_hand INTEGER NOT NULL, \n\treserved INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_inventory_0 CHECK (on_hand >= 0), \n\tCONSTRAINT ck_inventory_1 CHECK (reserved >= 0 AND reserved <= on_hand), \n\tCONSTRAINT uq_inventory_0 UNIQUE (warehouse_id, product_id), \n\tFOREIGN KEY(warehouse_id) REFERENCES warehouses (id), \n\tFOREIGN KEY(product_id) REFERENCES products (id)\n)",
+      "CREATE TABLE orders (\n\tid INTEGER NOT NULL, \n\tcustomer_id INTEGER NOT NULL, \n\tordered_on DATE NOT NULL, \n\tstatus VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_orders_0 CHECK (status IN ('completed','cancelled','pending')), \n\tFOREIGN KEY(customer_id) REFERENCES customers (id)\n)",
+      "CREATE TABLE order_lines (\n\tid INTEGER NOT NULL, \n\torder_id INTEGER NOT NULL, \n\tproduct_id INTEGER NOT NULL, \n\tquantity INTEGER NOT NULL, \n\tunit_cents BIGINT NOT NULL, \n\tdiscount_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_order_lines_0 CHECK (quantity > 0), \n\tCONSTRAINT ck_order_lines_1 CHECK (unit_cents >= 0), \n\tCONSTRAINT ck_order_lines_2 CHECK (discount_cents >= 0 AND discount_cents <= quantity * unit_cents), \n\tFOREIGN KEY(order_id) REFERENCES orders (id), \n\tFOREIGN KEY(product_id) REFERENCES products (id)\n)",
+      "CREATE TABLE payments (\n\tid INTEGER NOT NULL, \n\torder_id INTEGER NOT NULL, \n\tpaid_on DATE NOT NULL, \n\tamount_cents BIGINT NOT NULL, \n\tmethod VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_payments_0 CHECK (amount_cents > 0), \n\tFOREIGN KEY(order_id) REFERENCES orders (id)\n)",
+      "CREATE TABLE returns (\n\tid INTEGER NOT NULL, \n\tline_id INTEGER NOT NULL, \n\treturned_on DATE NOT NULL, \n\tquantity INTEGER NOT NULL, \n\trefund_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_returns_0 CHECK (quantity > 0), \n\tCONSTRAINT ck_returns_1 CHECK (refund_cents >= 0), \n\tFOREIGN KEY(line_id) REFERENCES order_lines (id)\n)",
+      "CREATE INDEX ix_inventory_product_id ON inventory (product_id)",
+      "CREATE INDEX ix_inventory_warehouse_id ON inventory (warehouse_id)",
+      "CREATE INDEX ix_orders_customer_id ON orders (customer_id)",
+      "CREATE INDEX ix_order_lines_order_id ON order_lines (order_id)",
+      "CREATE INDEX ix_order_lines_product_id ON order_lines (product_id)",
+      "CREATE INDEX ix_payments_order_id ON payments (order_id)",
+      "CREATE INDEX ix_returns_line_id ON returns (line_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE orders ADD review_flag INTEGER NOT NULL DEFAULT 0",
+      "UPDATE orders SET review_flag=CASE WHEN status = 'pending' THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_orders_flag ON orders (review_flag)"
+    ]
+  }
+]

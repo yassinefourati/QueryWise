@@ -1,0 +1,61 @@
+{
+  "valid_energy": {
+    "columns": [
+      "region",
+      "energy_wh"
+    ],
+    "rows": [
+      [
+        "R1",
+        3001473
+      ],
+      [
+        "R2",
+        3121560
+      ],
+      [
+        "R3",
+        3121530
+      ],
+      [
+        "R4",
+        3241636
+      ]
+    ]
+  },
+  "maintenance": {
+    "columns": [
+      "name",
+      "cost_cents",
+      "jobs"
+    ],
+    "rows": [
+      [
+        "Wind farm 4",
+        250660,
+        10
+      ],
+      [
+        "Wind farm 2",
+        250600,
+        10
+      ]
+    ]
+  },
+  "upgrade_flags": {
+    "columns": [
+      "review_flag",
+      "records"
+    ],
+    "rows": [
+      [
+        0,
+        104
+      ],
+      [
+        1,
+        16
+      ]
+    ]
+  }
+}

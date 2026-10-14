@@ -1,0 +1,29 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE branches (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tcity VARCHAR(120) NOT NULL, \n\tlatitude NUMERIC(14, 3) NOT NULL, \n\tlongitude NUMERIC(14, 3) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE titles (\n\tid INTEGER NOT NULL, \n\tisbn VARCHAR(32) NOT NULL, \n\ttitle VARCHAR(120) NOT NULL, \n\tgenre VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_titles_0 UNIQUE (isbn)\n)",
+      "CREATE TABLE copies (\n\tid INTEGER NOT NULL, \n\ttitle_id INTEGER NOT NULL, \n\tbranch_id INTEGER NOT NULL, \n\tbarcode VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_copies_0 UNIQUE (barcode), \n\tFOREIGN KEY(title_id) REFERENCES titles (id), \n\tFOREIGN KEY(branch_id) REFERENCES branches (id)\n)",
+      "CREATE TABLE members (\n\tid INTEGER NOT NULL, \n\tbranch_id INTEGER NOT NULL, \n\tmember_code VARCHAR(32) NOT NULL, \n\tjoined_on DATE NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_members_0 UNIQUE (member_code), \n\tFOREIGN KEY(branch_id) REFERENCES branches (id)\n)",
+      "CREATE TABLE loans (\n\tid INTEGER NOT NULL, \n\tcopy_id INTEGER NOT NULL, \n\tmember_id INTEGER NOT NULL, \n\tborrowed_on DATE NOT NULL, \n\tdue_on DATE NOT NULL, \n\treturned_on DATE, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_loans_0 CHECK (due_on >= borrowed_on), \n\tCONSTRAINT ck_loans_1 CHECK (returned_on IS NULL OR returned_on >= borrowed_on), \n\tFOREIGN KEY(copy_id) REFERENCES copies (id), \n\tFOREIGN KEY(member_id) REFERENCES members (id)\n)",
+      "CREATE TABLE fines (\n\tid INTEGER NOT NULL, \n\tloan_id INTEGER NOT NULL, \n\tassessed_cents BIGINT NOT NULL, \n\twaived_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_fines_0 CHECK (assessed_cents >= 0), \n\tCONSTRAINT ck_fines_1 CHECK (waived_cents >= 0 AND waived_cents <= assessed_cents), \n\tFOREIGN KEY(loan_id) REFERENCES loans (id)\n)",
+      "CREATE TABLE fine_payments (\n\tid INTEGER NOT NULL, \n\tfine_id INTEGER NOT NULL, \n\tpaid_on DATE NOT NULL, \n\tamount_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_fine_payment_0 CHECK (amount_cents > 0), \n\tFOREIGN KEY(fine_id) REFERENCES fines (id)\n)",
+      "CREATE INDEX ix_copies_branch_id ON copies (branch_id)",
+      "CREATE INDEX ix_copies_title_id ON copies (title_id)",
+      "CREATE INDEX ix_members_branch_id ON members (branch_id)",
+      "CREATE INDEX ix_loans_copy_id ON loans (copy_id)",
+      "CREATE INDEX ix_loans_member_id ON loans (member_id)",
+      "CREATE INDEX ix_fines_loan_id ON fines (loan_id)",
+      "CREATE INDEX ix_fine_payment_fine_id ON fine_payments (fine_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE loans ADD COLUMN overdue_flag INTEGER DEFAULT 0 NOT NULL",
+      "UPDATE loans SET overdue_flag=CASE WHEN returned_on IS NULL AND due_on < '2026-10-01' THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_loans_flag ON loans (overdue_flag)"
+    ]
+  }
+]

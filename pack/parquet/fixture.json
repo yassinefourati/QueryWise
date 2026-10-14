@@ -1,0 +1,7378 @@
+{
+  "sites": [
+    {
+      "id": 1,
+      "region": "south",
+      "latitude": 45.1,
+      "longitude": -73.1
+    },
+    {
+      "id": 2,
+      "region": "north",
+      "latitude": 45.2,
+      "longitude": -73.2
+    },
+    {
+      "id": 3,
+      "region": "south",
+      "latitude": 45.3,
+      "longitude": -73.3
+    },
+    {
+      "id": 4,
+      "region": "north",
+      "latitude": 45.4,
+      "longitude": -73.4
+    }
+  ],
+  "sensors": [
+    {
+      "id": 1,
+      "site_id": 1,
+      "serial": "SENSOR0001",
+      "unit": "C"
+    },
+    {
+      "id": 2,
+      "site_id": 2,
+      "serial": "SENSOR0002",
+      "unit": "C"
+    },
+    {
+      "id": 3,
+      "site_id": 3,
+      "serial": "SENSOR0003",
+      "unit": "C"
+    },
+    {
+      "id": 4,
+      "site_id": 4,
+      "serial": "SENSOR0004",
+      "unit": "C"
+    },
+    {
+      "id": 5,
+      "site_id": 1,
+      "serial": "SENSOR0005",
+      "unit": "C"
+    },
+    {
+      "id": 6,
+      "site_id": 2,
+      "serial": "SENSOR0006",
+      "unit": "C"
+    },
+    {
+      "id": 7,
+      "site_id": 3,
+      "serial": "SENSOR0007",
+      "unit": "C"
+    },
+    {
+      "id": 8,
+      "site_id": 4,
+      "serial": "SENSOR0008",
+      "unit": "C"
+    },
+    {
+      "id": 9,
+      "site_id": 1,
+      "serial": "SENSOR0009",
+      "unit": "C"
+    },
+    {
+      "id": 10,
+      "site_id": 2,
+      "serial": "SENSOR0010",
+      "unit": "C"
+    },
+    {
+      "id": 11,
+      "site_id": 3,
+      "serial": "SENSOR0011",
+      "unit": "C"
+    },
+    {
+      "id": 12,
+      "site_id": 4,
+      "serial": "SENSOR0012",
+      "unit": "C"
+    }
+  ],
+  "readings": [
+    {
+      "id": 1,
+      "sensor_id": 1,
+      "observed_on": "2026-01-01",
+      "value_c": -8.9
+    },
+    {
+      "id": 2,
+      "sensor_id": 2,
+      "observed_on": "2026-01-01",
+      "value_c": -7.8
+    },
+    {
+      "id": 3,
+      "sensor_id": 3,
+      "observed_on": "2026-01-01",
+      "value_c": -6.7
+    },
+    {
+      "id": 4,
+      "sensor_id": 4,
+      "observed_on": "2026-01-01",
+      "value_c": -5.6
+    },
+    {
+      "id": 5,
+      "sensor_id": 5,
+      "observed_on": "2026-01-01",
+      "value_c": -4.5
+    },
+    {
+      "id": 6,
+      "sensor_id": 6,
+      "observed_on": "2026-01-01",
+      "value_c": -3.4
+    },
+    {
+      "id": 7,
+      "sensor_id": 7,
+      "observed_on": "2026-01-01",
+      "value_c": -2.3
+    },
+    {
+      "id": 8,
+      "sensor_id": 8,
+      "observed_on": "2026-01-01",
+      "value_c": -1.2
+    },
+    {
+      "id": 9,
+      "sensor_id": 9,
+      "observed_on": "2026-01-01",
+      "value_c": -0.1
+    },
+    {
+      "id": 10,
+      "sensor_id": 10,
+      "observed_on": "2026-01-01",
+      "value_c": 0.0
+    },
+    {
+      "id": 11,
+      "sensor_id": 11,
+      "observed_on": "2026-01-01",
+      "value_c": 1.1
+    },
+    {
+      "id": 12,
+      "sensor_id": 12,
+      "observed_on": "2026-01-01",
+      "value_c": 2.2
+    },
+    {
+      "id": 13,
+      "sensor_id": 1,
+      "observed_on": "2026-01-02",
+      "value_c": 3.3
+    },
+    {
+      "id": 14,
+      "sensor_id": 2,
+      "observed_on": "2026-01-02",
+      "value_c": 4.4
+    },
+    {
+      "id": 15,
+      "sensor_id": 3,
+      "observed_on": "2026-01-02",
+      "value_c": 5.5
+    },
+    {
+      "id": 16,
+      "sensor_id": 4,
+      "observed_on": "2026-01-02",
+      "value_c": 6.6
+    },
+    {
+      "id": 17,
+      "sensor_id": 5,
+      "observed_on": "2026-01-02",
+      "value_c": 7.7
+    },
+    {
+      "id": 18,
+      "sensor_id": 6,
+      "observed_on": "2026-01-02",
+      "value_c": 8.8
+    },
+    {
+      "id": 19,
+      "sensor_id": 7,
+      "observed_on": "2026-01-02",
+      "value_c": null
+    },
+    {
+      "id": 20,
+      "sensor_id": 8,
+      "observed_on": "2026-01-02",
+      "value_c": 10.0
+    },
+    {
+      "id": 21,
+      "sensor_id": 9,
+      "observed_on": "2026-01-02",
+      "value_c": 11.1
+    },
+    {
+      "id": 22,
+      "sensor_id": 10,
+      "observed_on": "2026-01-02",
+      "value_c": 12.2
+    },
+    {
+      "id": 23,
+      "sensor_id": 11,
+      "observed_on": "2026-01-02",
+      "value_c": 13.3
+    },
+    {
+      "id": 24,
+      "sensor_id": 12,
+      "observed_on": "2026-01-02",
+      "value_c": 14.4
+    },
+    {
+      "id": 25,
+      "sensor_id": 1,
+      "observed_on": "2026-01-03",
+      "value_c": 15.5
+    },
+    {
+      "id": 26,
+      "sensor_id": 2,
+      "observed_on": "2026-01-03",
+      "value_c": 16.6
+    },
+    {
+      "id": 27,
+      "sensor_id": 3,
+      "observed_on": "2026-01-03",
+      "value_c": 17.7
+    },
+    {
+      "id": 28,
+      "sensor_id": 4,
+      "observed_on": "2026-01-03",
+      "value_c": 18.8
+    },
+    {
+      "id": 29,
+      "sensor_id": 5,
+      "observed_on": "2026-01-03",
+      "value_c": 19.9
+    },
+    {
+      "id": 30,
+      "sensor_id": 6,
+      "observed_on": "2026-01-03",
+      "value_c": 20.0
+    },
+    {
+      "id": 31,
+      "sensor_id": 7,
+      "observed_on": "2026-01-03",
+      "value_c": 21.1
+    },
+    {
+      "id": 32,
+      "sensor_id": 8,
+      "observed_on": "2026-01-03",
+      "value_c": 22.2
+    },
+    {
+      "id": 33,
+      "sensor_id": 9,
+      "observed_on": "2026-01-03",
+      "value_c": 23.3
+    },
+    {
+      "id": 34,
+      "sensor_id": 10,
+      "observed_on": "2026-01-03",
+      "value_c": 24.4
+    },
+    {
+      "id": 35,
+      "sensor_id": 11,
+      "observed_on": "2026-01-03",
+      "value_c": 25.5
+    },
+    {
+      "id": 36,
+      "sensor_id": 12,
+      "observed_on": "2026-01-03",
+      "value_c": 26.6
+    },
+    {
+      "id": 37,
+      "sensor_id": 1,
+      "observed_on": "2026-01-04",
+      "value_c": 27.7
+    },
+    {
+      "id": 38,
+      "sensor_id": 2,
+      "observed_on": "2026-01-04",
+      "value_c": null
+    },
+    {
+      "id": 39,
+      "sensor_id": 3,
+      "observed_on": "2026-01-04",
+      "value_c": 29.9
+    },
+    {
+      "id": 40,
+      "sensor_id": 4,
+      "observed_on": "2026-01-04",
+      "value_c": 30.0
+    },
+    {
+      "id": 41,
+      "sensor_id": 5,
+      "observed_on": "2026-01-04",
+      "value_c": 31.1
+    },
+    {
+      "id": 42,
+      "sensor_id": 6,
+      "observed_on": "2026-01-04",
+      "value_c": 32.2
+    },
+    {
+      "id": 43,
+      "sensor_id": 7,
+      "observed_on": "2026-01-04",
+      "value_c": 33.3
+    },
+    {
+      "id": 44,
+      "sensor_id": 8,
+      "observed_on": "2026-01-04",
+      "value_c": 34.4
+    },
+    {
+      "id": 45,
+      "sensor_id": 9,
+      "observed_on": "2026-01-04",
+      "value_c": -9.5
+    },
+    {
+      "id": 46,
+      "sensor_id": 10,
+      "observed_on": "2026-01-04",
+      "value_c": -8.4
+    },
+    {
+      "id": 47,
+      "sensor_id": 11,
+      "observed_on": "2026-01-04",
+      "value_c": -7.3
+    },
+    {
+      "id": 48,
+      "sensor_id": 12,
+      "observed_on": "2026-01-04",
+      "value_c": -6.2
+    },
+    {
+      "id": 49,
+      "sensor_id": 1,
+      "observed_on": "2026-01-05",
+      "value_c": -5.1
+    },
+    {
+      "id": 50,
+      "sensor_id": 2,
+      "observed_on": "2026-01-05",
+      "value_c": -5.0
+    },
+    {
+      "id": 51,
+      "sensor_id": 3,
+      "observed_on": "2026-01-05",
+      "value_c": -3.9
+    },
+    {
+      "id": 52,
+      "sensor_id": 4,
+      "observed_on": "2026-01-05",
+      "value_c": -2.8
+    },
+    {
+      "id": 53,
+      "sensor_id": 5,
+      "observed_on": "2026-01-05",
+      "value_c": -1.7
+    },
+    {
+      "id": 54,
+      "sensor_id": 6,
+      "observed_on": "2026-01-05",
+      "value_c": -0.6
+    },
+    {
+      "id": 55,
+      "sensor_id": 7,
+      "observed_on": "2026-01-05",
+      "value_c": 0.5
+    },
+    {
+      "id": 56,
+      "sensor_id": 8,
+      "observed_on": "2026-01-05",
+      "value_c": 1.6
+    },
+    {
+      "id": 57,
+      "sensor_id": 9,
+      "observed_on": "2026-01-05",
+      "value_c": null
+    },
+    {
+      "id": 58,
+      "sensor_id": 10,
+      "observed_on": "2026-01-05",
+      "value_c": 3.8
+    },
+    {
+      "id": 59,
+      "sensor_id": 11,
+      "observed_on": "2026-01-05",
+      "value_c": 4.9
+    },
+    {
+      "id": 60,
+      "sensor_id": 12,
+      "observed_on": "2026-01-05",
+      "value_c": 5.0
+    },
+    {
+      "id": 61,
+      "sensor_id": 1,
+      "observed_on": "2026-01-06",
+      "value_c": 6.1
+    },
+    {
+      "id": 62,
+      "sensor_id": 2,
+      "observed_on": "2026-01-06",
+      "value_c": 7.2
+    },
+    {
+      "id": 63,
+      "sensor_id": 3,
+      "observed_on": "2026-01-06",
+      "value_c": 8.3
+    },
+    {
+      "id": 64,
+      "sensor_id": 4,
+      "observed_on": "2026-01-06",
+      "value_c": 9.4
+    },
+    {
+      "id": 65,
+      "sensor_id": 5,
+      "observed_on": "2026-01-06",
+      "value_c": 10.5
+    },
+    {
+      "id": 66,
+      "sensor_id": 6,
+      "observed_on": "2026-01-06",
+      "value_c": 11.6
+    },
+    {
+      "id": 67,
+      "sensor_id": 7,
+      "observed_on": "2026-01-06",
+      "value_c": 12.7
+    },
+    {
+      "id": 68,
+      "sensor_id": 8,
+      "observed_on": "2026-01-06",
+      "value_c": 13.8
+    },
+    {
+      "id": 69,
+      "sensor_id": 9,
+      "observed_on": "2026-01-06",
+      "value_c": 14.9
+    },
+    {
+      "id": 70,
+      "sensor_id": 10,
+      "observed_on": "2026-01-06",
+      "value_c": 15.0
+    },
+    {
+      "id": 71,
+      "sensor_id": 11,
+      "observed_on": "2026-01-06",
+      "value_c": 16.1
+    },
+    {
+      "id": 72,
+      "sensor_id": 12,
+      "observed_on": "2026-01-06",
+      "value_c": 17.2
+    },
+    {
+      "id": 73,
+      "sensor_id": 1,
+      "observed_on": "2026-01-07",
+      "value_c": 18.3
+    },
+    {
+      "id": 74,
+      "sensor_id": 2,
+      "observed_on": "2026-01-07",
+      "value_c": 19.4
+    },
+    {
+      "id": 75,
+      "sensor_id": 3,
+      "observed_on": "2026-01-07",
+      "value_c": 20.5
+    },
+    {
+      "id": 76,
+      "sensor_id": 4,
+      "observed_on": "2026-01-07",
+      "value_c": null
+    },
+    {
+      "id": 77,
+      "sensor_id": 5,
+      "observed_on": "2026-01-07",
+      "value_c": 22.7
+    },
+    {
+      "id": 78,
+      "sensor_id": 6,
+      "observed_on": "2026-01-07",
+      "value_c": 23.8
+    },
+    {
+      "id": 79,
+      "sensor_id": 7,
+      "observed_on": "2026-01-07",
+      "value_c": 24.9
+    },
+    {
+      "id": 80,
+      "sensor_id": 8,
+      "observed_on": "2026-01-07",
+      "value_c": 25.0
+    },
+    {
+      "id": 81,
+      "sensor_id": 9,
+      "observed_on": "2026-01-07",
+      "value_c": 26.1
+    },
+    {
+      "id": 82,
+      "sensor_id": 10,
+      "observed_on": "2026-01-07",
+      "value_c": 27.2
+    },
+    {
+      "id": 83,
+      "sensor_id": 11,
+      "observed_on": "2026-01-07",
+      "value_c": 28.3
+    },
+    {
+      "id": 84,
+      "sensor_id": 12,
+      "observed_on": "2026-01-07",
+      "value_c": 29.4
+    },
+    {
+      "id": 85,
+      "sensor_id": 1,
+      "observed_on": "2026-01-08",
+      "value_c": 30.5
+    },
+    {
+      "id": 86,
+      "sensor_id": 2,
+      "observed_on": "2026-01-08",
+      "value_c": 31.6
+    },
+    {
+      "id": 87,
+      "sensor_id": 3,
+      "observed_on": "2026-01-08",
+      "value_c": 32.7
+    },
+    {
+      "id": 88,
+      "sensor_id": 4,
+      "observed_on": "2026-01-08",
+      "value_c": 33.8
+    },
+    {
+      "id": 89,
+      "sensor_id": 5,
+      "observed_on": "2026-01-08",
+      "value_c": 34.9
+    },
+    {
+      "id": 90,
+      "sensor_id": 6,
+      "observed_on": "2026-01-08",
+      "value_c": -10.0
+    },
+    {
+      "id": 91,
+      "sensor_id": 7,
+      "observed_on": "2026-01-08",
+      "value_c": -8.9
+    },
+    {
+      "id": 92,
+      "sensor_id": 8,
+      "observed_on": "2026-01-08",
+      "value_c": -7.8
+    },
+    {
+      "id": 93,
+      "sensor_id": 9,
+      "observed_on": "2026-01-08",
+      "value_c": -6.7
+    },
+    {
+      "id": 94,
+      "sensor_id": 10,
+      "observed_on": "2026-01-08",
+      "value_c": -5.6
+    },
+    {
+      "id": 95,
+      "sensor_id": 11,
+      "observed_on": "2026-01-08",
+      "value_c": null
+    },
+    {
+      "id": 96,
+      "sensor_id": 12,
+      "observed_on": "2026-01-08",
+      "value_c": -3.4
+    },
+    {
+      "id": 97,
+      "sensor_id": 1,
+      "observed_on": "2026-01-09",
+      "value_c": -2.3
+    },
+    {
+      "id": 98,
+      "sensor_id": 2,
+      "observed_on": "2026-01-09",
+      "value_c": -1.2
+    },
+    {
+      "id": 99,
+      "sensor_id": 3,
+      "observed_on": "2026-01-09",
+      "value_c": -0.1
+    },
+    {
+      "id": 100,
+      "sensor_id": 4,
+      "observed_on": "2026-01-09",
+      "value_c": 0.0
+    },
+    {
+      "id": 101,
+      "sensor_id": 5,
+      "observed_on": "2026-01-09",
+      "value_c": 1.1
+    },
+    {
+      "id": 102,
+      "sensor_id": 6,
+      "observed_on": "2026-01-09",
+      "value_c": 2.2
+    },
+    {
+      "id": 103,
+      "sensor_id": 7,
+      "observed_on": "2026-01-09",
+      "value_c": 3.3
+    },
+    {
+      "id": 104,
+      "sensor_id": 8,
+      "observed_on": "2026-01-09",
+      "value_c": 4.4
+    },
+    {
+      "id": 105,
+      "sensor_id": 9,
+      "observed_on": "2026-01-09",
+      "value_c": 5.5
+    },
+    {
+      "id": 106,
+      "sensor_id": 10,
+      "observed_on": "2026-01-09",
+      "value_c": 6.6
+    },
+    {
+      "id": 107,
+      "sensor_id": 11,
+      "observed_on": "2026-01-09",
+      "value_c": 7.7
+    },
+    {
+      "id": 108,
+      "sensor_id": 12,
+      "observed_on": "2026-01-09",
+      "value_c": 8.8
+    },
+    {
+      "id": 109,
+      "sensor_id": 1,
+      "observed_on": "2026-01-10",
+      "value_c": 9.9
+    },
+    {
+      "id": 110,
+      "sensor_id": 2,
+      "observed_on": "2026-01-10",
+      "value_c": 10.0
+    },
+    {
+      "id": 111,
+      "sensor_id": 3,
+      "observed_on": "2026-01-10",
+      "value_c": 11.1
+    },
+    {
+      "id": 112,
+      "sensor_id": 4,
+      "observed_on": "2026-01-10",
+      "value_c": 12.2
+    },
+    {
+      "id": 113,
+      "sensor_id": 5,
+      "observed_on": "2026-01-10",
+      "value_c": 13.3
+    },
+    {
+      "id": 114,
+      "sensor_id": 6,
+      "observed_on": "2026-01-10",
+      "value_c": null
+    },
+    {
+      "id": 115,
+      "sensor_id": 7,
+      "observed_on": "2026-01-10",
+      "value_c": 15.5
+    },
+    {
+      "id": 116,
+      "sensor_id": 8,
+      "observed_on": "2026-01-10",
+      "value_c": 16.6
+    },
+    {
+      "id": 117,
+      "sensor_id": 9,
+      "observed_on": "2026-01-10",
+      "value_c": 17.7
+    },
+    {
+      "id": 118,
+      "sensor_id": 10,
+      "observed_on": "2026-01-10",
+      "value_c": 18.8
+    },
+    {
+      "id": 119,
+      "sensor_id": 11,
+      "observed_on": "2026-01-10",
+      "value_c": 19.9
+    },
+    {
+      "id": 120,
+      "sensor_id": 12,
+      "observed_on": "2026-01-10",
+      "value_c": 20.0
+    },
+    {
+      "id": 121,
+      "sensor_id": 1,
+      "observed_on": "2026-01-11",
+      "value_c": 21.1
+    },
+    {
+      "id": 122,
+      "sensor_id": 2,
+      "observed_on": "2026-01-11",
+      "value_c": 22.2
+    },
+    {
+      "id": 123,
+      "sensor_id": 3,
+      "observed_on": "2026-01-11",
+      "value_c": 23.3
+    },
+    {
+      "id": 124,
+      "sensor_id": 4,
+      "observed_on": "2026-01-11",
+      "value_c": 24.4
+    },
+    {
+      "id": 125,
+      "sensor_id": 5,
+      "observed_on": "2026-01-11",
+      "value_c": 25.5
+    },
+    {
+      "id": 126,
+      "sensor_id": 6,
+      "observed_on": "2026-01-11",
+      "value_c": 26.6
+    },
+    {
+      "id": 127,
+      "sensor_id": 7,
+      "observed_on": "2026-01-11",
+      "value_c": 27.7
+    },
+    {
+      "id": 128,
+      "sensor_id": 8,
+      "observed_on": "2026-01-11",
+      "value_c": 28.8
+    },
+    {
+      "id": 129,
+      "sensor_id": 9,
+      "observed_on": "2026-01-11",
+      "value_c": 29.9
+    },
+    {
+      "id": 130,
+      "sensor_id": 10,
+      "observed_on": "2026-01-11",
+      "value_c": 30.0
+    },
+    {
+      "id": 131,
+      "sensor_id": 11,
+      "observed_on": "2026-01-11",
+      "value_c": 31.1
+    },
+    {
+      "id": 132,
+      "sensor_id": 12,
+      "observed_on": "2026-01-11",
+      "value_c": 32.2
+    },
+    {
+      "id": 133,
+      "sensor_id": 1,
+      "observed_on": "2026-01-12",
+      "value_c": null
+    },
+    {
+      "id": 134,
+      "sensor_id": 2,
+      "observed_on": "2026-01-12",
+      "value_c": 34.4
+    },
+    {
+      "id": 135,
+      "sensor_id": 3,
+      "observed_on": "2026-01-12",
+      "value_c": -9.5
+    },
+    {
+      "id": 136,
+      "sensor_id": 4,
+      "observed_on": "2026-01-12",
+      "value_c": -8.4
+    },
+    {
+      "id": 137,
+      "sensor_id": 5,
+      "observed_on": "2026-01-12",
+      "value_c": -7.3
+    },
+    {
+      "id": 138,
+      "sensor_id": 6,
+      "observed_on": "2026-01-12",
+      "value_c": -6.2
+    },
+    {
+      "id": 139,
+      "sensor_id": 7,
+      "observed_on": "2026-01-12",
+      "value_c": -5.1
+    },
+    {
+      "id": 140,
+      "sensor_id": 8,
+      "observed_on": "2026-01-12",
+      "value_c": -5.0
+    },
+    {
+      "id": 141,
+      "sensor_id": 9,
+      "observed_on": "2026-01-12",
+      "value_c": -3.9
+    },
+    {
+      "id": 142,
+      "sensor_id": 10,
+      "observed_on": "2026-01-12",
+      "value_c": -2.8
+    },
+    {
+      "id": 143,
+      "sensor_id": 11,
+      "observed_on": "2026-01-12",
+      "value_c": -1.7
+    },
+    {
+      "id": 144,
+      "sensor_id": 12,
+      "observed_on": "2026-01-12",
+      "value_c": -0.6
+    },
+    {
+      "id": 145,
+      "sensor_id": 1,
+      "observed_on": "2026-01-13",
+      "value_c": 0.5
+    },
+    {
+      "id": 146,
+      "sensor_id": 2,
+      "observed_on": "2026-01-13",
+      "value_c": 1.6
+    },
+    {
+      "id": 147,
+      "sensor_id": 3,
+      "observed_on": "2026-01-13",
+      "value_c": 2.7
+    },
+    {
+      "id": 148,
+      "sensor_id": 4,
+      "observed_on": "2026-01-13",
+      "value_c": 3.8
+    },
+    {
+      "id": 149,
+      "sensor_id": 5,
+      "observed_on": "2026-01-13",
+      "value_c": 4.9
+    },
+    {
+      "id": 150,
+      "sensor_id": 6,
+      "observed_on": "2026-01-13",
+      "value_c": 5.0
+    },
+    {
+      "id": 151,
+      "sensor_id": 7,
+      "observed_on": "2026-01-13",
+      "value_c": 6.1
+    },
+    {
+      "id": 152,
+      "sensor_id": 8,
+      "observed_on": "2026-01-13",
+      "value_c": null
+    },
+    {
+      "id": 153,
+      "sensor_id": 9,
+      "observed_on": "2026-01-13",
+      "value_c": 8.3
+    },
+    {
+      "id": 154,
+      "sensor_id": 10,
+      "observed_on": "2026-01-13",
+      "value_c": 9.4
+    },
+    {
+      "id": 155,
+      "sensor_id": 11,
+      "observed_on": "2026-01-13",
+      "value_c": 10.5
+    },
+    {
+      "id": 156,
+      "sensor_id": 12,
+      "observed_on": "2026-01-13",
+      "value_c": 11.6
+    },
+    {
+      "id": 157,
+      "sensor_id": 1,
+      "observed_on": "2026-01-14",
+      "value_c": 12.7
+    },
+    {
+      "id": 158,
+      "sensor_id": 2,
+      "observed_on": "2026-01-14",
+      "value_c": 13.8
+    },
+    {
+      "id": 159,
+      "sensor_id": 3,
+      "observed_on": "2026-01-14",
+      "value_c": 14.9
+    },
+    {
+      "id": 160,
+      "sensor_id": 4,
+      "observed_on": "2026-01-14",
+      "value_c": 15.0
+    },
+    {
+      "id": 161,
+      "sensor_id": 5,
+      "observed_on": "2026-01-14",
+      "value_c": 16.1
+    },
+    {
+      "id": 162,
+      "sensor_id": 6,
+      "observed_on": "2026-01-14",
+      "value_c": 17.2
+    },
+    {
+      "id": 163,
+      "sensor_id": 7,
+      "observed_on": "2026-01-14",
+      "value_c": 18.3
+    },
+    {
+      "id": 164,
+      "sensor_id": 8,
+      "observed_on": "2026-01-14",
+      "value_c": 19.4
+    },
+    {
+      "id": 165,
+      "sensor_id": 9,
+      "observed_on": "2026-01-14",
+      "value_c": 20.5
+    },
+    {
+      "id": 166,
+      "sensor_id": 10,
+      "observed_on": "2026-01-14",
+      "value_c": 21.6
+    },
+    {
+      "id": 167,
+      "sensor_id": 11,
+      "observed_on": "2026-01-14",
+      "value_c": 22.7
+    },
+    {
+      "id": 168,
+      "sensor_id": 12,
+      "observed_on": "2026-01-14",
+      "value_c": 23.8
+    },
+    {
+      "id": 169,
+      "sensor_id": 1,
+      "observed_on": "2026-01-15",
+      "value_c": 24.9
+    },
+    {
+      "id": 170,
+      "sensor_id": 2,
+      "observed_on": "2026-01-15",
+      "value_c": 25.0
+    },
+    {
+      "id": 171,
+      "sensor_id": 3,
+      "observed_on": "2026-01-15",
+      "value_c": null
+    },
+    {
+      "id": 172,
+      "sensor_id": 4,
+      "observed_on": "2026-01-15",
+      "value_c": 27.2
+    },
+    {
+      "id": 173,
+      "sensor_id": 5,
+      "observed_on": "2026-01-15",
+      "value_c": 28.3
+    },
+    {
+      "id": 174,
+      "sensor_id": 6,
+      "observed_on": "2026-01-15",
+      "value_c": 29.4
+    },
+    {
+      "id": 175,
+      "sensor_id": 7,
+      "observed_on": "2026-01-15",
+      "value_c": 30.5
+    },
+    {
+      "id": 176,
+      "sensor_id": 8,
+      "observed_on": "2026-01-15",
+      "value_c": 31.6
+    },
+    {
+      "id": 177,
+      "sensor_id": 9,
+      "observed_on": "2026-01-15",
+      "value_c": 32.7
+    },
+    {
+      "id": 178,
+      "sensor_id": 10,
+      "observed_on": "2026-01-15",
+      "value_c": 33.8
+    },
+    {
+      "id": 179,
+      "sensor_id": 11,
+      "observed_on": "2026-01-15",
+      "value_c": 34.9
+    },
+    {
+      "id": 180,
+      "sensor_id": 12,
+      "observed_on": "2026-01-15",
+      "value_c": -10.0
+    },
+    {
+      "id": 181,
+      "sensor_id": 1,
+      "observed_on": "2026-01-16",
+      "value_c": -8.9
+    },
+    {
+      "id": 182,
+      "sensor_id": 2,
+      "observed_on": "2026-01-16",
+      "value_c": -7.8
+    },
+    {
+      "id": 183,
+      "sensor_id": 3,
+      "observed_on": "2026-01-16",
+      "value_c": -6.7
+    },
+    {
+      "id": 184,
+      "sensor_id": 4,
+      "observed_on": "2026-01-16",
+      "value_c": -5.6
+    },
+    {
+      "id": 185,
+      "sensor_id": 5,
+      "observed_on": "2026-01-16",
+      "value_c": -4.5
+    },
+    {
+      "id": 186,
+      "sensor_id": 6,
+      "observed_on": "2026-01-16",
+      "value_c": -3.4
+    },
+    {
+      "id": 187,
+      "sensor_id": 7,
+      "observed_on": "2026-01-16",
+      "value_c": -2.3
+    },
+    {
+      "id": 188,
+      "sensor_id": 8,
+      "observed_on": "2026-01-16",
+      "value_c": -1.2
+    },
+    {
+      "id": 189,
+      "sensor_id": 9,
+      "observed_on": "2026-01-16",
+      "value_c": -0.1
+    },
+    {
+      "id": 190,
+      "sensor_id": 10,
+      "observed_on": "2026-01-16",
+      "value_c": null
+    },
+    {
+      "id": 191,
+      "sensor_id": 11,
+      "observed_on": "2026-01-16",
+      "value_c": 1.1
+    },
+    {
+      "id": 192,
+      "sensor_id": 12,
+      "observed_on": "2026-01-16",
+      "value_c": 2.2
+    },
+    {
+      "id": 193,
+      "sensor_id": 1,
+      "observed_on": "2026-01-17",
+      "value_c": 3.3
+    },
+    {
+      "id": 194,
+      "sensor_id": 2,
+      "observed_on": "2026-01-17",
+      "value_c": 4.4
+    },
+    {
+      "id": 195,
+      "sensor_id": 3,
+      "observed_on": "2026-01-17",
+      "value_c": 5.5
+    },
+    {
+      "id": 196,
+      "sensor_id": 4,
+      "observed_on": "2026-01-17",
+      "value_c": 6.6
+    },
+    {
+      "id": 197,
+      "sensor_id": 5,
+      "observed_on": "2026-01-17",
+      "value_c": 7.7
+    },
+    {
+      "id": 198,
+      "sensor_id": 6,
+      "observed_on": "2026-01-17",
+      "value_c": 8.8
+    },
+    {
+      "id": 199,
+      "sensor_id": 7,
+      "observed_on": "2026-01-17",
+      "value_c": 9.9
+    },
+    {
+      "id": 200,
+      "sensor_id": 8,
+      "observed_on": "2026-01-17",
+      "value_c": 10.0
+    },
+    {
+      "id": 201,
+      "sensor_id": 9,
+      "observed_on": "2026-01-17",
+      "value_c": 11.1
+    },
+    {
+      "id": 202,
+      "sensor_id": 10,
+      "observed_on": "2026-01-17",
+      "value_c": 12.2
+    },
+    {
+      "id": 203,
+      "sensor_id": 11,
+      "observed_on": "2026-01-17",
+      "value_c": 13.3
+    },
+    {
+      "id": 204,
+      "sensor_id": 12,
+      "observed_on": "2026-01-17",
+      "value_c": 14.4
+    },
+    {
+      "id": 205,
+      "sensor_id": 1,
+      "observed_on": "2026-01-18",
+      "value_c": 15.5
+    },
+    {
+      "id": 206,
+      "sensor_id": 2,
+      "observed_on": "2026-01-18",
+      "value_c": 16.6
+    },
+    {
+      "id": 207,
+      "sensor_id": 3,
+      "observed_on": "2026-01-18",
+      "value_c": 17.7
+    },
+    {
+      "id": 208,
+      "sensor_id": 4,
+      "observed_on": "2026-01-18",
+      "value_c": 18.8
+    },
+    {
+      "id": 209,
+      "sensor_id": 5,
+      "observed_on": "2026-01-18",
+      "value_c": null
+    },
+    {
+      "id": 210,
+      "sensor_id": 6,
+      "observed_on": "2026-01-18",
+      "value_c": 20.0
+    },
+    {
+      "id": 211,
+      "sensor_id": 7,
+      "observed_on": "2026-01-18",
+      "value_c": 21.1
+    },
+    {
+      "id": 212,
+      "sensor_id": 8,
+      "observed_on": "2026-01-18",
+      "value_c": 22.2
+    },
+    {
+      "id": 213,
+      "sensor_id": 9,
+      "observed_on": "2026-01-18",
+      "value_c": 23.3
+    },
+    {
+      "id": 214,
+      "sensor_id": 10,
+      "observed_on": "2026-01-18",
+      "value_c": 24.4
+    },
+    {
+      "id": 215,
+      "sensor_id": 11,
+      "observed_on": "2026-01-18",
+      "value_c": 25.5
+    },
+    {
+      "id": 216,
+      "sensor_id": 12,
+      "observed_on": "2026-01-18",
+      "value_c": 26.6
+    },
+    {
+      "id": 217,
+      "sensor_id": 1,
+      "observed_on": "2026-01-19",
+      "value_c": 27.7
+    },
+    {
+      "id": 218,
+      "sensor_id": 2,
+      "observed_on": "2026-01-19",
+      "value_c": 28.8
+    },
+    {
+      "id": 219,
+      "sensor_id": 3,
+      "observed_on": "2026-01-19",
+      "value_c": 29.9
+    },
+    {
+      "id": 220,
+      "sensor_id": 4,
+      "observed_on": "2026-01-19",
+      "value_c": 30.0
+    },
+    {
+      "id": 221,
+      "sensor_id": 5,
+      "observed_on": "2026-01-19",
+      "value_c": 31.1
+    },
+    {
+      "id": 222,
+      "sensor_id": 6,
+      "observed_on": "2026-01-19",
+      "value_c": 32.2
+    },
+    {
+      "id": 223,
+      "sensor_id": 7,
+      "observed_on": "2026-01-19",
+      "value_c": 33.3
+    },
+    {
+      "id": 224,
+      "sensor_id": 8,
+      "observed_on": "2026-01-19",
+      "value_c": 34.4
+    },
+    {
+      "id": 225,
+      "sensor_id": 9,
+      "observed_on": "2026-01-19",
+      "value_c": -9.5
+    },
+    {
+      "id": 226,
+      "sensor_id": 10,
+      "observed_on": "2026-01-19",
+      "value_c": -8.4
+    },
+    {
+      "id": 227,
+      "sensor_id": 11,
+      "observed_on": "2026-01-19",
+      "value_c": -7.3
+    },
+    {
+      "id": 228,
+      "sensor_id": 12,
+      "observed_on": "2026-01-19",
+      "value_c": null
+    },
+    {
+      "id": 229,
+      "sensor_id": 1,
+      "observed_on": "2026-01-20",
+      "value_c": -5.1
+    },
+    {
+      "id": 230,
+      "sensor_id": 2,
+      "observed_on": "2026-01-20",
+      "value_c": -5.0
+    },
+    {
+      "id": 231,
+      "sensor_id": 3,
+      "observed_on": "2026-01-20",
+      "value_c": -3.9
+    },
+    {
+      "id": 232,
+      "sensor_id": 4,
+      "observed_on": "2026-01-20",
+      "value_c": -2.8
+    },
+    {
+      "id": 233,
+      "sensor_id": 5,
+      "observed_on": "2026-01-20",
+      "value_c": -1.7
+    },
+    {
+      "id": 234,
+      "sensor_id": 6,
+      "observed_on": "2026-01-20",
+      "value_c": -0.6
+    },
+    {
+      "id": 235,
+      "sensor_id": 7,
+      "observed_on": "2026-01-20",
+      "value_c": 0.5
+    },
+    {
+      "id": 236,
+      "sensor_id": 8,
+      "observed_on": "2026-01-20",
+      "value_c": 1.6
+    },
+    {
+      "id": 237,
+      "sensor_id": 9,
+      "observed_on": "2026-01-20",
+      "value_c": 2.7
+    },
+    {
+      "id": 238,
+      "sensor_id": 10,
+      "observed_on": "2026-01-20",
+      "value_c": 3.8
+    },
+    {
+      "id": 239,
+      "sensor_id": 11,
+      "observed_on": "2026-01-20",
+      "value_c": 4.9
+    },
+    {
+      "id": 240,
+      "sensor_id": 12,
+      "observed_on": "2026-01-20",
+      "value_c": 5.0
+    },
+    {
+      "id": 241,
+      "sensor_id": 1,
+      "observed_on": "2026-01-21",
+      "value_c": 6.1
+    },
+    {
+      "id": 242,
+      "sensor_id": 2,
+      "observed_on": "2026-01-21",
+      "value_c": 7.2
+    },
+    {
+      "id": 243,
+      "sensor_id": 3,
+      "observed_on": "2026-01-21",
+      "value_c": 8.3
+    },
+    {
+      "id": 244,
+      "sensor_id": 4,
+      "observed_on": "2026-01-21",
+      "value_c": 9.4
+    },
+    {
+      "id": 245,
+      "sensor_id": 5,
+      "observed_on": "2026-01-21",
+      "value_c": 10.5
+    },
+    {
+      "id": 246,
+      "sensor_id": 6,
+      "observed_on": "2026-01-21",
+      "value_c": 11.6
+    },
+    {
+      "id": 247,
+      "sensor_id": 7,
+      "observed_on": "2026-01-21",
+      "value_c": null
+    },
+    {
+      "id": 248,
+      "sensor_id": 8,
+      "observed_on": "2026-01-21",
+      "value_c": 13.8
+    },
+    {
+      "id": 249,
+      "sensor_id": 9,
+      "observed_on": "2026-01-21",
+      "value_c": 14.9
+    },
+    {
+      "id": 250,
+      "sensor_id": 10,
+      "observed_on": "2026-01-21",
+      "value_c": 15.0
+    },
+    {
+      "id": 251,
+      "sensor_id": 11,
+      "observed_on": "2026-01-21",
+      "value_c": 16.1
+    },
+    {
+      "id": 252,
+      "sensor_id": 12,
+      "observed_on": "2026-01-21",
+      "value_c": 17.2
+    },
+    {
+      "id": 253,
+      "sensor_id": 1,
+      "observed_on": "2026-01-22",
+      "value_c": 18.3
+    },
+    {
+      "id": 254,
+      "sensor_id": 2,
+      "observed_on": "2026-01-22",
+      "value_c": 19.4
+    },
+    {
+      "id": 255,
+      "sensor_id": 3,
+      "observed_on": "2026-01-22",
+      "value_c": 20.5
+    },
+    {
+      "id": 256,
+      "sensor_id": 4,
+      "observed_on": "2026-01-22",
+      "value_c": 21.6
+    },
+    {
+      "id": 257,
+      "sensor_id": 5,
+      "observed_on": "2026-01-22",
+      "value_c": 22.7
+    },
+    {
+      "id": 258,
+      "sensor_id": 6,
+      "observed_on": "2026-01-22",
+      "value_c": 23.8
+    },
+    {
+      "id": 259,
+      "sensor_id": 7,
+      "observed_on": "2026-01-22",
+      "value_c": 24.9
+    },
+    {
+      "id": 260,
+      "sensor_id": 8,
+      "observed_on": "2026-01-22",
+      "value_c": 25.0
+    },
+    {
+      "id": 261,
+      "sensor_id": 9,
+      "observed_on": "2026-01-22",
+      "value_c": 26.1
+    },
+    {
+      "id": 262,
+      "sensor_id": 10,
+      "observed_on": "2026-01-22",
+      "value_c": 27.2
+    },
+    {
+      "id": 263,
+      "sensor_id": 11,
+      "observed_on": "2026-01-22",
+      "value_c": 28.3
+    },
+    {
+      "id": 264,
+      "sensor_id": 12,
+      "observed_on": "2026-01-22",
+      "value_c": 29.4
+    },
+    {
+      "id": 265,
+      "sensor_id": 1,
+      "observed_on": "2026-01-23",
+      "value_c": 30.5
+    },
+    {
+      "id": 266,
+      "sensor_id": 2,
+      "observed_on": "2026-01-23",
+      "value_c": null
+    },
+    {
+      "id": 267,
+      "sensor_id": 3,
+      "observed_on": "2026-01-23",
+      "value_c": 32.7
+    },
+    {
+      "id": 268,
+      "sensor_id": 4,
+      "observed_on": "2026-01-23",
+      "value_c": 33.8
+    },
+    {
+      "id": 269,
+      "sensor_id": 5,
+      "observed_on": "2026-01-23",
+      "value_c": 34.9
+    },
+    {
+      "id": 270,
+      "sensor_id": 6,
+      "observed_on": "2026-01-23",
+      "value_c": -10.0
+    },
+    {
+      "id": 271,
+      "sensor_id": 7,
+      "observed_on": "2026-01-23",
+      "value_c": -8.9
+    },
+    {
+      "id": 272,
+      "sensor_id": 8,
+      "observed_on": "2026-01-23",
+      "value_c": -7.8
+    },
+    {
+      "id": 273,
+      "sensor_id": 9,
+      "observed_on": "2026-01-23",
+      "value_c": -6.7
+    },
+    {
+      "id": 274,
+      "sensor_id": 10,
+      "observed_on": "2026-01-23",
+      "value_c": -5.6
+    },
+    {
+      "id": 275,
+      "sensor_id": 11,
+      "observed_on": "2026-01-23",
+      "value_c": -4.5
+    },
+    {
+      "id": 276,
+      "sensor_id": 12,
+      "observed_on": "2026-01-23",
+      "value_c": -3.4
+    },
+    {
+      "id": 277,
+      "sensor_id": 1,
+      "observed_on": "2026-01-24",
+      "value_c": -2.3
+    },
+    {
+      "id": 278,
+      "sensor_id": 2,
+      "observed_on": "2026-01-24",
+      "value_c": -1.2
+    },
+    {
+      "id": 279,
+      "sensor_id": 3,
+      "observed_on": "2026-01-24",
+      "value_c": -0.1
+    },
+    {
+      "id": 280,
+      "sensor_id": 4,
+      "observed_on": "2026-01-24",
+      "value_c": 0.0
+    },
+    {
+      "id": 281,
+      "sensor_id": 5,
+      "observed_on": "2026-01-24",
+      "value_c": 1.1
+    },
+    {
+      "id": 282,
+      "sensor_id": 6,
+      "observed_on": "2026-01-24",
+      "value_c": 2.2
+    },
+    {
+      "id": 283,
+      "sensor_id": 7,
+      "observed_on": "2026-01-24",
+      "value_c": 3.3
+    },
+    {
+      "id": 284,
+      "sensor_id": 8,
+      "observed_on": "2026-01-24",
+      "value_c": 4.4
+    },
+    {
+      "id": 285,
+      "sensor_id": 9,
+      "observed_on": "2026-01-24",
+      "value_c": null
+    },
+    {
+      "id": 286,
+      "sensor_id": 10,
+      "observed_on": "2026-01-24",
+      "value_c": 6.6
+    },
+    {
+      "id": 287,
+      "sensor_id": 11,
+      "observed_on": "2026-01-24",
+      "value_c": 7.7
+    },
+    {
+      "id": 288,
+      "sensor_id": 12,
+      "observed_on": "2026-01-24",
+      "value_c": 8.8
+    },
+    {
+      "id": 289,
+      "sensor_id": 1,
+      "observed_on": "2026-01-25",
+      "value_c": 9.9
+    },
+    {
+      "id": 290,
+      "sensor_id": 2,
+      "observed_on": "2026-01-25",
+      "value_c": 10.0
+    },
+    {
+      "id": 291,
+      "sensor_id": 3,
+      "observed_on": "2026-01-25",
+      "value_c": 11.1
+    },
+    {
+      "id": 292,
+      "sensor_id": 4,
+      "observed_on": "2026-01-25",
+      "value_c": 12.2
+    },
+    {
+      "id": 293,
+      "sensor_id": 5,
+      "observed_on": "2026-01-25",
+      "value_c": 13.3
+    },
+    {
+      "id": 294,
+      "sensor_id": 6,
+      "observed_on": "2026-01-25",
+      "value_c": 14.4
+    },
+    {
+      "id": 295,
+      "sensor_id": 7,
+      "observed_on": "2026-01-25",
+      "value_c": 15.5
+    },
+    {
+      "id": 296,
+      "sensor_id": 8,
+      "observed_on": "2026-01-25",
+      "value_c": 16.6
+    },
+    {
+      "id": 297,
+      "sensor_id": 9,
+      "observed_on": "2026-01-25",
+      "value_c": 17.7
+    },
+    {
+      "id": 298,
+      "sensor_id": 10,
+      "observed_on": "2026-01-25",
+      "value_c": 18.8
+    },
+    {
+      "id": 299,
+      "sensor_id": 11,
+      "observed_on": "2026-01-25",
+      "value_c": 19.9
+    },
+    {
+      "id": 300,
+      "sensor_id": 12,
+      "observed_on": "2026-01-25",
+      "value_c": 20.0
+    },
+    {
+      "id": 301,
+      "sensor_id": 1,
+      "observed_on": "2026-01-26",
+      "value_c": 21.1
+    },
+    {
+      "id": 302,
+      "sensor_id": 2,
+      "observed_on": "2026-01-26",
+      "value_c": 22.2
+    },
+    {
+      "id": 303,
+      "sensor_id": 3,
+      "observed_on": "2026-01-26",
+      "value_c": 23.3
+    },
+    {
+      "id": 304,
+      "sensor_id": 4,
+      "observed_on": "2026-01-26",
+      "value_c": null
+    },
+    {
+      "id": 305,
+      "sensor_id": 5,
+      "observed_on": "2026-01-26",
+      "value_c": 25.5
+    },
+    {
+      "id": 306,
+      "sensor_id": 6,
+      "observed_on": "2026-01-26",
+      "value_c": 26.6
+    },
+    {
+      "id": 307,
+      "sensor_id": 7,
+      "observed_on": "2026-01-26",
+      "value_c": 27.7
+    },
+    {
+      "id": 308,
+      "sensor_id": 8,
+      "observed_on": "2026-01-26",
+      "value_c": 28.8
+    },
+    {
+      "id": 309,
+      "sensor_id": 9,
+      "observed_on": "2026-01-26",
+      "value_c": 29.9
+    },
+    {
+      "id": 310,
+      "sensor_id": 10,
+      "observed_on": "2026-01-26",
+      "value_c": 30.0
+    },
+    {
+      "id": 311,
+      "sensor_id": 11,
+      "observed_on": "2026-01-26",
+      "value_c": 31.1
+    },
+    {
+      "id": 312,
+      "sensor_id": 12,
+      "observed_on": "2026-01-26",
+      "value_c": 32.2
+    },
+    {
+      "id": 313,
+      "sensor_id": 1,
+      "observed_on": "2026-01-27",
+      "value_c": 33.3
+    },
+    {
+      "id": 314,
+      "sensor_id": 2,
+      "observed_on": "2026-01-27",
+      "value_c": 34.4
+    },
+    {
+      "id": 315,
+      "sensor_id": 3,
+      "observed_on": "2026-01-27",
+      "value_c": -9.5
+    },
+    {
+      "id": 316,
+      "sensor_id": 4,
+      "observed_on": "2026-01-27",
+      "value_c": -8.4
+    },
+    {
+      "id": 317,
+      "sensor_id": 5,
+      "observed_on": "2026-01-27",
+      "value_c": -7.3
+    },
+    {
+      "id": 318,
+      "sensor_id": 6,
+      "observed_on": "2026-01-27",
+      "value_c": -6.2
+    },
+    {
+      "id": 319,
+      "sensor_id": 7,
+      "observed_on": "2026-01-27",
+      "value_c": -5.1
+    },
+    {
+      "id": 320,
+      "sensor_id": 8,
+      "observed_on": "2026-01-27",
+      "value_c": -5.0
+    },
+    {
+      "id": 321,
+      "sensor_id": 9,
+      "observed_on": "2026-01-27",
+      "value_c": -3.9
+    },
+    {
+      "id": 322,
+      "sensor_id": 10,
+      "observed_on": "2026-01-27",
+      "value_c": -2.8
+    },
+    {
+      "id": 323,
+      "sensor_id": 11,
+      "observed_on": "2026-01-27",
+      "value_c": null
+    },
+    {
+      "id": 324,
+      "sensor_id": 12,
+      "observed_on": "2026-01-27",
+      "value_c": -0.6
+    },
+    {
+      "id": 325,
+      "sensor_id": 1,
+      "observed_on": "2026-01-28",
+      "value_c": 0.5
+    },
+    {
+      "id": 326,
+      "sensor_id": 2,
+      "observed_on": "2026-01-28",
+      "value_c": 1.6
+    },
+    {
+      "id": 327,
+      "sensor_id": 3,
+      "observed_on": "2026-01-28",
+      "value_c": 2.7
+    },
+    {
+      "id": 328,
+      "sensor_id": 4,
+      "observed_on": "2026-01-28",
+      "value_c": 3.8
+    },
+    {
+      "id": 329,
+      "sensor_id": 5,
+      "observed_on": "2026-01-28",
+      "value_c": 4.9
+    },
+    {
+      "id": 330,
+      "sensor_id": 6,
+      "observed_on": "2026-01-28",
+      "value_c": 5.0
+    },
+    {
+      "id": 331,
+      "sensor_id": 7,
+      "observed_on": "2026-01-28",
+      "value_c": 6.1
+    },
+    {
+      "id": 332,
+      "sensor_id": 8,
+      "observed_on": "2026-01-28",
+      "value_c": 7.2
+    },
+    {
+      "id": 333,
+      "sensor_id": 9,
+      "observed_on": "2026-01-28",
+      "value_c": 8.3
+    },
+    {
+      "id": 334,
+      "sensor_id": 10,
+      "observed_on": "2026-01-28",
+      "value_c": 9.4
+    },
+    {
+      "id": 335,
+      "sensor_id": 11,
+      "observed_on": "2026-01-28",
+      "value_c": 10.5
+    },
+    {
+      "id": 336,
+      "sensor_id": 12,
+      "observed_on": "2026-01-28",
+      "value_c": 11.6
+    },
+    {
+      "id": 337,
+      "sensor_id": 1,
+      "observed_on": "2026-01-29",
+      "value_c": 12.7
+    },
+    {
+      "id": 338,
+      "sensor_id": 2,
+      "observed_on": "2026-01-29",
+      "value_c": 13.8
+    },
+    {
+      "id": 339,
+      "sensor_id": 3,
+      "observed_on": "2026-01-29",
+      "value_c": 14.9
+    },
+    {
+      "id": 340,
+      "sensor_id": 4,
+      "observed_on": "2026-01-29",
+      "value_c": 15.0
+    },
+    {
+      "id": 341,
+      "sensor_id": 5,
+      "observed_on": "2026-01-29",
+      "value_c": 16.1
+    },
+    {
+      "id": 342,
+      "sensor_id": 6,
+      "observed_on": "2026-01-29",
+      "value_c": null
+    },
+    {
+      "id": 343,
+      "sensor_id": 7,
+      "observed_on": "2026-01-29",
+      "value_c": 18.3
+    },
+    {
+      "id": 344,
+      "sensor_id": 8,
+      "observed_on": "2026-01-29",
+      "value_c": 19.4
+    },
+    {
+      "id": 345,
+      "sensor_id": 9,
+      "observed_on": "2026-01-29",
+      "value_c": 20.5
+    },
+    {
+      "id": 346,
+      "sensor_id": 10,
+      "observed_on": "2026-01-29",
+      "value_c": 21.6
+    },
+    {
+      "id": 347,
+      "sensor_id": 11,
+      "observed_on": "2026-01-29",
+      "value_c": 22.7
+    },
+    {
+      "id": 348,
+      "sensor_id": 12,
+      "observed_on": "2026-01-29",
+      "value_c": 23.8
+    },
+    {
+      "id": 349,
+      "sensor_id": 1,
+      "observed_on": "2026-01-30",
+      "value_c": 24.9
+    },
+    {
+      "id": 350,
+      "sensor_id": 2,
+      "observed_on": "2026-01-30",
+      "value_c": 25.0
+    },
+    {
+      "id": 351,
+      "sensor_id": 3,
+      "observed_on": "2026-01-30",
+      "value_c": 26.1
+    },
+    {
+      "id": 352,
+      "sensor_id": 4,
+      "observed_on": "2026-01-30",
+      "value_c": 27.2
+    },
+    {
+      "id": 353,
+      "sensor_id": 5,
+      "observed_on": "2026-01-30",
+      "value_c": 28.3
+    },
+    {
+      "id": 354,
+      "sensor_id": 6,
+      "observed_on": "2026-01-30",
+      "value_c": 29.4
+    },
+    {
+      "id": 355,
+      "sensor_id": 7,
+      "observed_on": "2026-01-30",
+      "value_c": 30.5
+    },
+    {
+      "id": 356,
+      "sensor_id": 8,
+      "observed_on": "2026-01-30",
+      "value_c": 31.6
+    },
+    {
+      "id": 357,
+      "sensor_id": 9,
+      "observed_on": "2026-01-30",
+      "value_c": 32.7
+    },
+    {
+      "id": 358,
+      "sensor_id": 10,
+      "observed_on": "2026-01-30",
+      "value_c": 33.8
+    },
+    {
+      "id": 359,
+      "sensor_id": 11,
+      "observed_on": "2026-01-30",
+      "value_c": 34.9
+    },
+    {
+      "id": 360,
+      "sensor_id": 12,
+      "observed_on": "2026-01-30",
+      "value_c": -10.0
+    },
+    {
+      "id": 361,
+      "sensor_id": 1,
+      "observed_on": "2026-01-31",
+      "value_c": null
+    },
+    {
+      "id": 362,
+      "sensor_id": 2,
+      "observed_on": "2026-01-31",
+      "value_c": -7.8
+    },
+    {
+      "id": 363,
+      "sensor_id": 3,
+      "observed_on": "2026-01-31",
+      "value_c": -6.7
+    },
+    {
+      "id": 364,
+      "sensor_id": 4,
+      "observed_on": "2026-01-31",
+      "value_c": -5.6
+    },
+    {
+      "id": 365,
+      "sensor_id": 5,
+      "observed_on": "2026-01-31",
+      "value_c": -4.5
+    },
+    {
+      "id": 366,
+      "sensor_id": 6,
+      "observed_on": "2026-01-31",
+      "value_c": -3.4
+    },
+    {
+      "id": 367,
+      "sensor_id": 7,
+      "observed_on": "2026-01-31",
+      "value_c": -2.3
+    },
+    {
+      "id": 368,
+      "sensor_id": 8,
+      "observed_on": "2026-01-31",
+      "value_c": -1.2
+    },
+    {
+      "id": 369,
+      "sensor_id": 9,
+      "observed_on": "2026-01-31",
+      "value_c": -0.1
+    },
+    {
+      "id": 370,
+      "sensor_id": 10,
+      "observed_on": "2026-01-31",
+      "value_c": 0.0
+    },
+    {
+      "id": 371,
+      "sensor_id": 11,
+      "observed_on": "2026-01-31",
+      "value_c": 1.1
+    },
+    {
+      "id": 372,
+      "sensor_id": 12,
+      "observed_on": "2026-01-31",
+      "value_c": 2.2
+    },
+    {
+      "id": 373,
+      "sensor_id": 1,
+      "observed_on": "2026-02-01",
+      "value_c": 3.3
+    },
+    {
+      "id": 374,
+      "sensor_id": 2,
+      "observed_on": "2026-02-01",
+      "value_c": 4.4
+    },
+    {
+      "id": 375,
+      "sensor_id": 3,
+      "observed_on": "2026-02-01",
+      "value_c": 5.5
+    },
+    {
+      "id": 376,
+      "sensor_id": 4,
+      "observed_on": "2026-02-01",
+      "value_c": 6.6
+    },
+    {
+      "id": 377,
+      "sensor_id": 5,
+      "observed_on": "2026-02-01",
+      "value_c": 7.7
+    },
+    {
+      "id": 378,
+      "sensor_id": 6,
+      "observed_on": "2026-02-01",
+      "value_c": 8.8
+    },
+    {
+      "id": 379,
+      "sensor_id": 7,
+      "observed_on": "2026-02-01",
+      "value_c": 9.9
+    },
+    {
+      "id": 380,
+      "sensor_id": 8,
+      "observed_on": "2026-02-01",
+      "value_c": null
+    },
+    {
+      "id": 381,
+      "sensor_id": 9,
+      "observed_on": "2026-02-01",
+      "value_c": 11.1
+    },
+    {
+      "id": 382,
+      "sensor_id": 10,
+      "observed_on": "2026-02-01",
+      "value_c": 12.2
+    },
+    {
+      "id": 383,
+      "sensor_id": 11,
+      "observed_on": "2026-02-01",
+      "value_c": 13.3
+    },
+    {
+      "id": 384,
+      "sensor_id": 12,
+      "observed_on": "2026-02-01",
+      "value_c": 14.4
+    },
+    {
+      "id": 385,
+      "sensor_id": 1,
+      "observed_on": "2026-02-02",
+      "value_c": 15.5
+    },
+    {
+      "id": 386,
+      "sensor_id": 2,
+      "observed_on": "2026-02-02",
+      "value_c": 16.6
+    },
+    {
+      "id": 387,
+      "sensor_id": 3,
+      "observed_on": "2026-02-02",
+      "value_c": 17.7
+    },
+    {
+      "id": 388,
+      "sensor_id": 4,
+      "observed_on": "2026-02-02",
+      "value_c": 18.8
+    },
+    {
+      "id": 389,
+      "sensor_id": 5,
+      "observed_on": "2026-02-02",
+      "value_c": 19.9
+    },
+    {
+      "id": 390,
+      "sensor_id": 6,
+      "observed_on": "2026-02-02",
+      "value_c": 20.0
+    },
+    {
+      "id": 391,
+      "sensor_id": 7,
+      "observed_on": "2026-02-02",
+      "value_c": 21.1
+    },
+    {
+      "id": 392,
+      "sensor_id": 8,
+      "observed_on": "2026-02-02",
+      "value_c": 22.2
+    },
+    {
+      "id": 393,
+      "sensor_id": 9,
+      "observed_on": "2026-02-02",
+      "value_c": 23.3
+    },
+    {
+      "id": 394,
+      "sensor_id": 10,
+      "observed_on": "2026-02-02",
+      "value_c": 24.4
+    },
+    {
+      "id": 395,
+      "sensor_id": 11,
+      "observed_on": "2026-02-02",
+      "value_c": 25.5
+    },
+    {
+      "id": 396,
+      "sensor_id": 12,
+      "observed_on": "2026-02-02",
+      "value_c": 26.6
+    },
+    {
+      "id": 397,
+      "sensor_id": 1,
+      "observed_on": "2026-02-03",
+      "value_c": 27.7
+    },
+    {
+      "id": 398,
+      "sensor_id": 2,
+      "observed_on": "2026-02-03",
+      "value_c": 28.8
+    },
+    {
+      "id": 399,
+      "sensor_id": 3,
+      "observed_on": "2026-02-03",
+      "value_c": null
+    },
+    {
+      "id": 400,
+      "sensor_id": 4,
+      "observed_on": "2026-02-03",
+      "value_c": 30.0
+    },
+    {
+      "id": 401,
+      "sensor_id": 5,
+      "observed_on": "2026-02-03",
+      "value_c": 31.1
+    },
+    {
+      "id": 402,
+      "sensor_id": 6,
+      "observed_on": "2026-02-03",
+      "value_c": 32.2
+    },
+    {
+      "id": 403,
+      "sensor_id": 7,
+      "observed_on": "2026-02-03",
+      "value_c": 33.3
+    },
+    {
+      "id": 404,
+      "sensor_id": 8,
+      "observed_on": "2026-02-03",
+      "value_c": 34.4
+    },
+    {
+      "id": 405,
+      "sensor_id": 9,
+      "observed_on": "2026-02-03",
+      "value_c": -9.5
+    },
+    {
+      "id": 406,
+      "sensor_id": 10,
+      "observed_on": "2026-02-03",
+      "value_c": -8.4
+    },
+    {
+      "id": 407,
+      "sensor_id": 11,
+      "observed_on": "2026-02-03",
+      "value_c": -7.3
+    },
+    {
+      "id": 408,
+      "sensor_id": 12,
+      "observed_on": "2026-02-03",
+      "value_c": -6.2
+    },
+    {
+      "id": 409,
+      "sensor_id": 1,
+      "observed_on": "2026-02-04",
+      "value_c": -5.1
+    },
+    {
+      "id": 410,
+      "sensor_id": 2,
+      "observed_on": "2026-02-04",
+      "value_c": -5.0
+    },
+    {
+      "id": 411,
+      "sensor_id": 3,
+      "observed_on": "2026-02-04",
+      "value_c": -3.9
+    },
+    {
+      "id": 412,
+      "sensor_id": 4,
+      "observed_on": "2026-02-04",
+      "value_c": -2.8
+    },
+    {
+      "id": 413,
+      "sensor_id": 5,
+      "observed_on": "2026-02-04",
+      "value_c": -1.7
+    },
+    {
+      "id": 414,
+      "sensor_id": 6,
+      "observed_on": "2026-02-04",
+      "value_c": -0.6
+    },
+    {
+      "id": 415,
+      "sensor_id": 7,
+      "observed_on": "2026-02-04",
+      "value_c": 0.5
+    },
+    {
+      "id": 416,
+      "sensor_id": 8,
+      "observed_on": "2026-02-04",
+      "value_c": 1.6
+    },
+    {
+      "id": 417,
+      "sensor_id": 9,
+      "observed_on": "2026-02-04",
+      "value_c": 2.7
+    },
+    {
+      "id": 418,
+      "sensor_id": 10,
+      "observed_on": "2026-02-04",
+      "value_c": null
+    },
+    {
+      "id": 419,
+      "sensor_id": 11,
+      "observed_on": "2026-02-04",
+      "value_c": 4.9
+    },
+    {
+      "id": 420,
+      "sensor_id": 12,
+      "observed_on": "2026-02-04",
+      "value_c": 5.0
+    },
+    {
+      "id": 421,
+      "sensor_id": 1,
+      "observed_on": "2026-02-05",
+      "value_c": 6.1
+    },
+    {
+      "id": 422,
+      "sensor_id": 2,
+      "observed_on": "2026-02-05",
+      "value_c": 7.2
+    },
+    {
+      "id": 423,
+      "sensor_id": 3,
+      "observed_on": "2026-02-05",
+      "value_c": 8.3
+    },
+    {
+      "id": 424,
+      "sensor_id": 4,
+      "observed_on": "2026-02-05",
+      "value_c": 9.4
+    },
+    {
+      "id": 425,
+      "sensor_id": 5,
+      "observed_on": "2026-02-05",
+      "value_c": 10.5
+    },
+    {
+      "id": 426,
+      "sensor_id": 6,
+      "observed_on": "2026-02-05",
+      "value_c": 11.6
+    },
+    {
+      "id": 427,
+      "sensor_id": 7,
+      "observed_on": "2026-02-05",
+      "value_c": 12.7
+    },
+    {
+      "id": 428,
+      "sensor_id": 8,
+      "observed_on": "2026-02-05",
+      "value_c": 13.8
+    },
+    {
+      "id": 429,
+      "sensor_id": 9,
+      "observed_on": "2026-02-05",
+      "value_c": 14.9
+    },
+    {
+      "id": 430,
+      "sensor_id": 10,
+      "observed_on": "2026-02-05",
+      "value_c": 15.0
+    },
+    {
+      "id": 431,
+      "sensor_id": 11,
+      "observed_on": "2026-02-05",
+      "value_c": 16.1
+    },
+    {
+      "id": 432,
+      "sensor_id": 12,
+      "observed_on": "2026-02-05",
+      "value_c": 17.2
+    },
+    {
+      "id": 433,
+      "sensor_id": 1,
+      "observed_on": "2026-02-06",
+      "value_c": 18.3
+    },
+    {
+      "id": 434,
+      "sensor_id": 2,
+      "observed_on": "2026-02-06",
+      "value_c": 19.4
+    },
+    {
+      "id": 435,
+      "sensor_id": 3,
+      "observed_on": "2026-02-06",
+      "value_c": 20.5
+    },
+    {
+      "id": 436,
+      "sensor_id": 4,
+      "observed_on": "2026-02-06",
+      "value_c": 21.6
+    },
+    {
+      "id": 437,
+      "sensor_id": 5,
+      "observed_on": "2026-02-06",
+      "value_c": null
+    },
+    {
+      "id": 438,
+      "sensor_id": 6,
+      "observed_on": "2026-02-06",
+      "value_c": 23.8
+    },
+    {
+      "id": 439,
+      "sensor_id": 7,
+      "observed_on": "2026-02-06",
+      "value_c": 24.9
+    },
+    {
+      "id": 440,
+      "sensor_id": 8,
+      "observed_on": "2026-02-06",
+      "value_c": 25.0
+    },
+    {
+      "id": 441,
+      "sensor_id": 9,
+      "observed_on": "2026-02-06",
+      "value_c": 26.1
+    },
+    {
+      "id": 442,
+      "sensor_id": 10,
+      "observed_on": "2026-02-06",
+      "value_c": 27.2
+    },
+    {
+      "id": 443,
+      "sensor_id": 11,
+      "observed_on": "2026-02-06",
+      "value_c": 28.3
+    },
+    {
+      "id": 444,
+      "sensor_id": 12,
+      "observed_on": "2026-02-06",
+      "value_c": 29.4
+    },
+    {
+      "id": 445,
+      "sensor_id": 1,
+      "observed_on": "2026-02-07",
+      "value_c": 30.5
+    },
+    {
+      "id": 446,
+      "sensor_id": 2,
+      "observed_on": "2026-02-07",
+      "value_c": 31.6
+    },
+    {
+      "id": 447,
+      "sensor_id": 3,
+      "observed_on": "2026-02-07",
+      "value_c": 32.7
+    },
+    {
+      "id": 448,
+      "sensor_id": 4,
+      "observed_on": "2026-02-07",
+      "value_c": 33.8
+    },
+    {
+      "id": 449,
+      "sensor_id": 5,
+      "observed_on": "2026-02-07",
+      "value_c": 34.9
+    },
+    {
+      "id": 450,
+      "sensor_id": 6,
+      "observed_on": "2026-02-07",
+      "value_c": -10.0
+    },
+    {
+      "id": 451,
+      "sensor_id": 7,
+      "observed_on": "2026-02-07",
+      "value_c": -8.9
+    },
+    {
+      "id": 452,
+      "sensor_id": 8,
+      "observed_on": "2026-02-07",
+      "value_c": -7.8
+    },
+    {
+      "id": 453,
+      "sensor_id": 9,
+      "observed_on": "2026-02-07",
+      "value_c": -6.7
+    },
+    {
+      "id": 454,
+      "sensor_id": 10,
+      "observed_on": "2026-02-07",
+      "value_c": -5.6
+    },
+    {
+      "id": 455,
+      "sensor_id": 11,
+      "observed_on": "2026-02-07",
+      "value_c": -4.5
+    },
+    {
+      "id": 456,
+      "sensor_id": 12,
+      "observed_on": "2026-02-07",
+      "value_c": null
+    },
+    {
+      "id": 457,
+      "sensor_id": 1,
+      "observed_on": "2026-02-08",
+      "value_c": -2.3
+    },
+    {
+      "id": 458,
+      "sensor_id": 2,
+      "observed_on": "2026-02-08",
+      "value_c": -1.2
+    },
+    {
+      "id": 459,
+      "sensor_id": 3,
+      "observed_on": "2026-02-08",
+      "value_c": -0.1
+    },
+    {
+      "id": 460,
+      "sensor_id": 4,
+      "observed_on": "2026-02-08",
+      "value_c": 0.0
+    },
+    {
+      "id": 461,
+      "sensor_id": 5,
+      "observed_on": "2026-02-08",
+      "value_c": 1.1
+    },
+    {
+      "id": 462,
+      "sensor_id": 6,
+      "observed_on": "2026-02-08",
+      "value_c": 2.2
+    },
+    {
+      "id": 463,
+      "sensor_id": 7,
+      "observed_on": "2026-02-08",
+      "value_c": 3.3
+    },
+    {
+      "id": 464,
+      "sensor_id": 8,
+      "observed_on": "2026-02-08",
+      "value_c": 4.4
+    },
+    {
+      "id": 465,
+      "sensor_id": 9,
+      "observed_on": "2026-02-08",
+      "value_c": 5.5
+    },
+    {
+      "id": 466,
+      "sensor_id": 10,
+      "observed_on": "2026-02-08",
+      "value_c": 6.6
+    },
+    {
+      "id": 467,
+      "sensor_id": 11,
+      "observed_on": "2026-02-08",
+      "value_c": 7.7
+    },
+    {
+      "id": 468,
+      "sensor_id": 12,
+      "observed_on": "2026-02-08",
+      "value_c": 8.8
+    },
+    {
+      "id": 469,
+      "sensor_id": 1,
+      "observed_on": "2026-02-09",
+      "value_c": 9.9
+    },
+    {
+      "id": 470,
+      "sensor_id": 2,
+      "observed_on": "2026-02-09",
+      "value_c": 10.0
+    },
+    {
+      "id": 471,
+      "sensor_id": 3,
+      "observed_on": "2026-02-09",
+      "value_c": 11.1
+    },
+    {
+      "id": 472,
+      "sensor_id": 4,
+      "observed_on": "2026-02-09",
+      "value_c": 12.2
+    },
+    {
+      "id": 473,
+      "sensor_id": 5,
+      "observed_on": "2026-02-09",
+      "value_c": 13.3
+    },
+    {
+      "id": 474,
+      "sensor_id": 6,
+      "observed_on": "2026-02-09",
+      "value_c": 14.4
+    },
+    {
+      "id": 475,
+      "sensor_id": 7,
+      "observed_on": "2026-02-09",
+      "value_c": null
+    },
+    {
+      "id": 476,
+      "sensor_id": 8,
+      "observed_on": "2026-02-09",
+      "value_c": 16.6
+    },
+    {
+      "id": 477,
+      "sensor_id": 9,
+      "observed_on": "2026-02-09",
+      "value_c": 17.7
+    },
+    {
+      "id": 478,
+      "sensor_id": 10,
+      "observed_on": "2026-02-09",
+      "value_c": 18.8
+    },
+    {
+      "id": 479,
+      "sensor_id": 11,
+      "observed_on": "2026-02-09",
+      "value_c": 19.9
+    },
+    {
+      "id": 480,
+      "sensor_id": 12,
+      "observed_on": "2026-02-09",
+      "value_c": 20.0
+    },
+    {
+      "id": 481,
+      "sensor_id": 1,
+      "observed_on": "2026-02-10",
+      "value_c": 21.1
+    },
+    {
+      "id": 482,
+      "sensor_id": 2,
+      "observed_on": "2026-02-10",
+      "value_c": 22.2
+    },
+    {
+      "id": 483,
+      "sensor_id": 3,
+      "observed_on": "2026-02-10",
+      "value_c": 23.3
+    },
+    {
+      "id": 484,
+      "sensor_id": 4,
+      "observed_on": "2026-02-10",
+      "value_c": 24.4
+    },
+    {
+      "id": 485,
+      "sensor_id": 5,
+      "observed_on": "2026-02-10",
+      "value_c": 25.5
+    },
+    {
+      "id": 486,
+      "sensor_id": 6,
+      "observed_on": "2026-02-10",
+      "value_c": 26.6
+    },
+    {
+      "id": 487,
+      "sensor_id": 7,
+      "observed_on": "2026-02-10",
+      "value_c": 27.7
+    },
+    {
+      "id": 488,
+      "sensor_id": 8,
+      "observed_on": "2026-02-10",
+      "value_c": 28.8
+    },
+    {
+      "id": 489,
+      "sensor_id": 9,
+      "observed_on": "2026-02-10",
+      "value_c": 29.9
+    },
+    {
+      "id": 490,
+      "sensor_id": 10,
+      "observed_on": "2026-02-10",
+      "value_c": 30.0
+    },
+    {
+      "id": 491,
+      "sensor_id": 11,
+      "observed_on": "2026-02-10",
+      "value_c": 31.1
+    },
+    {
+      "id": 492,
+      "sensor_id": 12,
+      "observed_on": "2026-02-10",
+      "value_c": 32.2
+    },
+    {
+      "id": 493,
+      "sensor_id": 1,
+      "observed_on": "2026-02-11",
+      "value_c": 33.3
+    },
+    {
+      "id": 494,
+      "sensor_id": 2,
+      "observed_on": "2026-02-11",
+      "value_c": null
+    },
+    {
+      "id": 495,
+      "sensor_id": 3,
+      "observed_on": "2026-02-11",
+      "value_c": -9.5
+    },
+    {
+      "id": 496,
+      "sensor_id": 4,
+      "observed_on": "2026-02-11",
+      "value_c": -8.4
+    },
+    {
+      "id": 497,
+      "sensor_id": 5,
+      "observed_on": "2026-02-11",
+      "value_c": -7.3
+    },
+    {
+      "id": 498,
+      "sensor_id": 6,
+      "observed_on": "2026-02-11",
+      "value_c": -6.2
+    },
+    {
+      "id": 499,
+      "sensor_id": 7,
+      "observed_on": "2026-02-11",
+      "value_c": -5.1
+    },
+    {
+      "id": 500,
+      "sensor_id": 8,
+      "observed_on": "2026-02-11",
+      "value_c": -5.0
+    },
+    {
+      "id": 501,
+      "sensor_id": 9,
+      "observed_on": "2026-02-11",
+      "value_c": -3.9
+    },
+    {
+      "id": 502,
+      "sensor_id": 10,
+      "observed_on": "2026-02-11",
+      "value_c": -2.8
+    },
+    {
+      "id": 503,
+      "sensor_id": 11,
+      "observed_on": "2026-02-11",
+      "value_c": -1.7
+    },
+    {
+      "id": 504,
+      "sensor_id": 12,
+      "observed_on": "2026-02-11",
+      "value_c": -0.6
+    },
+    {
+      "id": 505,
+      "sensor_id": 1,
+      "observed_on": "2026-02-12",
+      "value_c": 0.5
+    },
+    {
+      "id": 506,
+      "sensor_id": 2,
+      "observed_on": "2026-02-12",
+      "value_c": 1.6
+    },
+    {
+      "id": 507,
+      "sensor_id": 3,
+      "observed_on": "2026-02-12",
+      "value_c": 2.7
+    },
+    {
+      "id": 508,
+      "sensor_id": 4,
+      "observed_on": "2026-02-12",
+      "value_c": 3.8
+    },
+    {
+      "id": 509,
+      "sensor_id": 5,
+      "observed_on": "2026-02-12",
+      "value_c": 4.9
+    },
+    {
+      "id": 510,
+      "sensor_id": 6,
+      "observed_on": "2026-02-12",
+      "value_c": 5.0
+    },
+    {
+      "id": 511,
+      "sensor_id": 7,
+      "observed_on": "2026-02-12",
+      "value_c": 6.1
+    },
+    {
+      "id": 512,
+      "sensor_id": 8,
+      "observed_on": "2026-02-12",
+      "value_c": 7.2
+    },
+    {
+      "id": 513,
+      "sensor_id": 9,
+      "observed_on": "2026-02-12",
+      "value_c": null
+    },
+    {
+      "id": 514,
+      "sensor_id": 10,
+      "observed_on": "2026-02-12",
+      "value_c": 9.4
+    },
+    {
+      "id": 515,
+      "sensor_id": 11,
+      "observed_on": "2026-02-12",
+      "value_c": 10.5
+    },
+    {
+      "id": 516,
+      "sensor_id": 12,
+      "observed_on": "2026-02-12",
+      "value_c": 11.6
+    },
+    {
+      "id": 517,
+      "sensor_id": 1,
+      "observed_on": "2026-02-13",
+      "value_c": 12.7
+    },
+    {
+      "id": 518,
+      "sensor_id": 2,
+      "observed_on": "2026-02-13",
+      "value_c": 13.8
+    },
+    {
+      "id": 519,
+      "sensor_id": 3,
+      "observed_on": "2026-02-13",
+      "value_c": 14.9
+    },
+    {
+      "id": 520,
+      "sensor_id": 4,
+      "observed_on": "2026-02-13",
+      "value_c": 15.0
+    },
+    {
+      "id": 521,
+      "sensor_id": 5,
+      "observed_on": "2026-02-13",
+      "value_c": 16.1
+    },
+    {
+      "id": 522,
+      "sensor_id": 6,
+      "observed_on": "2026-02-13",
+      "value_c": 17.2
+    },
+    {
+      "id": 523,
+      "sensor_id": 7,
+      "observed_on": "2026-02-13",
+      "value_c": 18.3
+    },
+    {
+      "id": 524,
+      "sensor_id": 8,
+      "observed_on": "2026-02-13",
+      "value_c": 19.4
+    },
+    {
+      "id": 525,
+      "sensor_id": 9,
+      "observed_on": "2026-02-13",
+      "value_c": 20.5
+    },
+    {
+      "id": 526,
+      "sensor_id": 10,
+      "observed_on": "2026-02-13",
+      "value_c": 21.6
+    },
+    {
+      "id": 527,
+      "sensor_id": 11,
+      "observed_on": "2026-02-13",
+      "value_c": 22.7
+    },
+    {
+      "id": 528,
+      "sensor_id": 12,
+      "observed_on": "2026-02-13",
+      "value_c": 23.8
+    },
+    {
+      "id": 529,
+      "sensor_id": 1,
+      "observed_on": "2026-02-14",
+      "value_c": 24.9
+    },
+    {
+      "id": 530,
+      "sensor_id": 2,
+      "observed_on": "2026-02-14",
+      "value_c": 25.0
+    },
+    {
+      "id": 531,
+      "sensor_id": 3,
+      "observed_on": "2026-02-14",
+      "value_c": 26.1
+    },
+    {
+      "id": 532,
+      "sensor_id": 4,
+      "observed_on": "2026-02-14",
+      "value_c": null
+    },
+    {
+      "id": 533,
+      "sensor_id": 5,
+      "observed_on": "2026-02-14",
+      "value_c": 28.3
+    },
+    {
+      "id": 534,
+      "sensor_id": 6,
+      "observed_on": "2026-02-14",
+      "value_c": 29.4
+    },
+    {
+      "id": 535,
+      "sensor_id": 7,
+      "observed_on": "2026-02-14",
+      "value_c": 30.5
+    },
+    {
+      "id": 536,
+      "sensor_id": 8,
+      "observed_on": "2026-02-14",
+      "value_c": 31.6
+    },
+    {
+      "id": 537,
+      "sensor_id": 9,
+      "observed_on": "2026-02-14",
+      "value_c": 32.7
+    },
+    {
+      "id": 538,
+      "sensor_id": 10,
+      "observed_on": "2026-02-14",
+      "value_c": 33.8
+    },
+    {
+      "id": 539,
+      "sensor_id": 11,
+      "observed_on": "2026-02-14",
+      "value_c": 34.9
+    },
+    {
+      "id": 540,
+      "sensor_id": 12,
+      "observed_on": "2026-02-14",
+      "value_c": -10.0
+    },
+    {
+      "id": 541,
+      "sensor_id": 1,
+      "observed_on": "2026-02-15",
+      "value_c": -8.9
+    },
+    {
+      "id": 542,
+      "sensor_id": 2,
+      "observed_on": "2026-02-15",
+      "value_c": -7.8
+    },
+    {
+      "id": 543,
+      "sensor_id": 3,
+      "observed_on": "2026-02-15",
+      "value_c": -6.7
+    },
+    {
+      "id": 544,
+      "sensor_id": 4,
+      "observed_on": "2026-02-15",
+      "value_c": -5.6
+    },
+    {
+      "id": 545,
+      "sensor_id": 5,
+      "observed_on": "2026-02-15",
+      "value_c": -4.5
+    },
+    {
+      "id": 546,
+      "sensor_id": 6,
+      "observed_on": "2026-02-15",
+      "value_c": -3.4
+    },
+    {
+      "id": 547,
+      "sensor_id": 7,
+      "observed_on": "2026-02-15",
+      "value_c": -2.3
+    },
+    {
+      "id": 548,
+      "sensor_id": 8,
+      "observed_on": "2026-02-15",
+      "value_c": -1.2
+    },
+    {
+      "id": 549,
+      "sensor_id": 9,
+      "observed_on": "2026-02-15",
+      "value_c": -0.1
+    },
+    {
+      "id": 550,
+      "sensor_id": 10,
+      "observed_on": "2026-02-15",
+      "value_c": 0.0
+    },
+    {
+      "id": 551,
+      "sensor_id": 11,
+      "observed_on": "2026-02-15",
+      "value_c": null
+    },
+    {
+      "id": 552,
+      "sensor_id": 12,
+      "observed_on": "2026-02-15",
+      "value_c": 2.2
+    },
+    {
+      "id": 553,
+      "sensor_id": 1,
+      "observed_on": "2026-02-16",
+      "value_c": 3.3
+    },
+    {
+      "id": 554,
+      "sensor_id": 2,
+      "observed_on": "2026-02-16",
+      "value_c": 4.4
+    },
+    {
+      "id": 555,
+      "sensor_id": 3,
+      "observed_on": "2026-02-16",
+      "value_c": 5.5
+    },
+    {
+      "id": 556,
+      "sensor_id": 4,
+      "observed_on": "2026-02-16",
+      "value_c": 6.6
+    },
+    {
+      "id": 557,
+      "sensor_id": 5,
+      "observed_on": "2026-02-16",
+      "value_c": 7.7
+    },
+    {
+      "id": 558,
+      "sensor_id": 6,
+      "observed_on": "2026-02-16",
+      "value_c": 8.8
+    },
+    {
+      "id": 559,
+      "sensor_id": 7,
+      "observed_on": "2026-02-16",
+      "value_c": 9.9
+    },
+    {
+      "id": 560,
+      "sensor_id": 8,
+      "observed_on": "2026-02-16",
+      "value_c": 10.0
+    },
+    {
+      "id": 561,
+      "sensor_id": 9,
+      "observed_on": "2026-02-16",
+      "value_c": 11.1
+    },
+    {
+      "id": 562,
+      "sensor_id": 10,
+      "observed_on": "2026-02-16",
+      "value_c": 12.2
+    },
+    {
+      "id": 563,
+      "sensor_id": 11,
+      "observed_on": "2026-02-16",
+      "value_c": 13.3
+    },
+    {
+      "id": 564,
+      "sensor_id": 12,
+      "observed_on": "2026-02-16",
+      "value_c": 14.4
+    },
+    {
+      "id": 565,
+      "sensor_id": 1,
+      "observed_on": "2026-02-17",
+      "value_c": 15.5
+    },
+    {
+      "id": 566,
+      "sensor_id": 2,
+      "observed_on": "2026-02-17",
+      "value_c": 16.6
+    },
+    {
+      "id": 567,
+      "sensor_id": 3,
+      "observed_on": "2026-02-17",
+      "value_c": 17.7
+    },
+    {
+      "id": 568,
+      "sensor_id": 4,
+      "observed_on": "2026-02-17",
+      "value_c": 18.8
+    },
+    {
+      "id": 569,
+      "sensor_id": 5,
+      "observed_on": "2026-02-17",
+      "value_c": 19.9
+    },
+    {
+      "id": 570,
+      "sensor_id": 6,
+      "observed_on": "2026-02-17",
+      "value_c": null
+    },
+    {
+      "id": 571,
+      "sensor_id": 7,
+      "observed_on": "2026-02-17",
+      "value_c": 21.1
+    },
+    {
+      "id": 572,
+      "sensor_id": 8,
+      "observed_on": "2026-02-17",
+      "value_c": 22.2
+    },
+    {
+      "id": 573,
+      "sensor_id": 9,
+      "observed_on": "2026-02-17",
+      "value_c": 23.3
+    },
+    {
+      "id": 574,
+      "sensor_id": 10,
+      "observed_on": "2026-02-17",
+      "value_c": 24.4
+    },
+    {
+      "id": 575,
+      "sensor_id": 11,
+      "observed_on": "2026-02-17",
+      "value_c": 25.5
+    },
+    {
+      "id": 576,
+      "sensor_id": 12,
+      "observed_on": "2026-02-17",
+      "value_c": 26.6
+    },
+    {
+      "id": 577,
+      "sensor_id": 1,
+      "observed_on": "2026-02-18",
+      "value_c": 27.7
+    },
+    {
+      "id": 578,
+      "sensor_id": 2,
+      "observed_on": "2026-02-18",
+      "value_c": 28.8
+    },
+    {
+      "id": 579,
+      "sensor_id": 3,
+      "observed_on": "2026-02-18",
+      "value_c": 29.9
+    },
+    {
+      "id": 580,
+      "sensor_id": 4,
+      "observed_on": "2026-02-18",
+      "value_c": 30.0
+    },
+    {
+      "id": 581,
+      "sensor_id": 5,
+      "observed_on": "2026-02-18",
+      "value_c": 31.1
+    },
+    {
+      "id": 582,
+      "sensor_id": 6,
+      "observed_on": "2026-02-18",
+      "value_c": 32.2
+    },
+    {
+      "id": 583,
+      "sensor_id": 7,
+      "observed_on": "2026-02-18",
+      "value_c": 33.3
+    },
+    {
+      "id": 584,
+      "sensor_id": 8,
+      "observed_on": "2026-02-18",
+      "value_c": 34.4
+    },
+    {
+      "id": 585,
+      "sensor_id": 9,
+      "observed_on": "2026-02-18",
+      "value_c": -9.5
+    },
+    {
+      "id": 586,
+      "sensor_id": 10,
+      "observed_on": "2026-02-18",
+      "value_c": -8.4
+    },
+    {
+      "id": 587,
+      "sensor_id": 11,
+      "observed_on": "2026-02-18",
+      "value_c": -7.3
+    },
+    {
+      "id": 588,
+      "sensor_id": 12,
+      "observed_on": "2026-02-18",
+      "value_c": -6.2
+    },
+    {
+      "id": 589,
+      "sensor_id": 1,
+      "observed_on": "2026-02-19",
+      "value_c": null
+    },
+    {
+      "id": 590,
+      "sensor_id": 2,
+      "observed_on": "2026-02-19",
+      "value_c": -5.0
+    },
+    {
+      "id": 591,
+      "sensor_id": 3,
+      "observed_on": "2026-02-19",
+      "value_c": -3.9
+    },
+    {
+      "id": 592,
+      "sensor_id": 4,
+      "observed_on": "2026-02-19",
+      "value_c": -2.8
+    },
+    {
+      "id": 593,
+      "sensor_id": 5,
+      "observed_on": "2026-02-19",
+      "value_c": -1.7
+    },
+    {
+      "id": 594,
+      "sensor_id": 6,
+      "observed_on": "2026-02-19",
+      "value_c": -0.6
+    },
+    {
+      "id": 595,
+      "sensor_id": 7,
+      "observed_on": "2026-02-19",
+      "value_c": 0.5
+    },
+    {
+      "id": 596,
+      "sensor_id": 8,
+      "observed_on": "2026-02-19",
+      "value_c": 1.6
+    },
+    {
+      "id": 597,
+      "sensor_id": 9,
+      "observed_on": "2026-02-19",
+      "value_c": 2.7
+    },
+    {
+      "id": 598,
+      "sensor_id": 10,
+      "observed_on": "2026-02-19",
+      "value_c": 3.8
+    },
+    {
+      "id": 599,
+      "sensor_id": 11,
+      "observed_on": "2026-02-19",
+      "value_c": 4.9
+    },
+    {
+      "id": 600,
+      "sensor_id": 12,
+      "observed_on": "2026-02-19",
+      "value_c": 5.0
+    },
+    {
+      "id": 601,
+      "sensor_id": 1,
+      "observed_on": "2026-02-20",
+      "value_c": 6.1
+    },
+    {
+      "id": 602,
+      "sensor_id": 2,
+      "observed_on": "2026-02-20",
+      "value_c": 7.2
+    },
+    {
+      "id": 603,
+      "sensor_id": 3,
+      "observed_on": "2026-02-20",
+      "value_c": 8.3
+    },
+    {
+      "id": 604,
+      "sensor_id": 4,
+      "observed_on": "2026-02-20",
+      "value_c": 9.4
+    },
+    {
+      "id": 605,
+      "sensor_id": 5,
+      "observed_on": "2026-02-20",
+      "value_c": 10.5
+    },
+    {
+      "id": 606,
+      "sensor_id": 6,
+      "observed_on": "2026-02-20",
+      "value_c": 11.6
+    },
+    {
+      "id": 607,
+      "sensor_id": 7,
+      "observed_on": "2026-02-20",
+      "value_c": 12.7
+    },
+    {
+      "id": 608,
+      "sensor_id": 8,
+      "observed_on": "2026-02-20",
+      "value_c": null
+    },
+    {
+      "id": 609,
+      "sensor_id": 9,
+      "observed_on": "2026-02-20",
+      "value_c": 14.9
+    },
+    {
+      "id": 610,
+      "sensor_id": 10,
+      "observed_on": "2026-02-20",
+      "value_c": 15.0
+    },
+    {
+      "id": 611,
+      "sensor_id": 11,
+      "observed_on": "2026-02-20",
+      "value_c": 16.1
+    },
+    {
+      "id": 612,
+      "sensor_id": 12,
+      "observed_on": "2026-02-20",
+      "value_c": 17.2
+    },
+    {
+      "id": 613,
+      "sensor_id": 1,
+      "observed_on": "2026-02-21",
+      "value_c": 18.3
+    },
+    {
+      "id": 614,
+      "sensor_id": 2,
+      "observed_on": "2026-02-21",
+      "value_c": 19.4
+    },
+    {
+      "id": 615,
+      "sensor_id": 3,
+      "observed_on": "2026-02-21",
+      "value_c": 20.5
+    },
+    {
+      "id": 616,
+      "sensor_id": 4,
+      "observed_on": "2026-02-21",
+      "value_c": 21.6
+    },
+    {
+      "id": 617,
+      "sensor_id": 5,
+      "observed_on": "2026-02-21",
+      "value_c": 22.7
+    },
+    {
+      "id": 618,
+      "sensor_id": 6,
+      "observed_on": "2026-02-21",
+      "value_c": 23.8
+    },
+    {
+      "id": 619,
+      "sensor_id": 7,
+      "observed_on": "2026-02-21",
+      "value_c": 24.9
+    },
+    {
+      "id": 620,
+      "sensor_id": 8,
+      "observed_on": "2026-02-21",
+      "value_c": 25.0
+    },
+    {
+      "id": 621,
+      "sensor_id": 9,
+      "observed_on": "2026-02-21",
+      "value_c": 26.1
+    },
+    {
+      "id": 622,
+      "sensor_id": 10,
+      "observed_on": "2026-02-21",
+      "value_c": 27.2
+    },
+    {
+      "id": 623,
+      "sensor_id": 11,
+      "observed_on": "2026-02-21",
+      "value_c": 28.3
+    },
+    {
+      "id": 624,
+      "sensor_id": 12,
+      "observed_on": "2026-02-21",
+      "value_c": 29.4
+    },
+    {
+      "id": 625,
+      "sensor_id": 1,
+      "observed_on": "2026-02-22",
+      "value_c": 30.5
+    },
+    {
+      "id": 626,
+      "sensor_id": 2,
+      "observed_on": "2026-02-22",
+      "value_c": 31.6
+    },
+    {
+      "id": 627,
+      "sensor_id": 3,
+      "observed_on": "2026-02-22",
+      "value_c": null
+    },
+    {
+      "id": 628,
+      "sensor_id": 4,
+      "observed_on": "2026-02-22",
+      "value_c": 33.8
+    },
+    {
+      "id": 629,
+      "sensor_id": 5,
+      "observed_on": "2026-02-22",
+      "value_c": 34.9
+    },
+    {
+      "id": 630,
+      "sensor_id": 6,
+      "observed_on": "2026-02-22",
+      "value_c": -10.0
+    },
+    {
+      "id": 631,
+      "sensor_id": 7,
+      "observed_on": "2026-02-22",
+      "value_c": -8.9
+    },
+    {
+      "id": 632,
+      "sensor_id": 8,
+      "observed_on": "2026-02-22",
+      "value_c": -7.8
+    },
+    {
+      "id": 633,
+      "sensor_id": 9,
+      "observed_on": "2026-02-22",
+      "value_c": -6.7
+    },
+    {
+      "id": 634,
+      "sensor_id": 10,
+      "observed_on": "2026-02-22",
+      "value_c": -5.6
+    },
+    {
+      "id": 635,
+      "sensor_id": 11,
+      "observed_on": "2026-02-22",
+      "value_c": -4.5
+    },
+    {
+      "id": 636,
+      "sensor_id": 12,
+      "observed_on": "2026-02-22",
+      "value_c": -3.4
+    },
+    {
+      "id": 637,
+      "sensor_id": 1,
+      "observed_on": "2026-02-23",
+      "value_c": -2.3
+    },
+    {
+      "id": 638,
+      "sensor_id": 2,
+      "observed_on": "2026-02-23",
+      "value_c": -1.2
+    },
+    {
+      "id": 639,
+      "sensor_id": 3,
+      "observed_on": "2026-02-23",
+      "value_c": -0.1
+    },
+    {
+      "id": 640,
+      "sensor_id": 4,
+      "observed_on": "2026-02-23",
+      "value_c": 0.0
+    },
+    {
+      "id": 641,
+      "sensor_id": 5,
+      "observed_on": "2026-02-23",
+      "value_c": 1.1
+    },
+    {
+      "id": 642,
+      "sensor_id": 6,
+      "observed_on": "2026-02-23",
+      "value_c": 2.2
+    },
+    {
+      "id": 643,
+      "sensor_id": 7,
+      "observed_on": "2026-02-23",
+      "value_c": 3.3
+    },
+    {
+      "id": 644,
+      "sensor_id": 8,
+      "observed_on": "2026-02-23",
+      "value_c": 4.4
+    },
+    {
+      "id": 645,
+      "sensor_id": 9,
+      "observed_on": "2026-02-23",
+      "value_c": 5.5
+    },
+    {
+      "id": 646,
+      "sensor_id": 10,
+      "observed_on": "2026-02-23",
+      "value_c": null
+    },
+    {
+      "id": 647,
+      "sensor_id": 11,
+      "observed_on": "2026-02-23",
+      "value_c": 7.7
+    },
+    {
+      "id": 648,
+      "sensor_id": 12,
+      "observed_on": "2026-02-23",
+      "value_c": 8.8
+    },
+    {
+      "id": 649,
+      "sensor_id": 1,
+      "observed_on": "2026-02-24",
+      "value_c": 9.9
+    },
+    {
+      "id": 650,
+      "sensor_id": 2,
+      "observed_on": "2026-02-24",
+      "value_c": 10.0
+    },
+    {
+      "id": 651,
+      "sensor_id": 3,
+      "observed_on": "2026-02-24",
+      "value_c": 11.1
+    },
+    {
+      "id": 652,
+      "sensor_id": 4,
+      "observed_on": "2026-02-24",
+      "value_c": 12.2
+    },
+    {
+      "id": 653,
+      "sensor_id": 5,
+      "observed_on": "2026-02-24",
+      "value_c": 13.3
+    },
+    {
+      "id": 654,
+      "sensor_id": 6,
+      "observed_on": "2026-02-24",
+      "value_c": 14.4
+    },
+    {
+      "id": 655,
+      "sensor_id": 7,
+      "observed_on": "2026-02-24",
+      "value_c": 15.5
+    },
+    {
+      "id": 656,
+      "sensor_id": 8,
+      "observed_on": "2026-02-24",
+      "value_c": 16.6
+    },
+    {
+      "id": 657,
+      "sensor_id": 9,
+      "observed_on": "2026-02-24",
+      "value_c": 17.7
+    },
+    {
+      "id": 658,
+      "sensor_id": 10,
+      "observed_on": "2026-02-24",
+      "value_c": 18.8
+    },
+    {
+      "id": 659,
+      "sensor_id": 11,
+      "observed_on": "2026-02-24",
+      "value_c": 19.9
+    },
+    {
+      "id": 660,
+      "sensor_id": 12,
+      "observed_on": "2026-02-24",
+      "value_c": 20.0
+    },
+    {
+      "id": 661,
+      "sensor_id": 1,
+      "observed_on": "2026-02-25",
+      "value_c": 21.1
+    },
+    {
+      "id": 662,
+      "sensor_id": 2,
+      "observed_on": "2026-02-25",
+      "value_c": 22.2
+    },
+    {
+      "id": 663,
+      "sensor_id": 3,
+      "observed_on": "2026-02-25",
+      "value_c": 23.3
+    },
+    {
+      "id": 664,
+      "sensor_id": 4,
+      "observed_on": "2026-02-25",
+      "value_c": 24.4
+    },
+    {
+      "id": 665,
+      "sensor_id": 5,
+      "observed_on": "2026-02-25",
+      "value_c": null
+    },
+    {
+      "id": 666,
+      "sensor_id": 6,
+      "observed_on": "2026-02-25",
+      "value_c": 26.6
+    },
+    {
+      "id": 667,
+      "sensor_id": 7,
+      "observed_on": "2026-02-25",
+      "value_c": 27.7
+    },
+    {
+      "id": 668,
+      "sensor_id": 8,
+      "observed_on": "2026-02-25",
+      "value_c": 28.8
+    },
+    {
+      "id": 669,
+      "sensor_id": 9,
+      "observed_on": "2026-02-25",
+      "value_c": 29.9
+    },
+    {
+      "id": 670,
+      "sensor_id": 10,
+      "observed_on": "2026-02-25",
+      "value_c": 30.0
+    },
+    {
+      "id": 671,
+      "sensor_id": 11,
+      "observed_on": "2026-02-25",
+      "value_c": 31.1
+    },
+    {
+      "id": 672,
+      "sensor_id": 12,
+      "observed_on": "2026-02-25",
+      "value_c": 32.2
+    },
+    {
+      "id": 673,
+      "sensor_id": 1,
+      "observed_on": "2026-02-26",
+      "value_c": 33.3
+    },
+    {
+      "id": 674,
+      "sensor_id": 2,
+      "observed_on": "2026-02-26",
+      "value_c": 34.4
+    },
+    {
+      "id": 675,
+      "sensor_id": 3,
+      "observed_on": "2026-02-26",
+      "value_c": -9.5
+    },
+    {
+      "id": 676,
+      "sensor_id": 4,
+      "observed_on": "2026-02-26",
+      "value_c": -8.4
+    },
+    {
+      "id": 677,
+      "sensor_id": 5,
+      "observed_on": "2026-02-26",
+      "value_c": -7.3
+    },
+    {
+      "id": 678,
+      "sensor_id": 6,
+      "observed_on": "2026-02-26",
+      "value_c": -6.2
+    },
+    {
+      "id": 679,
+      "sensor_id": 7,
+      "observed_on": "2026-02-26",
+      "value_c": -5.1
+    },
+    {
+      "id": 680,
+      "sensor_id": 8,
+      "observed_on": "2026-02-26",
+      "value_c": -5.0
+    },
+    {
+      "id": 681,
+      "sensor_id": 9,
+      "observed_on": "2026-02-26",
+      "value_c": -3.9
+    },
+    {
+      "id": 682,
+      "sensor_id": 10,
+      "observed_on": "2026-02-26",
+      "value_c": -2.8
+    },
+    {
+      "id": 683,
+      "sensor_id": 11,
+      "observed_on": "2026-02-26",
+      "value_c": -1.7
+    },
+    {
+      "id": 684,
+      "sensor_id": 12,
+      "observed_on": "2026-02-26",
+      "value_c": null
+    },
+    {
+      "id": 685,
+      "sensor_id": 1,
+      "observed_on": "2026-02-27",
+      "value_c": 0.5
+    },
+    {
+      "id": 686,
+      "sensor_id": 2,
+      "observed_on": "2026-02-27",
+      "value_c": 1.6
+    },
+    {
+      "id": 687,
+      "sensor_id": 3,
+      "observed_on": "2026-02-27",
+      "value_c": 2.7
+    },
+    {
+      "id": 688,
+      "sensor_id": 4,
+      "observed_on": "2026-02-27",
+      "value_c": 3.8
+    },
+    {
+      "id": 689,
+      "sensor_id": 5,
+      "observed_on": "2026-02-27",
+      "value_c": 4.9
+    },
+    {
+      "id": 690,
+      "sensor_id": 6,
+      "observed_on": "2026-02-27",
+      "value_c": 5.0
+    },
+    {
+      "id": 691,
+      "sensor_id": 7,
+      "observed_on": "2026-02-27",
+      "value_c": 6.1
+    },
+    {
+      "id": 692,
+      "sensor_id": 8,
+      "observed_on": "2026-02-27",
+      "value_c": 7.2
+    },
+    {
+      "id": 693,
+      "sensor_id": 9,
+      "observed_on": "2026-02-27",
+      "value_c": 8.3
+    },
+    {
+      "id": 694,
+      "sensor_id": 10,
+      "observed_on": "2026-02-27",
+      "value_c": 9.4
+    },
+    {
+      "id": 695,
+      "sensor_id": 11,
+      "observed_on": "2026-02-27",
+      "value_c": 10.5
+    },
+    {
+      "id": 696,
+      "sensor_id": 12,
+      "observed_on": "2026-02-27",
+      "value_c": 11.6
+    },
+    {
+      "id": 697,
+      "sensor_id": 1,
+      "observed_on": "2026-02-28",
+      "value_c": 12.7
+    },
+    {
+      "id": 698,
+      "sensor_id": 2,
+      "observed_on": "2026-02-28",
+      "value_c": 13.8
+    },
+    {
+      "id": 699,
+      "sensor_id": 3,
+      "observed_on": "2026-02-28",
+      "value_c": 14.9
+    },
+    {
+      "id": 700,
+      "sensor_id": 4,
+      "observed_on": "2026-02-28",
+      "value_c": 15.0
+    },
+    {
+      "id": 701,
+      "sensor_id": 5,
+      "observed_on": "2026-02-28",
+      "value_c": 16.1
+    },
+    {
+      "id": 702,
+      "sensor_id": 6,
+      "observed_on": "2026-02-28",
+      "value_c": 17.2
+    },
+    {
+      "id": 703,
+      "sensor_id": 7,
+      "observed_on": "2026-02-28",
+      "value_c": null
+    },
+    {
+      "id": 704,
+      "sensor_id": 8,
+      "observed_on": "2026-02-28",
+      "value_c": 19.4
+    },
+    {
+      "id": 705,
+      "sensor_id": 9,
+      "observed_on": "2026-02-28",
+      "value_c": 20.5
+    },
+    {
+      "id": 706,
+      "sensor_id": 10,
+      "observed_on": "2026-02-28",
+      "value_c": 21.6
+    },
+    {
+      "id": 707,
+      "sensor_id": 11,
+      "observed_on": "2026-02-28",
+      "value_c": 22.7
+    },
+    {
+      "id": 708,
+      "sensor_id": 12,
+      "observed_on": "2026-02-28",
+      "value_c": 23.8
+    },
+    {
+      "id": 709,
+      "sensor_id": 1,
+      "observed_on": "2026-03-01",
+      "value_c": 24.9
+    },
+    {
+      "id": 710,
+      "sensor_id": 2,
+      "observed_on": "2026-03-01",
+      "value_c": 25.0
+    },
+    {
+      "id": 711,
+      "sensor_id": 3,
+      "observed_on": "2026-03-01",
+      "value_c": 26.1
+    },
+    {
+      "id": 712,
+      "sensor_id": 4,
+      "observed_on": "2026-03-01",
+      "value_c": 27.2
+    },
+    {
+      "id": 713,
+      "sensor_id": 5,
+      "observed_on": "2026-03-01",
+      "value_c": 28.3
+    },
+    {
+      "id": 714,
+      "sensor_id": 6,
+      "observed_on": "2026-03-01",
+      "value_c": 29.4
+    },
+    {
+      "id": 715,
+      "sensor_id": 7,
+      "observed_on": "2026-03-01",
+      "value_c": 30.5
+    },
+    {
+      "id": 716,
+      "sensor_id": 8,
+      "observed_on": "2026-03-01",
+      "value_c": 31.6
+    },
+    {
+      "id": 717,
+      "sensor_id": 9,
+      "observed_on": "2026-03-01",
+      "value_c": 32.7
+    },
+    {
+      "id": 718,
+      "sensor_id": 10,
+      "observed_on": "2026-03-01",
+      "value_c": 33.8
+    },
+    {
+      "id": 719,
+      "sensor_id": 11,
+      "observed_on": "2026-03-01",
+      "value_c": 34.9
+    },
+    {
+      "id": 720,
+      "sensor_id": 12,
+      "observed_on": "2026-03-01",
+      "value_c": -10.0
+    },
+    {
+      "id": 721,
+      "sensor_id": 1,
+      "observed_on": "2026-03-02",
+      "value_c": -8.9
+    },
+    {
+      "id": 722,
+      "sensor_id": 2,
+      "observed_on": "2026-03-02",
+      "value_c": null
+    },
+    {
+      "id": 723,
+      "sensor_id": 3,
+      "observed_on": "2026-03-02",
+      "value_c": -6.7
+    },
+    {
+      "id": 724,
+      "sensor_id": 4,
+      "observed_on": "2026-03-02",
+      "value_c": -5.6
+    },
+    {
+      "id": 725,
+      "sensor_id": 5,
+      "observed_on": "2026-03-02",
+      "value_c": -4.5
+    },
+    {
+      "id": 726,
+      "sensor_id": 6,
+      "observed_on": "2026-03-02",
+      "value_c": -3.4
+    },
+    {
+      "id": 727,
+      "sensor_id": 7,
+      "observed_on": "2026-03-02",
+      "value_c": -2.3
+    },
+    {
+      "id": 728,
+      "sensor_id": 8,
+      "observed_on": "2026-03-02",
+      "value_c": -1.2
+    },
+    {
+      "id": 729,
+      "sensor_id": 9,
+      "observed_on": "2026-03-02",
+      "value_c": -0.1
+    },
+    {
+      "id": 730,
+      "sensor_id": 10,
+      "observed_on": "2026-03-02",
+      "value_c": 0.0
+    },
+    {
+      "id": 731,
+      "sensor_id": 11,
+      "observed_on": "2026-03-02",
+      "value_c": 1.1
+    },
+    {
+      "id": 732,
+      "sensor_id": 12,
+      "observed_on": "2026-03-02",
+      "value_c": 2.2
+    },
+    {
+      "id": 733,
+      "sensor_id": 1,
+      "observed_on": "2026-03-03",
+      "value_c": 3.3
+    },
+    {
+      "id": 734,
+      "sensor_id": 2,
+      "observed_on": "2026-03-03",
+      "value_c": 4.4
+    },
+    {
+      "id": 735,
+      "sensor_id": 3,
+      "observed_on": "2026-03-03",
+      "value_c": 5.5
+    },
+    {
+      "id": 736,
+      "sensor_id": 4,
+      "observed_on": "2026-03-03",
+      "value_c": 6.6
+    },
+    {
+      "id": 737,
+      "sensor_id": 5,
+      "observed_on": "2026-03-03",
+      "value_c": 7.7
+    },
+    {
+      "id": 738,
+      "sensor_id": 6,
+      "observed_on": "2026-03-03",
+      "value_c": 8.8
+    },
+    {
+      "id": 739,
+      "sensor_id": 7,
+      "observed_on": "2026-03-03",
+      "value_c": 9.9
+    },
+    {
+      "id": 740,
+      "sensor_id": 8,
+      "observed_on": "2026-03-03",
+      "value_c": 10.0
+    },
+    {
+      "id": 741,
+      "sensor_id": 9,
+      "observed_on": "2026-03-03",
+      "value_c": null
+    },
+    {
+      "id": 742,
+      "sensor_id": 10,
+      "observed_on": "2026-03-03",
+      "value_c": 12.2
+    },
+    {
+      "id": 743,
+      "sensor_id": 11,
+      "observed_on": "2026-03-03",
+      "value_c": 13.3
+    },
+    {
+      "id": 744,
+      "sensor_id": 12,
+      "observed_on": "2026-03-03",
+      "value_c": 14.4
+    },
+    {
+      "id": 745,
+      "sensor_id": 1,
+      "observed_on": "2026-03-04",
+      "value_c": 15.5
+    },
+    {
+      "id": 746,
+      "sensor_id": 2,
+      "observed_on": "2026-03-04",
+      "value_c": 16.6
+    },
+    {
+      "id": 747,
+      "sensor_id": 3,
+      "observed_on": "2026-03-04",
+      "value_c": 17.7
+    },
+    {
+      "id": 748,
+      "sensor_id": 4,
+      "observed_on": "2026-03-04",
+      "value_c": 18.8
+    },
+    {
+      "id": 749,
+      "sensor_id": 5,
+      "observed_on": "2026-03-04",
+      "value_c": 19.9
+    },
+    {
+      "id": 750,
+      "sensor_id": 6,
+      "observed_on": "2026-03-04",
+      "value_c": 20.0
+    },
+    {
+      "id": 751,
+      "sensor_id": 7,
+      "observed_on": "2026-03-04",
+      "value_c": 21.1
+    },
+    {
+      "id": 752,
+      "sensor_id": 8,
+      "observed_on": "2026-03-04",
+      "value_c": 22.2
+    },
+    {
+      "id": 753,
+      "sensor_id": 9,
+      "observed_on": "2026-03-04",
+      "value_c": 23.3
+    },
+    {
+      "id": 754,
+      "sensor_id": 10,
+      "observed_on": "2026-03-04",
+      "value_c": 24.4
+    },
+    {
+      "id": 755,
+      "sensor_id": 11,
+      "observed_on": "2026-03-04",
+      "value_c": 25.5
+    },
+    {
+      "id": 756,
+      "sensor_id": 12,
+      "observed_on": "2026-03-04",
+      "value_c": 26.6
+    },
+    {
+      "id": 757,
+      "sensor_id": 1,
+      "observed_on": "2026-03-05",
+      "value_c": 27.7
+    },
+    {
+      "id": 758,
+      "sensor_id": 2,
+      "observed_on": "2026-03-05",
+      "value_c": 28.8
+    },
+    {
+      "id": 759,
+      "sensor_id": 3,
+      "observed_on": "2026-03-05",
+      "value_c": 29.9
+    },
+    {
+      "id": 760,
+      "sensor_id": 4,
+      "observed_on": "2026-03-05",
+      "value_c": null
+    },
+    {
+      "id": 761,
+      "sensor_id": 5,
+      "observed_on": "2026-03-05",
+      "value_c": 31.1
+    },
+    {
+      "id": 762,
+      "sensor_id": 6,
+      "observed_on": "2026-03-05",
+      "value_c": 32.2
+    },
+    {
+      "id": 763,
+      "sensor_id": 7,
+      "observed_on": "2026-03-05",
+      "value_c": 33.3
+    },
+    {
+      "id": 764,
+      "sensor_id": 8,
+      "observed_on": "2026-03-05",
+      "value_c": 34.4
+    },
+    {
+      "id": 765,
+      "sensor_id": 9,
+      "observed_on": "2026-03-05",
+      "value_c": -9.5
+    },
+    {
+      "id": 766,
+      "sensor_id": 10,
+      "observed_on": "2026-03-05",
+      "value_c": -8.4
+    },
+    {
+      "id": 767,
+      "sensor_id": 11,
+      "observed_on": "2026-03-05",
+      "value_c": -7.3
+    },
+    {
+      "id": 768,
+      "sensor_id": 12,
+      "observed_on": "2026-03-05",
+      "value_c": -6.2
+    },
+    {
+      "id": 769,
+      "sensor_id": 1,
+      "observed_on": "2026-03-06",
+      "value_c": -5.1
+    },
+    {
+      "id": 770,
+      "sensor_id": 2,
+      "observed_on": "2026-03-06",
+      "value_c": -5.0
+    },
+    {
+      "id": 771,
+      "sensor_id": 3,
+      "observed_on": "2026-03-06",
+      "value_c": -3.9
+    },
+    {
+      "id": 772,
+      "sensor_id": 4,
+      "observed_on": "2026-03-06",
+      "value_c": -2.8
+    },
+    {
+      "id": 773,
+      "sensor_id": 5,
+      "observed_on": "2026-03-06",
+      "value_c": -1.7
+    },
+    {
+      "id": 774,
+      "sensor_id": 6,
+      "observed_on": "2026-03-06",
+      "value_c": -0.6
+    },
+    {
+      "id": 775,
+      "sensor_id": 7,
+      "observed_on": "2026-03-06",
+      "value_c": 0.5
+    },
+    {
+      "id": 776,
+      "sensor_id": 8,
+      "observed_on": "2026-03-06",
+      "value_c": 1.6
+    },
+    {
+      "id": 777,
+      "sensor_id": 9,
+      "observed_on": "2026-03-06",
+      "value_c": 2.7
+    },
+    {
+      "id": 778,
+      "sensor_id": 10,
+      "observed_on": "2026-03-06",
+      "value_c": 3.8
+    },
+    {
+      "id": 779,
+      "sensor_id": 11,
+      "observed_on": "2026-03-06",
+      "value_c": null
+    },
+    {
+      "id": 780,
+      "sensor_id": 12,
+      "observed_on": "2026-03-06",
+      "value_c": 5.0
+    },
+    {
+      "id": 781,
+      "sensor_id": 1,
+      "observed_on": "2026-03-07",
+      "value_c": 6.1
+    },
+    {
+      "id": 782,
+      "sensor_id": 2,
+      "observed_on": "2026-03-07",
+      "value_c": 7.2
+    },
+    {
+      "id": 783,
+      "sensor_id": 3,
+      "observed_on": "2026-03-07",
+      "value_c": 8.3
+    },
+    {
+      "id": 784,
+      "sensor_id": 4,
+      "observed_on": "2026-03-07",
+      "value_c": 9.4
+    },
+    {
+      "id": 785,
+      "sensor_id": 5,
+      "observed_on": "2026-03-07",
+      "value_c": 10.5
+    },
+    {
+      "id": 786,
+      "sensor_id": 6,
+      "observed_on": "2026-03-07",
+      "value_c": 11.6
+    },
+    {
+      "id": 787,
+      "sensor_id": 7,
+      "observed_on": "2026-03-07",
+      "value_c": 12.7
+    },
+    {
+      "id": 788,
+      "sensor_id": 8,
+      "observed_on": "2026-03-07",
+      "value_c": 13.8
+    },
+    {
+      "id": 789,
+      "sensor_id": 9,
+      "observed_on": "2026-03-07",
+      "value_c": 14.9
+    },
+    {
+      "id": 790,
+      "sensor_id": 10,
+      "observed_on": "2026-03-07",
+      "value_c": 15.0
+    },
+    {
+      "id": 791,
+      "sensor_id": 11,
+      "observed_on": "2026-03-07",
+      "value_c": 16.1
+    },
+    {
+      "id": 792,
+      "sensor_id": 12,
+      "observed_on": "2026-03-07",
+      "value_c": 17.2
+    },
+    {
+      "id": 793,
+      "sensor_id": 1,
+      "observed_on": "2026-03-08",
+      "value_c": 18.3
+    },
+    {
+      "id": 794,
+      "sensor_id": 2,
+      "observed_on": "2026-03-08",
+      "value_c": 19.4
+    },
+    {
+      "id": 795,
+      "sensor_id": 3,
+      "observed_on": "2026-03-08",
+      "value_c": 20.5
+    },
+    {
+      "id": 796,
+      "sensor_id": 4,
+      "observed_on": "2026-03-08",
+      "value_c": 21.6
+    },
+    {
+      "id": 797,
+      "sensor_id": 5,
+      "observed_on": "2026-03-08",
+      "value_c": 22.7
+    },
+    {
+      "id": 798,
+      "sensor_id": 6,
+      "observed_on": "2026-03-08",
+      "value_c": null
+    },
+    {
+      "id": 799,
+      "sensor_id": 7,
+      "observed_on": "2026-03-08",
+      "value_c": 24.9
+    },
+    {
+      "id": 800,
+      "sensor_id": 8,
+      "observed_on": "2026-03-08",
+      "value_c": 25.0
+    },
+    {
+      "id": 801,
+      "sensor_id": 9,
+      "observed_on": "2026-03-08",
+      "value_c": 26.1
+    },
+    {
+      "id": 802,
+      "sensor_id": 10,
+      "observed_on": "2026-03-08",
+      "value_c": 27.2
+    },
+    {
+      "id": 803,
+      "sensor_id": 11,
+      "observed_on": "2026-03-08",
+      "value_c": 28.3
+    },
+    {
+      "id": 804,
+      "sensor_id": 12,
+      "observed_on": "2026-03-08",
+      "value_c": 29.4
+    },
+    {
+      "id": 805,
+      "sensor_id": 1,
+      "observed_on": "2026-03-09",
+      "value_c": 30.5
+    },
+    {
+      "id": 806,
+      "sensor_id": 2,
+      "observed_on": "2026-03-09",
+      "value_c": 31.6
+    },
+    {
+      "id": 807,
+      "sensor_id": 3,
+      "observed_on": "2026-03-09",
+      "value_c": 32.7
+    },
+    {
+      "id": 808,
+      "sensor_id": 4,
+      "observed_on": "2026-03-09",
+      "value_c": 33.8
+    },
+    {
+      "id": 809,
+      "sensor_id": 5,
+      "observed_on": "2026-03-09",
+      "value_c": 34.9
+    },
+    {
+      "id": 810,
+      "sensor_id": 6,
+      "observed_on": "2026-03-09",
+      "value_c": -10.0
+    },
+    {
+      "id": 811,
+      "sensor_id": 7,
+      "observed_on": "2026-03-09",
+      "value_c": -8.9
+    },
+    {
+      "id": 812,
+      "sensor_id": 8,
+      "observed_on": "2026-03-09",
+      "value_c": -7.8
+    },
+    {
+      "id": 813,
+      "sensor_id": 9,
+      "observed_on": "2026-03-09",
+      "value_c": -6.7
+    },
+    {
+      "id": 814,
+      "sensor_id": 10,
+      "observed_on": "2026-03-09",
+      "value_c": -5.6
+    },
+    {
+      "id": 815,
+      "sensor_id": 11,
+      "observed_on": "2026-03-09",
+      "value_c": -4.5
+    },
+    {
+      "id": 816,
+      "sensor_id": 12,
+      "observed_on": "2026-03-09",
+      "value_c": -3.4
+    },
+    {
+      "id": 817,
+      "sensor_id": 1,
+      "observed_on": "2026-03-10",
+      "value_c": null
+    },
+    {
+      "id": 818,
+      "sensor_id": 2,
+      "observed_on": "2026-03-10",
+      "value_c": -1.2
+    },
+    {
+      "id": 819,
+      "sensor_id": 3,
+      "observed_on": "2026-03-10",
+      "value_c": -0.1
+    },
+    {
+      "id": 820,
+      "sensor_id": 4,
+      "observed_on": "2026-03-10",
+      "value_c": 0.0
+    },
+    {
+      "id": 821,
+      "sensor_id": 5,
+      "observed_on": "2026-03-10",
+      "value_c": 1.1
+    },
+    {
+      "id": 822,
+      "sensor_id": 6,
+      "observed_on": "2026-03-10",
+      "value_c": 2.2
+    },
+    {
+      "id": 823,
+      "sensor_id": 7,
+      "observed_on": "2026-03-10",
+      "value_c": 3.3
+    },
+    {
+      "id": 824,
+      "sensor_id": 8,
+      "observed_on": "2026-03-10",
+      "value_c": 4.4
+    },
+    {
+      "id": 825,
+      "sensor_id": 9,
+      "observed_on": "2026-03-10",
+      "value_c": 5.5
+    },
+    {
+      "id": 826,
+      "sensor_id": 10,
+      "observed_on": "2026-03-10",
+      "value_c": 6.6
+    },
+    {
+      "id": 827,
+      "sensor_id": 11,
+      "observed_on": "2026-03-10",
+      "value_c": 7.7
+    },
+    {
+      "id": 828,
+      "sensor_id": 12,
+      "observed_on": "2026-03-10",
+      "value_c": 8.8
+    },
+    {
+      "id": 829,
+      "sensor_id": 1,
+      "observed_on": "2026-03-11",
+      "value_c": 9.9
+    },
+    {
+      "id": 830,
+      "sensor_id": 2,
+      "observed_on": "2026-03-11",
+      "value_c": 10.0
+    },
+    {
+      "id": 831,
+      "sensor_id": 3,
+      "observed_on": "2026-03-11",
+      "value_c": 11.1
+    },
+    {
+      "id": 832,
+      "sensor_id": 4,
+      "observed_on": "2026-03-11",
+      "value_c": 12.2
+    },
+    {
+      "id": 833,
+      "sensor_id": 5,
+      "observed_on": "2026-03-11",
+      "value_c": 13.3
+    },
+    {
+      "id": 834,
+      "sensor_id": 6,
+      "observed_on": "2026-03-11",
+      "value_c": 14.4
+    },
+    {
+      "id": 835,
+      "sensor_id": 7,
+      "observed_on": "2026-03-11",
+      "value_c": 15.5
+    },
+    {
+      "id": 836,
+      "sensor_id": 8,
+      "observed_on": "2026-03-11",
+      "value_c": null
+    },
+    {
+      "id": 837,
+      "sensor_id": 9,
+      "observed_on": "2026-03-11",
+      "value_c": 17.7
+    },
+    {
+      "id": 838,
+      "sensor_id": 10,
+      "observed_on": "2026-03-11",
+      "value_c": 18.8
+    },
+    {
+      "id": 839,
+      "sensor_id": 11,
+      "observed_on": "2026-03-11",
+      "value_c": 19.9
+    },
+    {
+      "id": 840,
+      "sensor_id": 12,
+      "observed_on": "2026-03-11",
+      "value_c": 20.0
+    },
+    {
+      "id": 841,
+      "sensor_id": 1,
+      "observed_on": "2026-03-12",
+      "value_c": 21.1
+    },
+    {
+      "id": 842,
+      "sensor_id": 2,
+      "observed_on": "2026-03-12",
+      "value_c": 22.2
+    },
+    {
+      "id": 843,
+      "sensor_id": 3,
+      "observed_on": "2026-03-12",
+      "value_c": 23.3
+    },
+    {
+      "id": 844,
+      "sensor_id": 4,
+      "observed_on": "2026-03-12",
+      "value_c": 24.4
+    },
+    {
+      "id": 845,
+      "sensor_id": 5,
+      "observed_on": "2026-03-12",
+      "value_c": 25.5
+    },
+    {
+      "id": 846,
+      "sensor_id": 6,
+      "observed_on": "2026-03-12",
+      "value_c": 26.6
+    },
+    {
+      "id": 847,
+      "sensor_id": 7,
+      "observed_on": "2026-03-12",
+      "value_c": 27.7
+    },
+    {
+      "id": 848,
+      "sensor_id": 8,
+      "observed_on": "2026-03-12",
+      "value_c": 28.8
+    },
+    {
+      "id": 849,
+      "sensor_id": 9,
+      "observed_on": "2026-03-12",
+      "value_c": 29.9
+    },
+    {
+      "id": 850,
+      "sensor_id": 10,
+      "observed_on": "2026-03-12",
+      "value_c": 30.0
+    },
+    {
+      "id": 851,
+      "sensor_id": 11,
+      "observed_on": "2026-03-12",
+      "value_c": 31.1
+    },
+    {
+      "id": 852,
+      "sensor_id": 12,
+      "observed_on": "2026-03-12",
+      "value_c": 32.2
+    },
+    {
+      "id": 853,
+      "sensor_id": 1,
+      "observed_on": "2026-03-13",
+      "value_c": 33.3
+    },
+    {
+      "id": 854,
+      "sensor_id": 2,
+      "observed_on": "2026-03-13",
+      "value_c": 34.4
+    },
+    {
+      "id": 855,
+      "sensor_id": 3,
+      "observed_on": "2026-03-13",
+      "value_c": null
+    },
+    {
+      "id": 856,
+      "sensor_id": 4,
+      "observed_on": "2026-03-13",
+      "value_c": -8.4
+    },
+    {
+      "id": 857,
+      "sensor_id": 5,
+      "observed_on": "2026-03-13",
+      "value_c": -7.3
+    },
+    {
+      "id": 858,
+      "sensor_id": 6,
+      "observed_on": "2026-03-13",
+      "value_c": -6.2
+    },
+    {
+      "id": 859,
+      "sensor_id": 7,
+      "observed_on": "2026-03-13",
+      "value_c": -5.1
+    },
+    {
+      "id": 860,
+      "sensor_id": 8,
+      "observed_on": "2026-03-13",
+      "value_c": -5.0
+    },
+    {
+      "id": 861,
+      "sensor_id": 9,
+      "observed_on": "2026-03-13",
+      "value_c": -3.9
+    },
+    {
+      "id": 862,
+      "sensor_id": 10,
+      "observed_on": "2026-03-13",
+      "value_c": -2.8
+    },
+    {
+      "id": 863,
+      "sensor_id": 11,
+      "observed_on": "2026-03-13",
+      "value_c": -1.7
+    },
+    {
+      "id": 864,
+      "sensor_id": 12,
+      "observed_on": "2026-03-13",
+      "value_c": -0.6
+    },
+    {
+      "id": 865,
+      "sensor_id": 1,
+      "observed_on": "2026-03-14",
+      "value_c": 0.5
+    },
+    {
+      "id": 866,
+      "sensor_id": 2,
+      "observed_on": "2026-03-14",
+      "value_c": 1.6
+    },
+    {
+      "id": 867,
+      "sensor_id": 3,
+      "observed_on": "2026-03-14",
+      "value_c": 2.7
+    },
+    {
+      "id": 868,
+      "sensor_id": 4,
+      "observed_on": "2026-03-14",
+      "value_c": 3.8
+    },
+    {
+      "id": 869,
+      "sensor_id": 5,
+      "observed_on": "2026-03-14",
+      "value_c": 4.9
+    },
+    {
+      "id": 870,
+      "sensor_id": 6,
+      "observed_on": "2026-03-14",
+      "value_c": 5.0
+    },
+    {
+      "id": 871,
+      "sensor_id": 7,
+      "observed_on": "2026-03-14",
+      "value_c": 6.1
+    },
+    {
+      "id": 872,
+      "sensor_id": 8,
+      "observed_on": "2026-03-14",
+      "value_c": 7.2
+    },
+    {
+      "id": 873,
+      "sensor_id": 9,
+      "observed_on": "2026-03-14",
+      "value_c": 8.3
+    },
+    {
+      "id": 874,
+      "sensor_id": 10,
+      "observed_on": "2026-03-14",
+      "value_c": null
+    },
+    {
+      "id": 875,
+      "sensor_id": 11,
+      "observed_on": "2026-03-14",
+      "value_c": 10.5
+    },
+    {
+      "id": 876,
+      "sensor_id": 12,
+      "observed_on": "2026-03-14",
+      "value_c": 11.6
+    },
+    {
+      "id": 877,
+      "sensor_id": 1,
+      "observed_on": "2026-03-15",
+      "value_c": 12.7
+    },
+    {
+      "id": 878,
+      "sensor_id": 2,
+      "observed_on": "2026-03-15",
+      "value_c": 13.8
+    },
+    {
+      "id": 879,
+      "sensor_id": 3,
+      "observed_on": "2026-03-15",
+      "value_c": 14.9
+    },
+    {
+      "id": 880,
+      "sensor_id": 4,
+      "observed_on": "2026-03-15",
+      "value_c": 15.0
+    },
+    {
+      "id": 881,
+      "sensor_id": 5,
+      "observed_on": "2026-03-15",
+      "value_c": 16.1
+    },
+    {
+      "id": 882,
+      "sensor_id": 6,
+      "observed_on": "2026-03-15",
+      "value_c": 17.2
+    },
+    {
+      "id": 883,
+      "sensor_id": 7,
+      "observed_on": "2026-03-15",
+      "value_c": 18.3
+    },
+    {
+      "id": 884,
+      "sensor_id": 8,
+      "observed_on": "2026-03-15",
+      "value_c": 19.4
+    },
+    {
+      "id": 885,
+      "sensor_id": 9,
+      "observed_on": "2026-03-15",
+      "value_c": 20.5
+    },
+    {
+      "id": 886,
+      "sensor_id": 10,
+      "observed_on": "2026-03-15",
+      "value_c": 21.6
+    },
+    {
+      "id": 887,
+      "sensor_id": 11,
+      "observed_on": "2026-03-15",
+      "value_c": 22.7
+    },
+    {
+      "id": 888,
+      "sensor_id": 12,
+      "observed_on": "2026-03-15",
+      "value_c": 23.8
+    },
+    {
+      "id": 889,
+      "sensor_id": 1,
+      "observed_on": "2026-03-16",
+      "value_c": 24.9
+    },
+    {
+      "id": 890,
+      "sensor_id": 2,
+      "observed_on": "2026-03-16",
+      "value_c": 25.0
+    },
+    {
+      "id": 891,
+      "sensor_id": 3,
+      "observed_on": "2026-03-16",
+      "value_c": 26.1
+    },
+    {
+      "id": 892,
+      "sensor_id": 4,
+      "observed_on": "2026-03-16",
+      "value_c": 27.2
+    },
+    {
+      "id": 893,
+      "sensor_id": 5,
+      "observed_on": "2026-03-16",
+      "value_c": null
+    },
+    {
+      "id": 894,
+      "sensor_id": 6,
+      "observed_on": "2026-03-16",
+      "value_c": 29.4
+    },
+    {
+      "id": 895,
+      "sensor_id": 7,
+      "observed_on": "2026-03-16",
+      "value_c": 30.5
+    },
+    {
+      "id": 896,
+      "sensor_id": 8,
+      "observed_on": "2026-03-16",
+      "value_c": 31.6
+    },
+    {
+      "id": 897,
+      "sensor_id": 9,
+      "observed_on": "2026-03-16",
+      "value_c": 32.7
+    },
+    {
+      "id": 898,
+      "sensor_id": 10,
+      "observed_on": "2026-03-16",
+      "value_c": 33.8
+    },
+    {
+      "id": 899,
+      "sensor_id": 11,
+      "observed_on": "2026-03-16",
+      "value_c": 34.9
+    },
+    {
+      "id": 900,
+      "sensor_id": 12,
+      "observed_on": "2026-03-16",
+      "value_c": -10.0
+    },
+    {
+      "id": 901,
+      "sensor_id": 1,
+      "observed_on": "2026-03-17",
+      "value_c": -8.9
+    },
+    {
+      "id": 902,
+      "sensor_id": 2,
+      "observed_on": "2026-03-17",
+      "value_c": -7.8
+    },
+    {
+      "id": 903,
+      "sensor_id": 3,
+      "observed_on": "2026-03-17",
+      "value_c": -6.7
+    },
+    {
+      "id": 904,
+      "sensor_id": 4,
+      "observed_on": "2026-03-17",
+      "value_c": -5.6
+    },
+    {
+      "id": 905,
+      "sensor_id": 5,
+      "observed_on": "2026-03-17",
+      "value_c": -4.5
+    },
+    {
+      "id": 906,
+      "sensor_id": 6,
+      "observed_on": "2026-03-17",
+      "value_c": -3.4
+    },
+    {
+      "id": 907,
+      "sensor_id": 7,
+      "observed_on": "2026-03-17",
+      "value_c": -2.3
+    },
+    {
+      "id": 908,
+      "sensor_id": 8,
+      "observed_on": "2026-03-17",
+      "value_c": -1.2
+    },
+    {
+      "id": 909,
+      "sensor_id": 9,
+      "observed_on": "2026-03-17",
+      "value_c": -0.1
+    },
+    {
+      "id": 910,
+      "sensor_id": 10,
+      "observed_on": "2026-03-17",
+      "value_c": 0.0
+    },
+    {
+      "id": 911,
+      "sensor_id": 11,
+      "observed_on": "2026-03-17",
+      "value_c": 1.1
+    },
+    {
+      "id": 912,
+      "sensor_id": 12,
+      "observed_on": "2026-03-17",
+      "value_c": null
+    },
+    {
+      "id": 913,
+      "sensor_id": 1,
+      "observed_on": "2026-03-18",
+      "value_c": 3.3
+    },
+    {
+      "id": 914,
+      "sensor_id": 2,
+      "observed_on": "2026-03-18",
+      "value_c": 4.4
+    },
+    {
+      "id": 915,
+      "sensor_id": 3,
+      "observed_on": "2026-03-18",
+      "value_c": 5.5
+    },
+    {
+      "id": 916,
+      "sensor_id": 4,
+      "observed_on": "2026-03-18",
+      "value_c": 6.6
+    },
+    {
+      "id": 917,
+      "sensor_id": 5,
+      "observed_on": "2026-03-18",
+      "value_c": 7.7
+    },
+    {
+      "id": 918,
+      "sensor_id": 6,
+      "observed_on": "2026-03-18",
+      "value_c": 8.8
+    },
+    {
+      "id": 919,
+      "sensor_id": 7,
+      "observed_on": "2026-03-18",
+      "value_c": 9.9
+    },
+    {
+      "id": 920,
+      "sensor_id": 8,
+      "observed_on": "2026-03-18",
+      "value_c": 10.0
+    },
+    {
+      "id": 921,
+      "sensor_id": 9,
+      "observed_on": "2026-03-18",
+      "value_c": 11.1
+    },
+    {
+      "id": 922,
+      "sensor_id": 10,
+      "observed_on": "2026-03-18",
+      "value_c": 12.2
+    },
+    {
+      "id": 923,
+      "sensor_id": 11,
+      "observed_on": "2026-03-18",
+      "value_c": 13.3
+    },
+    {
+      "id": 924,
+      "sensor_id": 12,
+      "observed_on": "2026-03-18",
+      "value_c": 14.4
+    },
+    {
+      "id": 925,
+      "sensor_id": 1,
+      "observed_on": "2026-03-19",
+      "value_c": 15.5
+    },
+    {
+      "id": 926,
+      "sensor_id": 2,
+      "observed_on": "2026-03-19",
+      "value_c": 16.6
+    },
+    {
+      "id": 927,
+      "sensor_id": 3,
+      "observed_on": "2026-03-19",
+      "value_c": 17.7
+    },
+    {
+      "id": 928,
+      "sensor_id": 4,
+      "observed_on": "2026-03-19",
+      "value_c": 18.8
+    },
+    {
+      "id": 929,
+      "sensor_id": 5,
+      "observed_on": "2026-03-19",
+      "value_c": 19.9
+    },
+    {
+      "id": 930,
+      "sensor_id": 6,
+      "observed_on": "2026-03-19",
+      "value_c": 20.0
+    },
+    {
+      "id": 931,
+      "sensor_id": 7,
+      "observed_on": "2026-03-19",
+      "value_c": null
+    },
+    {
+      "id": 932,
+      "sensor_id": 8,
+      "observed_on": "2026-03-19",
+      "value_c": 22.2
+    },
+    {
+      "id": 933,
+      "sensor_id": 9,
+      "observed_on": "2026-03-19",
+      "value_c": 23.3
+    },
+    {
+      "id": 934,
+      "sensor_id": 10,
+      "observed_on": "2026-03-19",
+      "value_c": 24.4
+    },
+    {
+      "id": 935,
+      "sensor_id": 11,
+      "observed_on": "2026-03-19",
+      "value_c": 25.5
+    },
+    {
+      "id": 936,
+      "sensor_id": 12,
+      "observed_on": "2026-03-19",
+      "value_c": 26.6
+    },
+    {
+      "id": 937,
+      "sensor_id": 1,
+      "observed_on": "2026-03-20",
+      "value_c": 27.7
+    },
+    {
+      "id": 938,
+      "sensor_id": 2,
+      "observed_on": "2026-03-20",
+      "value_c": 28.8
+    },
+    {
+      "id": 939,
+      "sensor_id": 3,
+      "observed_on": "2026-03-20",
+      "value_c": 29.9
+    },
+    {
+      "id": 940,
+      "sensor_id": 4,
+      "observed_on": "2026-03-20",
+      "value_c": 30.0
+    },
+    {
+      "id": 941,
+      "sensor_id": 5,
+      "observed_on": "2026-03-20",
+      "value_c": 31.1
+    },
+    {
+      "id": 942,
+      "sensor_id": 6,
+      "observed_on": "2026-03-20",
+      "value_c": 32.2
+    },
+    {
+      "id": 943,
+      "sensor_id": 7,
+      "observed_on": "2026-03-20",
+      "value_c": 33.3
+    },
+    {
+      "id": 944,
+      "sensor_id": 8,
+      "observed_on": "2026-03-20",
+      "value_c": 34.4
+    },
+    {
+      "id": 945,
+      "sensor_id": 9,
+      "observed_on": "2026-03-20",
+      "value_c": -9.5
+    },
+    {
+      "id": 946,
+      "sensor_id": 10,
+      "observed_on": "2026-03-20",
+      "value_c": -8.4
+    },
+    {
+      "id": 947,
+      "sensor_id": 11,
+      "observed_on": "2026-03-20",
+      "value_c": -7.3
+    },
+    {
+      "id": 948,
+      "sensor_id": 12,
+      "observed_on": "2026-03-20",
+      "value_c": -6.2
+    },
+    {
+      "id": 949,
+      "sensor_id": 1,
+      "observed_on": "2026-03-21",
+      "value_c": -5.1
+    },
+    {
+      "id": 950,
+      "sensor_id": 2,
+      "observed_on": "2026-03-21",
+      "value_c": null
+    },
+    {
+      "id": 951,
+      "sensor_id": 3,
+      "observed_on": "2026-03-21",
+      "value_c": -3.9
+    },
+    {
+      "id": 952,
+      "sensor_id": 4,
+      "observed_on": "2026-03-21",
+      "value_c": -2.8
+    },
+    {
+      "id": 953,
+      "sensor_id": 5,
+      "observed_on": "2026-03-21",
+      "value_c": -1.7
+    },
+    {
+      "id": 954,
+      "sensor_id": 6,
+      "observed_on": "2026-03-21",
+      "value_c": -0.6
+    },
+    {
+      "id": 955,
+      "sensor_id": 7,
+      "observed_on": "2026-03-21",
+      "value_c": 0.5
+    },
+    {
+      "id": 956,
+      "sensor_id": 8,
+      "observed_on": "2026-03-21",
+      "value_c": 1.6
+    },
+    {
+      "id": 957,
+      "sensor_id": 9,
+      "observed_on": "2026-03-21",
+      "value_c": 2.7
+    },
+    {
+      "id": 958,
+      "sensor_id": 10,
+      "observed_on": "2026-03-21",
+      "value_c": 3.8
+    },
+    {
+      "id": 959,
+      "sensor_id": 11,
+      "observed_on": "2026-03-21",
+      "value_c": 4.9
+    },
+    {
+      "id": 960,
+      "sensor_id": 12,
+      "observed_on": "2026-03-21",
+      "value_c": 5.0
+    },
+    {
+      "id": 961,
+      "sensor_id": 1,
+      "observed_on": "2026-03-22",
+      "value_c": 6.1
+    },
+    {
+      "id": 962,
+      "sensor_id": 2,
+      "observed_on": "2026-03-22",
+      "value_c": 7.2
+    },
+    {
+      "id": 963,
+      "sensor_id": 3,
+      "observed_on": "2026-03-22",
+      "value_c": 8.3
+    },
+    {
+      "id": 964,
+      "sensor_id": 4,
+      "observed_on": "2026-03-22",
+      "value_c": 9.4
+    },
+    {
+      "id": 965,
+      "sensor_id": 5,
+      "observed_on": "2026-03-22",
+      "value_c": 10.5
+    },
+    {
+      "id": 966,
+      "sensor_id": 6,
+      "observed_on": "2026-03-22",
+      "value_c": 11.6
+    },
+    {
+      "id": 967,
+      "sensor_id": 7,
+      "observed_on": "2026-03-22",
+      "value_c": 12.7
+    },
+    {
+      "id": 968,
+      "sensor_id": 8,
+      "observed_on": "2026-03-22",
+      "value_c": 13.8
+    },
+    {
+      "id": 969,
+      "sensor_id": 9,
+      "observed_on": "2026-03-22",
+      "value_c": null
+    },
+    {
+      "id": 970,
+      "sensor_id": 10,
+      "observed_on": "2026-03-22",
+      "value_c": 15.0
+    },
+    {
+      "id": 971,
+      "sensor_id": 11,
+      "observed_on": "2026-03-22",
+      "value_c": 16.1
+    },
+    {
+      "id": 972,
+      "sensor_id": 12,
+      "observed_on": "2026-03-22",
+      "value_c": 17.2
+    },
+    {
+      "id": 973,
+      "sensor_id": 1,
+      "observed_on": "2026-03-23",
+      "value_c": 18.3
+    },
+    {
+      "id": 974,
+      "sensor_id": 2,
+      "observed_on": "2026-03-23",
+      "value_c": 19.4
+    },
+    {
+      "id": 975,
+      "sensor_id": 3,
+      "observed_on": "2026-03-23",
+      "value_c": 20.5
+    },
+    {
+      "id": 976,
+      "sensor_id": 4,
+      "observed_on": "2026-03-23",
+      "value_c": 21.6
+    },
+    {
+      "id": 977,
+      "sensor_id": 5,
+      "observed_on": "2026-03-23",
+      "value_c": 22.7
+    },
+    {
+      "id": 978,
+      "sensor_id": 6,
+      "observed_on": "2026-03-23",
+      "value_c": 23.8
+    },
+    {
+      "id": 979,
+      "sensor_id": 7,
+      "observed_on": "2026-03-23",
+      "value_c": 24.9
+    },
+    {
+      "id": 980,
+      "sensor_id": 8,
+      "observed_on": "2026-03-23",
+      "value_c": 25.0
+    },
+    {
+      "id": 981,
+      "sensor_id": 9,
+      "observed_on": "2026-03-23",
+      "value_c": 26.1
+    },
+    {
+      "id": 982,
+      "sensor_id": 10,
+      "observed_on": "2026-03-23",
+      "value_c": 27.2
+    },
+    {
+      "id": 983,
+      "sensor_id": 11,
+      "observed_on": "2026-03-23",
+      "value_c": 28.3
+    },
+    {
+      "id": 984,
+      "sensor_id": 12,
+      "observed_on": "2026-03-23",
+      "value_c": 29.4
+    },
+    {
+      "id": 985,
+      "sensor_id": 1,
+      "observed_on": "2026-03-24",
+      "value_c": 30.5
+    },
+    {
+      "id": 986,
+      "sensor_id": 2,
+      "observed_on": "2026-03-24",
+      "value_c": 31.6
+    },
+    {
+      "id": 987,
+      "sensor_id": 3,
+      "observed_on": "2026-03-24",
+      "value_c": 32.7
+    },
+    {
+      "id": 988,
+      "sensor_id": 4,
+      "observed_on": "2026-03-24",
+      "value_c": null
+    },
+    {
+      "id": 989,
+      "sensor_id": 5,
+      "observed_on": "2026-03-24",
+      "value_c": 34.9
+    },
+    {
+      "id": 990,
+      "sensor_id": 6,
+      "observed_on": "2026-03-24",
+      "value_c": -10.0
+    },
+    {
+      "id": 991,
+      "sensor_id": 7,
+      "observed_on": "2026-03-24",
+      "value_c": -8.9
+    },
+    {
+      "id": 992,
+      "sensor_id": 8,
+      "observed_on": "2026-03-24",
+      "value_c": -7.8
+    },
+    {
+      "id": 993,
+      "sensor_id": 9,
+      "observed_on": "2026-03-24",
+      "value_c": -6.7
+    },
+    {
+      "id": 994,
+      "sensor_id": 10,
+      "observed_on": "2026-03-24",
+      "value_c": -5.6
+    },
+    {
+      "id": 995,
+      "sensor_id": 11,
+      "observed_on": "2026-03-24",
+      "value_c": -4.5
+    },
+    {
+      "id": 996,
+      "sensor_id": 12,
+      "observed_on": "2026-03-24",
+      "value_c": -3.4
+    },
+    {
+      "id": 997,
+      "sensor_id": 1,
+      "observed_on": "2026-03-25",
+      "value_c": -2.3
+    },
+    {
+      "id": 998,
+      "sensor_id": 2,
+      "observed_on": "2026-03-25",
+      "value_c": -1.2
+    },
+    {
+      "id": 999,
+      "sensor_id": 3,
+      "observed_on": "2026-03-25",
+      "value_c": -0.1
+    },
+    {
+      "id": 1000,
+      "sensor_id": 4,
+      "observed_on": "2026-03-25",
+      "value_c": 0.0
+    },
+    {
+      "id": 1001,
+      "sensor_id": 5,
+      "observed_on": "2026-03-25",
+      "value_c": 1.1
+    },
+    {
+      "id": 1002,
+      "sensor_id": 6,
+      "observed_on": "2026-03-25",
+      "value_c": 2.2
+    },
+    {
+      "id": 1003,
+      "sensor_id": 7,
+      "observed_on": "2026-03-25",
+      "value_c": 3.3
+    },
+    {
+      "id": 1004,
+      "sensor_id": 8,
+      "observed_on": "2026-03-25",
+      "value_c": 4.4
+    },
+    {
+      "id": 1005,
+      "sensor_id": 9,
+      "observed_on": "2026-03-25",
+      "value_c": 5.5
+    },
+    {
+      "id": 1006,
+      "sensor_id": 10,
+      "observed_on": "2026-03-25",
+      "value_c": 6.6
+    },
+    {
+      "id": 1007,
+      "sensor_id": 11,
+      "observed_on": "2026-03-25",
+      "value_c": null
+    },
+    {
+      "id": 1008,
+      "sensor_id": 12,
+      "observed_on": "2026-03-25",
+      "value_c": 8.8
+    },
+    {
+      "id": 1009,
+      "sensor_id": 1,
+      "observed_on": "2026-03-26",
+      "value_c": 9.9
+    },
+    {
+      "id": 1010,
+      "sensor_id": 2,
+      "observed_on": "2026-03-26",
+      "value_c": 10.0
+    },
+    {
+      "id": 1011,
+      "sensor_id": 3,
+      "observed_on": "2026-03-26",
+      "value_c": 11.1
+    },
+    {
+      "id": 1012,
+      "sensor_id": 4,
+      "observed_on": "2026-03-26",
+      "value_c": 12.2
+    },
+    {
+      "id": 1013,
+      "sensor_id": 5,
+      "observed_on": "2026-03-26",
+      "value_c": 13.3
+    },
+    {
+      "id": 1014,
+      "sensor_id": 6,
+      "observed_on": "2026-03-26",
+      "value_c": 14.4
+    },
+    {
+      "id": 1015,
+      "sensor_id": 7,
+      "observed_on": "2026-03-26",
+      "value_c": 15.5
+    },
+    {
+      "id": 1016,
+      "sensor_id": 8,
+      "observed_on": "2026-03-26",
+      "value_c": 16.6
+    },
+    {
+      "id": 1017,
+      "sensor_id": 9,
+      "observed_on": "2026-03-26",
+      "value_c": 17.7
+    },
+    {
+      "id": 1018,
+      "sensor_id": 10,
+      "observed_on": "2026-03-26",
+      "value_c": 18.8
+    },
+    {
+      "id": 1019,
+      "sensor_id": 11,
+      "observed_on": "2026-03-26",
+      "value_c": 19.9
+    },
+    {
+      "id": 1020,
+      "sensor_id": 12,
+      "observed_on": "2026-03-26",
+      "value_c": 20.0
+    },
+    {
+      "id": 1021,
+      "sensor_id": 1,
+      "observed_on": "2026-03-27",
+      "value_c": 21.1
+    },
+    {
+      "id": 1022,
+      "sensor_id": 2,
+      "observed_on": "2026-03-27",
+      "value_c": 22.2
+    },
+    {
+      "id": 1023,
+      "sensor_id": 3,
+      "observed_on": "2026-03-27",
+      "value_c": 23.3
+    },
+    {
+      "id": 1024,
+      "sensor_id": 4,
+      "observed_on": "2026-03-27",
+      "value_c": 24.4
+    },
+    {
+      "id": 1025,
+      "sensor_id": 5,
+      "observed_on": "2026-03-27",
+      "value_c": 25.5
+    },
+    {
+      "id": 1026,
+      "sensor_id": 6,
+      "observed_on": "2026-03-27",
+      "value_c": null
+    },
+    {
+      "id": 1027,
+      "sensor_id": 7,
+      "observed_on": "2026-03-27",
+      "value_c": 27.7
+    },
+    {
+      "id": 1028,
+      "sensor_id": 8,
+      "observed_on": "2026-03-27",
+      "value_c": 28.8
+    },
+    {
+      "id": 1029,
+      "sensor_id": 9,
+      "observed_on": "2026-03-27",
+      "value_c": 29.9
+    },
+    {
+      "id": 1030,
+      "sensor_id": 10,
+      "observed_on": "2026-03-27",
+      "value_c": 30.0
+    },
+    {
+      "id": 1031,
+      "sensor_id": 11,
+      "observed_on": "2026-03-27",
+      "value_c": 31.1
+    },
+    {
+      "id": 1032,
+      "sensor_id": 12,
+      "observed_on": "2026-03-27",
+      "value_c": 32.2
+    },
+    {
+      "id": 1033,
+      "sensor_id": 1,
+      "observed_on": "2026-03-28",
+      "value_c": 33.3
+    },
+    {
+      "id": 1034,
+      "sensor_id": 2,
+      "observed_on": "2026-03-28",
+      "value_c": 34.4
+    },
+    {
+      "id": 1035,
+      "sensor_id": 3,
+      "observed_on": "2026-03-28",
+      "value_c": -9.5
+    },
+    {
+      "id": 1036,
+      "sensor_id": 4,
+      "observed_on": "2026-03-28",
+      "value_c": -8.4
+    },
+    {
+      "id": 1037,
+      "sensor_id": 5,
+      "observed_on": "2026-03-28",
+      "value_c": -7.3
+    },
+    {
+      "id": 1038,
+      "sensor_id": 6,
+      "observed_on": "2026-03-28",
+      "value_c": -6.2
+    },
+    {
+      "id": 1039,
+      "sensor_id": 7,
+      "observed_on": "2026-03-28",
+      "value_c": -5.1
+    },
+    {
+      "id": 1040,
+      "sensor_id": 8,
+      "observed_on": "2026-03-28",
+      "value_c": -5.0
+    },
+    {
+      "id": 1041,
+      "sensor_id": 9,
+      "observed_on": "2026-03-28",
+      "value_c": -3.9
+    },
+    {
+      "id": 1042,
+      "sensor_id": 10,
+      "observed_on": "2026-03-28",
+      "value_c": -2.8
+    },
+    {
+      "id": 1043,
+      "sensor_id": 11,
+      "observed_on": "2026-03-28",
+      "value_c": -1.7
+    },
+    {
+      "id": 1044,
+      "sensor_id": 12,
+      "observed_on": "2026-03-28",
+      "value_c": -0.6
+    },
+    {
+      "id": 1045,
+      "sensor_id": 1,
+      "observed_on": "2026-03-29",
+      "value_c": null
+    },
+    {
+      "id": 1046,
+      "sensor_id": 2,
+      "observed_on": "2026-03-29",
+      "value_c": 1.6
+    },
+    {
+      "id": 1047,
+      "sensor_id": 3,
+      "observed_on": "2026-03-29",
+      "value_c": 2.7
+    },
+    {
+      "id": 1048,
+      "sensor_id": 4,
+      "observed_on": "2026-03-29",
+      "value_c": 3.8
+    },
+    {
+      "id": 1049,
+      "sensor_id": 5,
+      "observed_on": "2026-03-29",
+      "value_c": 4.9
+    },
+    {
+      "id": 1050,
+      "sensor_id": 6,
+      "observed_on": "2026-03-29",
+      "value_c": 5.0
+    },
+    {
+      "id": 1051,
+      "sensor_id": 7,
+      "observed_on": "2026-03-29",
+      "value_c": 6.1
+    },
+    {
+      "id": 1052,
+      "sensor_id": 8,
+      "observed_on": "2026-03-29",
+      "value_c": 7.2
+    },
+    {
+      "id": 1053,
+      "sensor_id": 9,
+      "observed_on": "2026-03-29",
+      "value_c": 8.3
+    },
+    {
+      "id": 1054,
+      "sensor_id": 10,
+      "observed_on": "2026-03-29",
+      "value_c": 9.4
+    },
+    {
+      "id": 1055,
+      "sensor_id": 11,
+      "observed_on": "2026-03-29",
+      "value_c": 10.5
+    },
+    {
+      "id": 1056,
+      "sensor_id": 12,
+      "observed_on": "2026-03-29",
+      "value_c": 11.6
+    },
+    {
+      "id": 1057,
+      "sensor_id": 1,
+      "observed_on": "2026-03-30",
+      "value_c": 12.7
+    },
+    {
+      "id": 1058,
+      "sensor_id": 2,
+      "observed_on": "2026-03-30",
+      "value_c": 13.8
+    },
+    {
+      "id": 1059,
+      "sensor_id": 3,
+      "observed_on": "2026-03-30",
+      "value_c": 14.9
+    },
+    {
+      "id": 1060,
+      "sensor_id": 4,
+      "observed_on": "2026-03-30",
+      "value_c": 15.0
+    },
+    {
+      "id": 1061,
+      "sensor_id": 5,
+      "observed_on": "2026-03-30",
+      "value_c": 16.1
+    },
+    {
+      "id": 1062,
+      "sensor_id": 6,
+      "observed_on": "2026-03-30",
+      "value_c": 17.2
+    },
+    {
+      "id": 1063,
+      "sensor_id": 7,
+      "observed_on": "2026-03-30",
+      "value_c": 18.3
+    },
+    {
+      "id": 1064,
+      "sensor_id": 8,
+      "observed_on": "2026-03-30",
+      "value_c": null
+    },
+    {
+      "id": 1065,
+      "sensor_id": 9,
+      "observed_on": "2026-03-30",
+      "value_c": 20.5
+    },
+    {
+      "id": 1066,
+      "sensor_id": 10,
+      "observed_on": "2026-03-30",
+      "value_c": 21.6
+    },
+    {
+      "id": 1067,
+      "sensor_id": 11,
+      "observed_on": "2026-03-30",
+      "value_c": 22.7
+    },
+    {
+      "id": 1068,
+      "sensor_id": 12,
+      "observed_on": "2026-03-30",
+      "value_c": 23.8
+    },
+    {
+      "id": 1069,
+      "sensor_id": 1,
+      "observed_on": "2026-03-31",
+      "value_c": 24.9
+    },
+    {
+      "id": 1070,
+      "sensor_id": 2,
+      "observed_on": "2026-03-31",
+      "value_c": 25.0
+    },
+    {
+      "id": 1071,
+      "sensor_id": 3,
+      "observed_on": "2026-03-31",
+      "value_c": 26.1
+    },
+    {
+      "id": 1072,
+      "sensor_id": 4,
+      "observed_on": "2026-03-31",
+      "value_c": 27.2
+    },
+    {
+      "id": 1073,
+      "sensor_id": 5,
+      "observed_on": "2026-03-31",
+      "value_c": 28.3
+    },
+    {
+      "id": 1074,
+      "sensor_id": 6,
+      "observed_on": "2026-03-31",
+      "value_c": 29.4
+    },
+    {
+      "id": 1075,
+      "sensor_id": 7,
+      "observed_on": "2026-03-31",
+      "value_c": 30.5
+    },
+    {
+      "id": 1076,
+      "sensor_id": 8,
+      "observed_on": "2026-03-31",
+      "value_c": 31.6
+    },
+    {
+      "id": 1077,
+      "sensor_id": 9,
+      "observed_on": "2026-03-31",
+      "value_c": 32.7
+    },
+    {
+      "id": 1078,
+      "sensor_id": 10,
+      "observed_on": "2026-03-31",
+      "value_c": 33.8
+    },
+    {
+      "id": 1079,
+      "sensor_id": 11,
+      "observed_on": "2026-03-31",
+      "value_c": 34.9
+    },
+    {
+      "id": 1080,
+      "sensor_id": 12,
+      "observed_on": "2026-03-31",
+      "value_c": -10.0
+    },
+    {
+      "id": 1081,
+      "sensor_id": 1,
+      "observed_on": "2026-04-01",
+      "value_c": -8.9
+    },
+    {
+      "id": 1082,
+      "sensor_id": 2,
+      "observed_on": "2026-04-01",
+      "value_c": -7.8
+    },
+    {
+      "id": 1083,
+      "sensor_id": 3,
+      "observed_on": "2026-04-01",
+      "value_c": null
+    },
+    {
+      "id": 1084,
+      "sensor_id": 4,
+      "observed_on": "2026-04-01",
+      "value_c": -5.6
+    },
+    {
+      "id": 1085,
+      "sensor_id": 5,
+      "observed_on": "2026-04-01",
+      "value_c": -4.5
+    },
+    {
+      "id": 1086,
+      "sensor_id": 6,
+      "observed_on": "2026-04-01",
+      "value_c": -3.4
+    },
+    {
+      "id": 1087,
+      "sensor_id": 7,
+      "observed_on": "2026-04-01",
+      "value_c": -2.3
+    },
+    {
+      "id": 1088,
+      "sensor_id": 8,
+      "observed_on": "2026-04-01",
+      "value_c": -1.2
+    },
+    {
+      "id": 1089,
+      "sensor_id": 9,
+      "observed_on": "2026-04-01",
+      "value_c": -0.1
+    },
+    {
+      "id": 1090,
+      "sensor_id": 10,
+      "observed_on": "2026-04-01",
+      "value_c": 0.0
+    },
+    {
+      "id": 1091,
+      "sensor_id": 11,
+      "observed_on": "2026-04-01",
+      "value_c": 1.1
+    },
+    {
+      "id": 1092,
+      "sensor_id": 12,
+      "observed_on": "2026-04-01",
+      "value_c": 2.2
+    },
+    {
+      "id": 1093,
+      "sensor_id": 1,
+      "observed_on": "2026-04-02",
+      "value_c": 3.3
+    },
+    {
+      "id": 1094,
+      "sensor_id": 2,
+      "observed_on": "2026-04-02",
+      "value_c": 4.4
+    },
+    {
+      "id": 1095,
+      "sensor_id": 3,
+      "observed_on": "2026-04-02",
+      "value_c": 5.5
+    },
+    {
+      "id": 1096,
+      "sensor_id": 4,
+      "observed_on": "2026-04-02",
+      "value_c": 6.6
+    },
+    {
+      "id": 1097,
+      "sensor_id": 5,
+      "observed_on": "2026-04-02",
+      "value_c": 7.7
+    },
+    {
+      "id": 1098,
+      "sensor_id": 6,
+      "observed_on": "2026-04-02",
+      "value_c": 8.8
+    },
+    {
+      "id": 1099,
+      "sensor_id": 7,
+      "observed_on": "2026-04-02",
+      "value_c": 9.9
+    },
+    {
+      "id": 1100,
+      "sensor_id": 8,
+      "observed_on": "2026-04-02",
+      "value_c": 10.0
+    },
+    {
+      "id": 1101,
+      "sensor_id": 9,
+      "observed_on": "2026-04-02",
+      "value_c": 11.1
+    },
+    {
+      "id": 1102,
+      "sensor_id": 10,
+      "observed_on": "2026-04-02",
+      "value_c": null
+    },
+    {
+      "id": 1103,
+      "sensor_id": 11,
+      "observed_on": "2026-04-02",
+      "value_c": 13.3
+    },
+    {
+      "id": 1104,
+      "sensor_id": 12,
+      "observed_on": "2026-04-02",
+      "value_c": 14.4
+    },
+    {
+      "id": 1105,
+      "sensor_id": 1,
+      "observed_on": "2026-04-03",
+      "value_c": 15.5
+    },
+    {
+      "id": 1106,
+      "sensor_id": 2,
+      "observed_on": "2026-04-03",
+      "value_c": 16.6
+    },
+    {
+      "id": 1107,
+      "sensor_id": 3,
+      "observed_on": "2026-04-03",
+      "value_c": 17.7
+    },
+    {
+      "id": 1108,
+      "sensor_id": 4,
+      "observed_on": "2026-04-03",
+      "value_c": 18.8
+    },
+    {
+      "id": 1109,
+      "sensor_id": 5,
+      "observed_on": "2026-04-03",
+      "value_c": 19.9
+    },
+    {
+      "id": 1110,
+      "sensor_id": 6,
+      "observed_on": "2026-04-03",
+      "value_c": 20.0
+    },
+    {
+      "id": 1111,
+      "sensor_id": 7,
+      "observed_on": "2026-04-03",
+      "value_c": 21.1
+    },
+    {
+      "id": 1112,
+      "sensor_id": 8,
+      "observed_on": "2026-04-03",
+      "value_c": 22.2
+    },
+    {
+      "id": 1113,
+      "sensor_id": 9,
+      "observed_on": "2026-04-03",
+      "value_c": 23.3
+    },
+    {
+      "id": 1114,
+      "sensor_id": 10,
+      "observed_on": "2026-04-03",
+      "value_c": 24.4
+    },
+    {
+      "id": 1115,
+      "sensor_id": 11,
+      "observed_on": "2026-04-03",
+      "value_c": 25.5
+    },
+    {
+      "id": 1116,
+      "sensor_id": 12,
+      "observed_on": "2026-04-03",
+      "value_c": 26.6
+    },
+    {
+      "id": 1117,
+      "sensor_id": 1,
+      "observed_on": "2026-04-04",
+      "value_c": 27.7
+    },
+    {
+      "id": 1118,
+      "sensor_id": 2,
+      "observed_on": "2026-04-04",
+      "value_c": 28.8
+    },
+    {
+      "id": 1119,
+      "sensor_id": 3,
+      "observed_on": "2026-04-04",
+      "value_c": 29.9
+    },
+    {
+      "id": 1120,
+      "sensor_id": 4,
+      "observed_on": "2026-04-04",
+      "value_c": 30.0
+    },
+    {
+      "id": 1121,
+      "sensor_id": 5,
+      "observed_on": "2026-04-04",
+      "value_c": null
+    },
+    {
+      "id": 1122,
+      "sensor_id": 6,
+      "observed_on": "2026-04-04",
+      "value_c": 32.2
+    },
+    {
+      "id": 1123,
+      "sensor_id": 7,
+      "observed_on": "2026-04-04",
+      "value_c": 33.3
+    },
+    {
+      "id": 1124,
+      "sensor_id": 8,
+      "observed_on": "2026-04-04",
+      "value_c": 34.4
+    },
+    {
+      "id": 1125,
+      "sensor_id": 9,
+      "observed_on": "2026-04-04",
+      "value_c": -9.5
+    },
+    {
+      "id": 1126,
+      "sensor_id": 10,
+      "observed_on": "2026-04-04",
+      "value_c": -8.4
+    },
+    {
+      "id": 1127,
+      "sensor_id": 11,
+      "observed_on": "2026-04-04",
+      "value_c": -7.3
+    },
+    {
+      "id": 1128,
+      "sensor_id": 12,
+      "observed_on": "2026-04-04",
+      "value_c": -6.2
+    },
+    {
+      "id": 1129,
+      "sensor_id": 1,
+      "observed_on": "2026-04-05",
+      "value_c": -5.1
+    },
+    {
+      "id": 1130,
+      "sensor_id": 2,
+      "observed_on": "2026-04-05",
+      "value_c": -5.0
+    },
+    {
+      "id": 1131,
+      "sensor_id": 3,
+      "observed_on": "2026-04-05",
+      "value_c": -3.9
+    },
+    {
+      "id": 1132,
+      "sensor_id": 4,
+      "observed_on": "2026-04-05",
+      "value_c": -2.8
+    },
+    {
+      "id": 1133,
+      "sensor_id": 5,
+      "observed_on": "2026-04-05",
+      "value_c": -1.7
+    },
+    {
+      "id": 1134,
+      "sensor_id": 6,
+      "observed_on": "2026-04-05",
+      "value_c": -0.6
+    },
+    {
+      "id": 1135,
+      "sensor_id": 7,
+      "observed_on": "2026-04-05",
+      "value_c": 0.5
+    },
+    {
+      "id": 1136,
+      "sensor_id": 8,
+      "observed_on": "2026-04-05",
+      "value_c": 1.6
+    },
+    {
+      "id": 1137,
+      "sensor_id": 9,
+      "observed_on": "2026-04-05",
+      "value_c": 2.7
+    },
+    {
+      "id": 1138,
+      "sensor_id": 10,
+      "observed_on": "2026-04-05",
+      "value_c": 3.8
+    },
+    {
+      "id": 1139,
+      "sensor_id": 11,
+      "observed_on": "2026-04-05",
+      "value_c": 4.9
+    },
+    {
+      "id": 1140,
+      "sensor_id": 12,
+      "observed_on": "2026-04-05",
+      "value_c": null
+    },
+    {
+      "id": 1141,
+      "sensor_id": 1,
+      "observed_on": "2026-04-06",
+      "value_c": 6.1
+    },
+    {
+      "id": 1142,
+      "sensor_id": 2,
+      "observed_on": "2026-04-06",
+      "value_c": 7.2
+    },
+    {
+      "id": 1143,
+      "sensor_id": 3,
+      "observed_on": "2026-04-06",
+      "value_c": 8.3
+    },
+    {
+      "id": 1144,
+      "sensor_id": 4,
+      "observed_on": "2026-04-06",
+      "value_c": 9.4
+    },
+    {
+      "id": 1145,
+      "sensor_id": 5,
+      "observed_on": "2026-04-06",
+      "value_c": 10.5
+    },
+    {
+      "id": 1146,
+      "sensor_id": 6,
+      "observed_on": "2026-04-06",
+      "value_c": 11.6
+    },
+    {
+      "id": 1147,
+      "sensor_id": 7,
+      "observed_on": "2026-04-06",
+      "value_c": 12.7
+    },
+    {
+      "id": 1148,
+      "sensor_id": 8,
+      "observed_on": "2026-04-06",
+      "value_c": 13.8
+    },
+    {
+      "id": 1149,
+      "sensor_id": 9,
+      "observed_on": "2026-04-06",
+      "value_c": 14.9
+    },
+    {
+      "id": 1150,
+      "sensor_id": 10,
+      "observed_on": "2026-04-06",
+      "value_c": 15.0
+    },
+    {
+      "id": 1151,
+      "sensor_id": 11,
+      "observed_on": "2026-04-06",
+      "value_c": 16.1
+    },
+    {
+      "id": 1152,
+      "sensor_id": 12,
+      "observed_on": "2026-04-06",
+      "value_c": 17.2
+    },
+    {
+      "id": 1153,
+      "sensor_id": 1,
+      "observed_on": "2026-04-07",
+      "value_c": 18.3
+    },
+    {
+      "id": 1154,
+      "sensor_id": 2,
+      "observed_on": "2026-04-07",
+      "value_c": 19.4
+    },
+    {
+      "id": 1155,
+      "sensor_id": 3,
+      "observed_on": "2026-04-07",
+      "value_c": 20.5
+    },
+    {
+      "id": 1156,
+      "sensor_id": 4,
+      "observed_on": "2026-04-07",
+      "value_c": 21.6
+    },
+    {
+      "id": 1157,
+      "sensor_id": 5,
+      "observed_on": "2026-04-07",
+      "value_c": 22.7
+    },
+    {
+      "id": 1158,
+      "sensor_id": 6,
+      "observed_on": "2026-04-07",
+      "value_c": 23.8
+    },
+    {
+      "id": 1159,
+      "sensor_id": 7,
+      "observed_on": "2026-04-07",
+      "value_c": null
+    },
+    {
+      "id": 1160,
+      "sensor_id": 8,
+      "observed_on": "2026-04-07",
+      "value_c": 25.0
+    },
+    {
+      "id": 1161,
+      "sensor_id": 9,
+      "observed_on": "2026-04-07",
+      "value_c": 26.1
+    },
+    {
+      "id": 1162,
+      "sensor_id": 10,
+      "observed_on": "2026-04-07",
+      "value_c": 27.2
+    },
+    {
+      "id": 1163,
+      "sensor_id": 11,
+      "observed_on": "2026-04-07",
+      "value_c": 28.3
+    },
+    {
+      "id": 1164,
+      "sensor_id": 12,
+      "observed_on": "2026-04-07",
+      "value_c": 29.4
+    },
+    {
+      "id": 1165,
+      "sensor_id": 1,
+      "observed_on": "2026-04-08",
+      "value_c": 30.5
+    },
+    {
+      "id": 1166,
+      "sensor_id": 2,
+      "observed_on": "2026-04-08",
+      "value_c": 31.6
+    },
+    {
+      "id": 1167,
+      "sensor_id": 3,
+      "observed_on": "2026-04-08",
+      "value_c": 32.7
+    },
+    {
+      "id": 1168,
+      "sensor_id": 4,
+      "observed_on": "2026-04-08",
+      "value_c": 33.8
+    },
+    {
+      "id": 1169,
+      "sensor_id": 5,
+      "observed_on": "2026-04-08",
+      "value_c": 34.9
+    },
+    {
+      "id": 1170,
+      "sensor_id": 6,
+      "observed_on": "2026-04-08",
+      "value_c": -10.0
+    },
+    {
+      "id": 1171,
+      "sensor_id": 7,
+      "observed_on": "2026-04-08",
+      "value_c": -8.9
+    },
+    {
+      "id": 1172,
+      "sensor_id": 8,
+      "observed_on": "2026-04-08",
+      "value_c": -7.8
+    },
+    {
+      "id": 1173,
+      "sensor_id": 9,
+      "observed_on": "2026-04-08",
+      "value_c": -6.7
+    },
+    {
+      "id": 1174,
+      "sensor_id": 10,
+      "observed_on": "2026-04-08",
+      "value_c": -5.6
+    },
+    {
+      "id": 1175,
+      "sensor_id": 11,
+      "observed_on": "2026-04-08",
+      "value_c": -4.5
+    },
+    {
+      "id": 1176,
+      "sensor_id": 12,
+      "observed_on": "2026-04-08",
+      "value_c": -3.4
+    },
+    {
+      "id": 1177,
+      "sensor_id": 1,
+      "observed_on": "2026-04-09",
+      "value_c": -2.3
+    },
+    {
+      "id": 1178,
+      "sensor_id": 2,
+      "observed_on": "2026-04-09",
+      "value_c": null
+    },
+    {
+      "id": 1179,
+      "sensor_id": 3,
+      "observed_on": "2026-04-09",
+      "value_c": -0.1
+    },
+    {
+      "id": 1180,
+      "sensor_id": 4,
+      "observed_on": "2026-04-09",
+      "value_c": 0.0
+    },
+    {
+      "id": 1181,
+      "sensor_id": 5,
+      "observed_on": "2026-04-09",
+      "value_c": 1.1
+    },
+    {
+      "id": 1182,
+      "sensor_id": 6,
+      "observed_on": "2026-04-09",
+      "value_c": 2.2
+    },
+    {
+      "id": 1183,
+      "sensor_id": 7,
+      "observed_on": "2026-04-09",
+      "value_c": 3.3
+    },
+    {
+      "id": 1184,
+      "sensor_id": 8,
+      "observed_on": "2026-04-09",
+      "value_c": 4.4
+    },
+    {
+      "id": 1185,
+      "sensor_id": 9,
+      "observed_on": "2026-04-09",
+      "value_c": 5.5
+    },
+    {
+      "id": 1186,
+      "sensor_id": 10,
+      "observed_on": "2026-04-09",
+      "value_c": 6.6
+    },
+    {
+      "id": 1187,
+      "sensor_id": 11,
+      "observed_on": "2026-04-09",
+      "value_c": 7.7
+    },
+    {
+      "id": 1188,
+      "sensor_id": 12,
+      "observed_on": "2026-04-09",
+      "value_c": 8.8
+    },
+    {
+      "id": 1189,
+      "sensor_id": 1,
+      "observed_on": "2026-04-10",
+      "value_c": 9.9
+    },
+    {
+      "id": 1190,
+      "sensor_id": 2,
+      "observed_on": "2026-04-10",
+      "value_c": 10.0
+    },
+    {
+      "id": 1191,
+      "sensor_id": 3,
+      "observed_on": "2026-04-10",
+      "value_c": 11.1
+    },
+    {
+      "id": 1192,
+      "sensor_id": 4,
+      "observed_on": "2026-04-10",
+      "value_c": 12.2
+    },
+    {
+      "id": 1193,
+      "sensor_id": 5,
+      "observed_on": "2026-04-10",
+      "value_c": 13.3
+    },
+    {
+      "id": 1194,
+      "sensor_id": 6,
+      "observed_on": "2026-04-10",
+      "value_c": 14.4
+    },
+    {
+      "id": 1195,
+      "sensor_id": 7,
+      "observed_on": "2026-04-10",
+      "value_c": 15.5
+    },
+    {
+      "id": 1196,
+      "sensor_id": 8,
+      "observed_on": "2026-04-10",
+      "value_c": 16.6
+    },
+    {
+      "id": 1197,
+      "sensor_id": 9,
+      "observed_on": "2026-04-10",
+      "value_c": null
+    },
+    {
+      "id": 1198,
+      "sensor_id": 10,
+      "observed_on": "2026-04-10",
+      "value_c": 18.8
+    },
+    {
+      "id": 1199,
+      "sensor_id": 11,
+      "observed_on": "2026-04-10",
+      "value_c": 19.9
+    },
+    {
+      "id": 1200,
+      "sensor_id": 12,
+      "observed_on": "2026-04-10",
+      "value_c": 20.0
+    }
+  ],
+  "calibrations": [
+    {
+      "id": 1,
+      "sensor_id": 1,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 2,
+      "sensor_id": 2,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    },
+    {
+      "id": 3,
+      "sensor_id": 3,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 4,
+      "sensor_id": 4,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    },
+    {
+      "id": 5,
+      "sensor_id": 5,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 6,
+      "sensor_id": 6,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    },
+    {
+      "id": 7,
+      "sensor_id": 7,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 8,
+      "sensor_id": 8,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    },
+    {
+      "id": 9,
+      "sensor_id": 9,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 10,
+      "sensor_id": 10,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    },
+    {
+      "id": 11,
+      "sensor_id": 11,
+      "calibrated_on": "2026-01-01",
+      "offset_c": 0.1
+    },
+    {
+      "id": 12,
+      "sensor_id": 12,
+      "calibrated_on": "2026-01-01",
+      "offset_c": -0.1
+    }
+  ]
+}

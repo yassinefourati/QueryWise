@@ -1,0 +1,31 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE aircraft (\n\tid INTEGER NOT NULL, \n\ttail_number VARCHAR2(32 CHAR) NOT NULL, \n\tseats INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_aircraft_0 CHECK (seats > 0), \n\tCONSTRAINT uq_aircraft_0 UNIQUE (tail_number)\n)",
+      "CREATE TABLE airports (\n\tid INTEGER NOT NULL, \n\tiata VARCHAR2(32 CHAR) NOT NULL, \n\tlatitude NUMERIC(14, 3) NOT NULL, \n\tlongitude NUMERIC(14, 3) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_airports_0 UNIQUE (iata)\n)",
+      "CREATE TABLE gates (\n\tid INTEGER NOT NULL, \n\tairport_id INTEGER NOT NULL, \n\tgate_code VARCHAR2(32 CHAR) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_gates_0 UNIQUE (airport_id, gate_code), \n\tFOREIGN KEY(airport_id) REFERENCES airports (id)\n)",
+      "CREATE TABLE routes (\n\tid INTEGER NOT NULL, \n\torigin_id INTEGER NOT NULL, \n\tdestination_id INTEGER NOT NULL, \n\tdistance_km INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_routes_0 CHECK (origin_id <> destination_id), \n\tCONSTRAINT ck_routes_1 CHECK (distance_km > 0), \n\tFOREIGN KEY(origin_id) REFERENCES airports (id), \n\tFOREIGN KEY(destination_id) REFERENCES airports (id)\n)",
+      "CREATE TABLE flights (\n\tid INTEGER NOT NULL, \n\troute_id INTEGER NOT NULL, \n\taircraft_id INTEGER NOT NULL, \n\tdeparted_on DATE NOT NULL, \n\tstatus VARCHAR2(32 CHAR) NOT NULL, \n\tpassengers INTEGER NOT NULL, \n\tdelay_minutes INTEGER, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_flights_0 CHECK (passengers >= 0), \n\tCONSTRAINT ck_flights_1 CHECK (status IN ('departed','cancelled')), \n\tFOREIGN KEY(route_id) REFERENCES routes (id), \n\tFOREIGN KEY(aircraft_id) REFERENCES aircraft (id)\n)",
+      "CREATE TABLE crew_assignments (\n\tid INTEGER NOT NULL, \n\tflight_id INTEGER NOT NULL, \n\tcrew_code VARCHAR2(32 CHAR) NOT NULL, \n\trole_code VARCHAR2(32 CHAR) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_crew_assignm_0 UNIQUE (flight_id, crew_code), \n\tFOREIGN KEY(flight_id) REFERENCES flights (id)\n)",
+      "CREATE TABLE disruptions (\n\tid INTEGER NOT NULL, \n\tflight_id INTEGER NOT NULL, \n\treason VARCHAR2(32 CHAR) NOT NULL, \n\tcost_cents NUMBER(19) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_disruptions_0 CHECK (cost_cents >= 0), \n\tFOREIGN KEY(flight_id) REFERENCES flights (id)\n)",
+      "CREATE TABLE turnarounds (\n\tid INTEGER NOT NULL, \n\tflight_id INTEGER NOT NULL, \n\tgate_id INTEGER NOT NULL, \n\tground_minutes INTEGER NOT NULL, \n\ttarget_minutes INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_turnarounds_0 CHECK (ground_minutes >= 0), \n\tCONSTRAINT ck_turnarounds_1 CHECK (target_minutes > 0), \n\tCONSTRAINT uq_turnarounds_0 UNIQUE (flight_id), \n\tFOREIGN KEY(flight_id) REFERENCES flights (id), \n\tFOREIGN KEY(gate_id) REFERENCES gates (id)\n)",
+      "CREATE INDEX ix_gates_airport_id ON gates (airport_id)",
+      "CREATE INDEX ix_routes_destination_ ON routes (destination_id)",
+      "CREATE INDEX ix_routes_origin_id ON routes (origin_id)",
+      "CREATE INDEX ix_flights_aircraft_id ON flights (aircraft_id)",
+      "CREATE INDEX ix_flights_route_id ON flights (route_id)",
+      "CREATE INDEX ix_crew_assignm_flight_id ON crew_assignments (flight_id)",
+      "CREATE INDEX ix_disruptions_flight_id ON disruptions (flight_id)",
+      "CREATE INDEX ix_turnarounds_gate_id ON turnarounds (gate_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE flights ADD (delay_flag INTEGER DEFAULT 0 NOT NULL)",
+      "UPDATE flights SET delay_flag=CASE WHEN delay_minutes >= 15 THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_flights_flag ON flights (delay_flag)"
+    ]
+  }
+]

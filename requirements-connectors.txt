@@ -1,0 +1,12 @@
+# Optional data-source drivers. Install only what you connect to; a missing driver produces a clear message.
+# Also used by the migration pack's server runners (pack/tools).
+-r requirements.txt
+PyMySQL==1.2.3          # MySQL and MariaDB
+pyodbc==5.3.0           # SQL Server (also needs Microsoft ODBC Driver 18 on the host)
+oracledb==26.0.1        # Oracle (thin mode, no Instant Client needed)
+ibm_db==3.3.0           # Db2 LUW
+ibm_db_sa==0.4.4
+pymongo==4.18.3         # MongoDB
+elasticsearch==9.5.1    # Pack migration runner only; the app talks to Elasticsearch over HTTP
+duckdb==1.5.6           # Parquet
+openpyxl==3.1.5         # Excel .xlsx/.xlsm (CSV needs nothing extra)

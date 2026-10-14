@@ -1,0 +1,14 @@
+[
+  {
+    "question": "Which production service has the highest error count?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "What is the production p95 latency in seconds by service?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "Which incidents have no recorded recovery duration?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  }
+]

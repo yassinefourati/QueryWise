@@ -1,0 +1,20 @@
+{
+  "dynamic": "strict",
+  "properties": {
+    "observed_at": {
+      "type": "date"
+    },
+    "service": {
+      "type": "keyword"
+    },
+    "deployment_id": {
+      "type": "keyword"
+    },
+    "version": {
+      "type": "keyword"
+    },
+    "result": {
+      "type": "keyword"
+    }
+  }
+}

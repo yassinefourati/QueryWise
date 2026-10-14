@@ -1,0 +1,230 @@
+[
+  {
+    "table": "clinics",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "clinics",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "clinics",
+    "column": "region",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "patients",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "patients",
+    "column": "patient_token",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "patients",
+    "column": "birth_year",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "clinicians",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "clinicians",
+    "column": "clinic_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "clinics.id"
+    ]
+  },
+  {
+    "table": "clinicians",
+    "column": "specialty",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "procedures",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "procedures",
+    "column": "procedure_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "procedures",
+    "column": "fee_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "appointments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "appointments",
+    "column": "patient_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "patients.id"
+    ]
+  },
+  {
+    "table": "appointments",
+    "column": "clinician_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "clinicians.id"
+    ]
+  },
+  {
+    "table": "appointments",
+    "column": "scheduled_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "appointments",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claim_lines",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "claim_lines",
+    "column": "appointment_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "appointments.id"
+    ]
+  },
+  {
+    "table": "claim_lines",
+    "column": "procedure_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "procedures.id"
+    ]
+  },
+  {
+    "table": "claim_lines",
+    "column": "billed_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claim_lines",
+    "column": "allowed_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "remittances",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "remittances",
+    "column": "claim_line_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "claim_lines.id"
+    ]
+  },
+  {
+    "table": "remittances",
+    "column": "paid_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "remittances",
+    "column": "amount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "remittances",
+    "column": "reason",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

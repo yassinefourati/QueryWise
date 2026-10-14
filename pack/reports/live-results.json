@@ -1,0 +1,57 @@
+[
+  {
+    "source": "sqlite",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "source": "postgres",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "source": "mysql",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "source": "mariadb",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "source": "sqlserver",
+    "status": "SKIP",
+    "reason": "Endpoint, fixture or required native runtime unavailable"
+  },
+  {
+    "source": "oracle",
+    "status": "SKIP",
+    "reason": "Endpoint, fixture or required native runtime unavailable"
+  },
+  {
+    "source": "db2",
+    "status": "SKIP",
+    "reason": "Endpoint, fixture or required native runtime unavailable"
+  },
+  {
+    "source": "mongodb",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "source": "elasticsearch",
+    "status": "SKIP",
+    "reason": "Endpoint, fixture or required native runtime unavailable"
+  },
+  {
+    "source": "excel",
+    "status": "SKIP",
+    "reason": "Endpoint, fixture or required native runtime unavailable"
+  },
+  {
+    "source": "parquet",
+    "status": "PASS",
+    "exit_code": 0
+  }
+]

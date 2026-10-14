@@ -1,0 +1,195 @@
+[
+  {
+    "id": "complex_sqlite",
+    "kind": "sqlite",
+    "name": "Public library lending",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_SQLITE_URL",
+    "tables": [
+      "branches",
+      "members",
+      "titles",
+      "copies",
+      "loans",
+      "fines",
+      "fine_payments"
+    ],
+    "questions": "pack/sqlite/questions.json"
+  },
+  {
+    "id": "complex_postgres",
+    "kind": "postgres",
+    "name": "Renewable energy operations",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_POSTGRES_URL",
+    "tables": [
+      "sites",
+      "turbines",
+      "contracts",
+      "readings",
+      "outages",
+      "crews",
+      "work_orders",
+      "settlements"
+    ],
+    "questions": "pack/postgres/questions.json",
+    "schema": "public"
+  },
+  {
+    "id": "complex_mysql",
+    "kind": "mysql",
+    "name": "Omnichannel retail",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_MYSQL_URL",
+    "tables": [
+      "customers",
+      "products",
+      "warehouses",
+      "inventory",
+      "orders",
+      "order_lines",
+      "returns",
+      "payments"
+    ],
+    "questions": "pack/mysql/questions.json"
+  },
+  {
+    "id": "complex_mariadb",
+    "kind": "mariadb",
+    "name": "Cold-chain freight",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_MARIADB_URL",
+    "tables": [
+      "depots",
+      "vehicles",
+      "drivers",
+      "shipments",
+      "legs",
+      "temperature_scans",
+      "invoices"
+    ],
+    "questions": "pack/mariadb/questions.json"
+  },
+  {
+    "id": "complex_sqlserver",
+    "kind": "sqlserver",
+    "name": "Outpatient billing",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_SQLSERVER_URL",
+    "tables": [
+      "clinics",
+      "patients",
+      "clinicians",
+      "procedures",
+      "appointments",
+      "claim_lines",
+      "remittances"
+    ],
+    "questions": "pack/sqlserver/questions.json"
+  },
+  {
+    "id": "complex_oracle",
+    "kind": "oracle",
+    "name": "Airport operations",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_ORACLE_URL",
+    "tables": [
+      "airports",
+      "aircraft",
+      "routes",
+      "gates",
+      "flights",
+      "turnarounds",
+      "disruptions",
+      "crew_assignments"
+    ],
+    "questions": "pack/oracle/questions.json",
+    "schema": "QW_COMPLEX"
+  },
+  {
+    "id": "complex_db2",
+    "kind": "db2",
+    "name": "Property insurance",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields. Db2 runs through the generic ANSI SQL path; review analytics.sql for native-only joins.",
+    "url_env": "QUERYWISE_DB2_URL",
+    "tables": [
+      "policyholders",
+      "policies",
+      "coverages",
+      "claims",
+      "reserve_changes",
+      "claim_payments",
+      "recoveries"
+    ],
+    "questions": "pack/db2/questions.json",
+    "schema": "QW_COMPLEX"
+  },
+  {
+    "id": "complex_mongodb",
+    "kind": "mongodb",
+    "name": "Online learning",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_MONGODB_URL",
+    "database": "qw_complex_learning",
+    "tables": [
+      "courses",
+      "learners",
+      "enrollments",
+      "attempts"
+    ]
+  },
+  {
+    "id": "complex_elasticsearch",
+    "kind": "elasticsearch",
+    "name": "Service reliability",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "url_env": "QUERYWISE_ELASTICSEARCH_URL",
+    "tables": [
+      "qw-complex-reliability-requests",
+      "qw-complex-reliability-deployments-v1",
+      "qw-complex-reliability-incidents-v1"
+    ],
+    "options": {
+      "api_key_env": "QUERYWISE_ELASTICSEARCH_API_KEY"
+    }
+  },
+  {
+    "id": "complex_excel",
+    "kind": "excel",
+    "name": "Nonprofit grant administration",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "path_env": "QUERYWISE_EXCEL_PATH",
+    "tables": [
+      "donors",
+      "programs",
+      "awards",
+      "disbursements",
+      "milestones"
+    ]
+  },
+  {
+    "id": "complex_parquet",
+    "kind": "parquet",
+    "name": "Environmental sensors",
+    "description": "Synthetic complex business migration fixture",
+    "definitions": "Dates refer to 2026. Money is integer CAD cents. Never mix cents and dollars. Pre-aggregate independent child relations before joining. Missing values are not zero. Migration flags are snapshots, not continuously calculated fields.",
+    "path_env": "QUERYWISE_PARQUET_PATH",
+    "tables": [
+      "analytics_readings",
+      "readings",
+      "sensors",
+      "sites",
+      "calibrations"
+    ]
+  }
+]

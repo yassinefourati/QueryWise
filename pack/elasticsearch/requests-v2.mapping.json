@@ -1,0 +1,38 @@
+{
+  "dynamic": "strict",
+  "properties": {
+    "observed_at": {
+      "type": "date"
+    },
+    "service": {
+      "type": "keyword"
+    },
+    "event_id": {
+      "type": "keyword"
+    },
+    "environment": {
+      "type": "keyword"
+    },
+    "duration_ms": {
+      "type": "long"
+    },
+    "status_code": {
+      "type": "integer"
+    },
+    "trace_id": {
+      "type": "keyword"
+    },
+    "deployment_id": {
+      "type": "keyword"
+    },
+    "location": {
+      "type": "geo_point"
+    },
+    "schema_version": {
+      "type": "integer"
+    },
+    "latency_seconds": {
+      "type": "double"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE clinics (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tregion VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE patients (\n\tid INTEGER NOT NULL, \n\tpatient_token VARCHAR(32) NOT NULL, \n\tbirth_year INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_patients_0 CHECK (birth_year BETWEEN 1900 AND 2026), \n\tCONSTRAINT uq_patients_0 UNIQUE (patient_token)\n)",
+      "CREATE TABLE procedures (\n\tid INTEGER NOT NULL, \n\tprocedure_code VARCHAR(32) NOT NULL, \n\tfee_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_procedures_0 CHECK (fee_cents >= 0), \n\tCONSTRAINT uq_procedures_0 UNIQUE (procedure_code)\n)",
+      "CREATE TABLE clinicians (\n\tid INTEGER NOT NULL, \n\tclinic_id INTEGER NOT NULL, \n\tspecialty VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(clinic_id) REFERENCES clinics (id)\n)",
+      "CREATE TABLE appointments (\n\tid INTEGER NOT NULL, \n\tpatient_id INTEGER NOT NULL, \n\tclinician_id INTEGER NOT NULL, \n\tscheduled_on DATETIME NOT NULL, \n\tstatus VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_appointments_0 CHECK (status IN ('attended','cancelled','no_show')), \n\tFOREIGN KEY(patient_id) REFERENCES patients (id), \n\tFOREIGN KEY(clinician_id) REFERENCES clinicians (id)\n)",
+      "CREATE TABLE claim_lines (\n\tid INTEGER NOT NULL, \n\tappointment_id INTEGER NOT NULL, \n\tprocedure_id INTEGER NOT NULL, \n\tbilled_cents BIGINT NOT NULL, \n\tallowed_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_claim_lines_0 CHECK (billed_cents >= 0), \n\tCONSTRAINT ck_claim_lines_1 CHECK (allowed_cents >= 0 AND allowed_cents <= billed_cents), \n\tFOREIGN KEY(appointment_id) REFERENCES appointments (id), \n\tFOREIGN KEY(procedure_id) REFERENCES procedures (id)\n)",
+      "CREATE TABLE remittances (\n\tid INTEGER NOT NULL, \n\tclaim_line_id INTEGER NOT NULL, \n\tpaid_on DATETIME NOT NULL, \n\tamount_cents BIGINT NOT NULL, \n\treason VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(claim_line_id) REFERENCES claim_lines (id)\n)",
+      "CREATE INDEX ix_clinicians_clinic_id ON clinicians (clinic_id)",
+      "CREATE INDEX ix_appointments_clinician_id ON appointments (clinician_id)",
+      "CREATE INDEX ix_appointments_patient_id ON appointments (patient_id)",
+      "CREATE INDEX ix_claim_lines_appointment_ ON claim_lines (appointment_id)",
+      "CREATE INDEX ix_claim_lines_procedure_id ON claim_lines (procedure_id)",
+      "CREATE INDEX ix_remittances_claim_line_i ON remittances (claim_line_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE appointments ADD no_show_flag INTEGER NOT NULL DEFAULT 0",
+      "UPDATE appointments SET no_show_flag=CASE WHEN status = 'no_show' THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_appointments_flag ON appointments (no_show_flag)"
+    ]
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "table": "policyholders",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "policyholders",
+    "column": "holder_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "policyholders",
+    "column": "region",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "policies",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "policies",
+    "column": "holder_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "policyholders.id"
+    ]
+  },
+  {
+    "table": "policies",
+    "column": "policy_number",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "policies",
+    "column": "starts_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "policies",
+    "column": "ends_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "policies",
+    "column": "premium_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "coverages",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "coverages",
+    "column": "policy_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "policies.id"
+    ]
+  },
+  {
+    "table": "coverages",
+    "column": "peril",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "coverages",
+    "column": "limit_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "coverages",
+    "column": "deductible_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claims",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "claims",
+    "column": "coverage_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "coverages.id"
+    ]
+  },
+  {
+    "table": "claims",
+    "column": "loss_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claims",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claims",
+    "column": "reported_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "reserve_changes",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "reserve_changes",
+    "column": "claim_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "claims.id"
+    ]
+  },
+  {
+    "table": "reserve_changes",
+    "column": "posted_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "reserve_changes",
+    "column": "delta_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claim_payments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "claim_payments",
+    "column": "claim_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "claims.id"
+    ]
+  },
+  {
+    "table": "claim_payments",
+    "column": "posted_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "claim_payments",
+    "column": "amount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "recoveries",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "recoveries",
+    "column": "claim_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "claims.id"
+    ]
+  },
+  {
+    "table": "recoveries",
+    "column": "posted_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "recoveries",
+    "column": "amount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

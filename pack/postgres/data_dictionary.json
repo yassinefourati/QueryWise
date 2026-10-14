@@ -1,0 +1,304 @@
+[
+  {
+    "table": "sites",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "sites",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "sites",
+    "column": "region",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "sites",
+    "column": "latitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "sites",
+    "column": "longitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "turbines",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "turbines",
+    "column": "site_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "sites.id"
+    ]
+  },
+  {
+    "table": "turbines",
+    "column": "serial",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "turbines",
+    "column": "capacity_kw",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "contracts",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "contracts",
+    "column": "site_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "sites.id"
+    ]
+  },
+  {
+    "table": "contracts",
+    "column": "starts_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "contracts",
+    "column": "ends_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "contracts",
+    "column": "rate_micros",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "readings",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "readings",
+    "column": "turbine_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "turbines.id"
+    ]
+  },
+  {
+    "table": "readings",
+    "column": "observed_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "readings",
+    "column": "energy_wh",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "readings",
+    "column": "quality",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "outages",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "outages",
+    "column": "turbine_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "turbines.id"
+    ]
+  },
+  {
+    "table": "outages",
+    "column": "started_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "outages",
+    "column": "duration_minutes",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "outages",
+    "column": "reason",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "crews",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "crews",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "crews",
+    "column": "specialty",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "work_orders",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "work_orders",
+    "column": "outage_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "outages.id"
+    ]
+  },
+  {
+    "table": "work_orders",
+    "column": "crew_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "crews.id"
+    ]
+  },
+  {
+    "table": "work_orders",
+    "column": "cost_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "work_orders",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "settlements",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "settlements",
+    "column": "contract_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "contracts.id"
+    ]
+  },
+  {
+    "table": "settlements",
+    "column": "period_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "settlements",
+    "column": "paid_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

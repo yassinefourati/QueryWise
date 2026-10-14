@@ -1,0 +1,320 @@
+[
+  {
+    "table": "customers",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "customers",
+    "column": "customer_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "customers",
+    "column": "segment",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "customers",
+    "column": "province",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "products",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "products",
+    "column": "sku",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "products",
+    "column": "category",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "products",
+    "column": "price_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "products",
+    "column": "cost_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "warehouses",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "warehouses",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "warehouses",
+    "column": "latitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "warehouses",
+    "column": "longitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "inventory",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "inventory",
+    "column": "warehouse_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "warehouses.id"
+    ]
+  },
+  {
+    "table": "inventory",
+    "column": "product_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "products.id"
+    ]
+  },
+  {
+    "table": "inventory",
+    "column": "on_hand",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "inventory",
+    "column": "reserved",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "orders",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "orders",
+    "column": "customer_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "customers.id"
+    ]
+  },
+  {
+    "table": "orders",
+    "column": "ordered_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "orders",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "order_lines",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "order_lines",
+    "column": "order_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "orders.id"
+    ]
+  },
+  {
+    "table": "order_lines",
+    "column": "product_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "products.id"
+    ]
+  },
+  {
+    "table": "order_lines",
+    "column": "quantity",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "order_lines",
+    "column": "unit_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "order_lines",
+    "column": "discount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "returns",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "returns",
+    "column": "line_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "order_lines.id"
+    ]
+  },
+  {
+    "table": "returns",
+    "column": "returned_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "returns",
+    "column": "quantity",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "returns",
+    "column": "refund_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "payments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "payments",
+    "column": "order_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "orders.id"
+    ]
+  },
+  {
+    "table": "payments",
+    "column": "paid_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "payments",
+    "column": "amount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "payments",
+    "column": "method",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

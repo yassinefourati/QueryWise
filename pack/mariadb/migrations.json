@@ -1,0 +1,30 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE depots (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tlatitude NUMERIC(14, 3) NOT NULL, \n\tlongitude NUMERIC(14, 3) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE vehicles (\n\tid INTEGER NOT NULL, \n\tregistration VARCHAR(32) NOT NULL, \n\tcapacity_kg INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_vehicles_0 CHECK (capacity_kg > 0), \n\tCONSTRAINT uq_vehicles_0 UNIQUE (registration)\n)",
+      "CREATE TABLE drivers (\n\tid INTEGER NOT NULL, \n\tdriver_code VARCHAR(32) NOT NULL, \n\thome_depot_id INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_drivers_0 UNIQUE (driver_code), \n\tFOREIGN KEY(home_depot_id) REFERENCES depots (id)\n)",
+      "CREATE TABLE shipments (\n\tid INTEGER NOT NULL, \n\torigin_id INTEGER NOT NULL, \n\tdestination_id INTEGER NOT NULL, \n\tpromised_on DATE NOT NULL, \n\tdelivered_on DATE, \n\tweight_kg INTEGER NOT NULL, \n\tstatus VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_shipments_0 CHECK (origin_id <> destination_id), \n\tCONSTRAINT ck_shipments_1 CHECK (weight_kg > 0), \n\tFOREIGN KEY(origin_id) REFERENCES depots (id), \n\tFOREIGN KEY(destination_id) REFERENCES depots (id)\n)",
+      "CREATE TABLE invoices (\n\tid INTEGER NOT NULL, \n\tshipment_id INTEGER NOT NULL, \n\tbilled_cents BIGINT NOT NULL, \n\tfuel_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_invoices_0 CHECK (billed_cents >= 0), \n\tCONSTRAINT ck_invoices_1 CHECK (fuel_cents >= 0), \n\tCONSTRAINT uq_invoices_0 UNIQUE (shipment_id), \n\tFOREIGN KEY(shipment_id) REFERENCES shipments (id)\n)",
+      "CREATE TABLE legs (\n\tid INTEGER NOT NULL, \n\tshipment_id INTEGER NOT NULL, \n\tvehicle_id INTEGER NOT NULL, \n\tdriver_id INTEGER NOT NULL, \n\tdistance_km INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_legs_0 CHECK (distance_km > 0), \n\tFOREIGN KEY(shipment_id) REFERENCES shipments (id), \n\tFOREIGN KEY(vehicle_id) REFERENCES vehicles (id), \n\tFOREIGN KEY(driver_id) REFERENCES drivers (id)\n)",
+      "CREATE TABLE temperature_scans (\n\tid INTEGER NOT NULL, \n\tleg_id INTEGER NOT NULL, \n\tobserved_on DATE NOT NULL, \n\ttemperature_c NUMERIC(14, 3), \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(leg_id) REFERENCES legs (id)\n)",
+      "CREATE INDEX ix_drivers_home_depot_i ON drivers (home_depot_id)",
+      "CREATE INDEX ix_shipments_destination_ ON shipments (destination_id)",
+      "CREATE INDEX ix_shipments_origin_id ON shipments (origin_id)",
+      "CREATE INDEX ix_invoices_shipment_id ON invoices (shipment_id)",
+      "CREATE INDEX ix_legs_driver_id ON legs (driver_id)",
+      "CREATE INDEX ix_legs_shipment_id ON legs (shipment_id)",
+      "CREATE INDEX ix_legs_vehicle_id ON legs (vehicle_id)",
+      "CREATE INDEX ix_temperature__leg_id ON temperature_scans (leg_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE shipments ADD late_flag INTEGER NOT NULL DEFAULT 0",
+      "UPDATE shipments SET late_flag=CASE WHEN delivered_on > promised_on THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_shipments_flag ON shipments (late_flag)"
+    ]
+  }
+]

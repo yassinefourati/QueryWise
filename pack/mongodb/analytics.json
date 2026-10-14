@@ -1,0 +1,50 @@
+{
+  "active_minutes_by_course": [
+    {
+      "$match": {
+        "status": "active"
+      }
+    },
+    {
+      "$group": {
+        "_id": "$course_id",
+        "minutes": {
+          "$sum": "$learning_minutes"
+        }
+      }
+    },
+    {
+      "$sort": {
+        "_id": 1
+      }
+    }
+  ],
+  "scores_by_course": [
+    {
+      "$lookup": {
+        "from": "enrollments",
+        "localField": "enrollment_id",
+        "foreignField": "_id",
+        "as": "enrollment"
+      }
+    },
+    {
+      "$unwind": "$enrollment"
+    },
+    {
+      "$match": {
+        "score": {
+          "$ne": null
+        }
+      }
+    },
+    {
+      "$group": {
+        "_id": "$enrollment.course_id",
+        "average_score": {
+          "$avg": "$score"
+        }
+      }
+    }
+  ]
+}

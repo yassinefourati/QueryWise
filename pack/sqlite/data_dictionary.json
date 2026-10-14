@@ -1,0 +1,264 @@
+[
+  {
+    "table": "branches",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "branches",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "branches",
+    "column": "city",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "branches",
+    "column": "latitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "branches",
+    "column": "longitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "members",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "members",
+    "column": "branch_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "branches.id"
+    ]
+  },
+  {
+    "table": "members",
+    "column": "member_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "members",
+    "column": "joined_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "titles",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "titles",
+    "column": "isbn",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "titles",
+    "column": "title",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "titles",
+    "column": "genre",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "copies",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "copies",
+    "column": "title_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "titles.id"
+    ]
+  },
+  {
+    "table": "copies",
+    "column": "branch_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "branches.id"
+    ]
+  },
+  {
+    "table": "copies",
+    "column": "barcode",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "loans",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "loans",
+    "column": "copy_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "copies.id"
+    ]
+  },
+  {
+    "table": "loans",
+    "column": "member_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "members.id"
+    ]
+  },
+  {
+    "table": "loans",
+    "column": "borrowed_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "loans",
+    "column": "due_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "loans",
+    "column": "returned_on",
+    "type": "DATE",
+    "nullable": true,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "fines",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "fines",
+    "column": "loan_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "loans.id"
+    ]
+  },
+  {
+    "table": "fines",
+    "column": "assessed_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "fines",
+    "column": "waived_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "fine_payments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "fine_payments",
+    "column": "fine_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "fines.id"
+    ]
+  },
+  {
+    "table": "fine_payments",
+    "column": "paid_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "fine_payments",
+    "column": "amount_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

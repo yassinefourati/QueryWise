@@ -1,0 +1,36 @@
+[
+  {
+    "source": "complex_sqlite",
+    "status": "PASS",
+    "columns": [
+      "loans"
+    ],
+    "rows": [
+      [
+        120
+      ]
+    ]
+  },
+  {
+    "source": "complex_parquet",
+    "status": "PASS",
+    "columns": [
+      "quality",
+      "readings"
+    ],
+    "rows": [
+      [
+        "missing",
+        63
+      ],
+      [
+        "outlier",
+        239
+      ],
+      [
+        "valid",
+        898
+      ]
+    ]
+  }
+]

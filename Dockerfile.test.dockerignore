@@ -1,0 +1,17 @@
+.git
+.venv
+node_modules
+data
+.env
+.env.*
+!.env.example
+.querywise
+*.key
+__pycache__
+.pytest_cache
+pack/output
+pack/querywise-sources.json
+querywise-sources.json
+test-results
+eval-results.json
+dist/querywise-source.zip

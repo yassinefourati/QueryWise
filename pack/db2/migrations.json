@@ -1,0 +1,28 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE policyholders (\n\tid INT NOT NULL, \n\tholder_code VARCHAR(32) NOT NULL, \n\tregion VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_policyholder_0 UNIQUE (holder_code)\n)",
+      "CREATE TABLE policies (\n\tid INT NOT NULL, \n\tholder_id INT NOT NULL, \n\tpolicy_number VARCHAR(32) NOT NULL, \n\tstarts_on DATE NOT NULL, \n\tends_on DATE NOT NULL, \n\tpremium_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_policies_0 CHECK (ends_on >= starts_on), \n\tCONSTRAINT ck_policies_1 CHECK (premium_cents >= 0), \n\tCONSTRAINT uq_policies_0 UNIQUE (policy_number), \n\tFOREIGN KEY(holder_id) REFERENCES policyholders (id)\n)",
+      "CREATE TABLE coverages (\n\tid INT NOT NULL, \n\tpolicy_id INT NOT NULL, \n\tperil VARCHAR(32) NOT NULL, \n\tlimit_cents BIGINT NOT NULL, \n\tdeductible_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_coverages_0 CHECK (limit_cents > 0), \n\tCONSTRAINT ck_coverages_1 CHECK (deductible_cents >= 0), \n\tCONSTRAINT uq_coverages_0 UNIQUE (policy_id, peril), \n\tFOREIGN KEY(policy_id) REFERENCES policies (id)\n)",
+      "CREATE TABLE claims (\n\tid INT NOT NULL, \n\tcoverage_id INT NOT NULL, \n\tloss_on DATE NOT NULL, \n\tstatus VARCHAR(32) NOT NULL, \n\treported_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_claims_0 CHECK (reported_cents >= 0), \n\tCONSTRAINT ck_claims_1 CHECK (status IN ('open','closed','denied')), \n\tFOREIGN KEY(coverage_id) REFERENCES coverages (id)\n)",
+      "CREATE TABLE claim_payments (\n\tid INT NOT NULL, \n\tclaim_id INT NOT NULL, \n\tposted_on DATE NOT NULL, \n\tamount_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_claim_paymen_0 CHECK (amount_cents > 0), \n\tFOREIGN KEY(claim_id) REFERENCES claims (id)\n)",
+      "CREATE TABLE recoveries (\n\tid INT NOT NULL, \n\tclaim_id INT NOT NULL, \n\tposted_on DATE NOT NULL, \n\tamount_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_recoveries_0 CHECK (amount_cents > 0), \n\tFOREIGN KEY(claim_id) REFERENCES claims (id)\n)",
+      "CREATE TABLE reserve_changes (\n\tid INT NOT NULL, \n\tclaim_id INT NOT NULL, \n\tposted_on DATE NOT NULL, \n\tdelta_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(claim_id) REFERENCES claims (id)\n)",
+      "CREATE INDEX ix_policies_holder_id ON policies (holder_id)",
+      "CREATE INDEX ix_coverages_policy_id ON coverages (policy_id)",
+      "CREATE INDEX ix_claims_coverage_id ON claims (coverage_id)",
+      "CREATE INDEX ix_claim_paymen_claim_id ON claim_payments (claim_id)",
+      "CREATE INDEX ix_recoveries_claim_id ON recoveries (claim_id)",
+      "CREATE INDEX ix_reserve_chan_claim_id ON reserve_changes (claim_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE claims ADD COLUMN large_loss_flag INTEGER DEFAULT 0 NOT NULL",
+      "UPDATE claims SET large_loss_flag=CASE WHEN reported_cents >= 210000 THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_claims_flag ON claims (large_loss_flag)"
+    ]
+  }
+]

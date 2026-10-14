@@ -1,0 +1,61 @@
+{
+  "receivables": {
+    "columns": [
+      "name",
+      "outstanding_cents"
+    ],
+    "rows": [
+      [
+        "Clinic 1",
+        0
+      ],
+      [
+        "Clinic 2",
+        0
+      ],
+      [
+        "Clinic 3",
+        0
+      ],
+      [
+        "Clinic 4",
+        11000
+      ]
+    ]
+  },
+  "no_shows": {
+    "columns": [
+      "specialty",
+      "appointments",
+      "no_shows"
+    ],
+    "rows": [
+      [
+        "general",
+        60,
+        12
+      ],
+      [
+        "physio",
+        60,
+        0
+      ]
+    ]
+  },
+  "upgrade_flags": {
+    "columns": [
+      "no_show_flag",
+      "records"
+    ],
+    "rows": [
+      [
+        0,
+        108
+      ],
+      [
+        1,
+        12
+      ]
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "courses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "title",
+        "category",
+        "lessons"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "title": {
+          "bsonType": "string"
+        },
+        "lessons": {
+          "bsonType": "array"
+        }
+      }
+    }
+  },
+  "learners": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "learner_code",
+        "profile"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "profile": {
+          "bsonType": "object"
+        }
+      }
+    }
+  },
+  "enrollments": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "learner_id",
+        "course_id",
+        "cohort",
+        "status",
+        "duration_seconds",
+        "schema_version",
+        "learning_minutes"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "learner_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "course_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "status": {
+          "enum": [
+            "active",
+            "cancelled"
+          ]
+        },
+        "duration_seconds": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ],
+          "minimum": 0
+        },
+        "schema_version": {
+          "enum": [
+            2
+          ]
+        },
+        "learning_minutes": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ],
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "attempts": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": [
+        "_id",
+        "enrollment_id",
+        "lesson_id",
+        "score",
+        "submitted_on"
+      ],
+      "properties": {
+        "_id": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        },
+        "score": {
+          "bsonType": [
+            "int",
+            "long",
+            "double",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    }
+  }
+}

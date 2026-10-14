@@ -1,0 +1,55 @@
+{
+  "createRole": "qw_reader",
+  "privileges": [
+    {
+      "resource": {
+        "db": "qw_complex_learning",
+        "collection": "courses"
+      },
+      "actions": [
+        "find",
+        "listIndexes"
+      ]
+    },
+    {
+      "resource": {
+        "db": "qw_complex_learning",
+        "collection": "learners"
+      },
+      "actions": [
+        "find",
+        "listIndexes"
+      ]
+    },
+    {
+      "resource": {
+        "db": "qw_complex_learning",
+        "collection": "enrollments"
+      },
+      "actions": [
+        "find",
+        "listIndexes"
+      ]
+    },
+    {
+      "resource": {
+        "db": "qw_complex_learning",
+        "collection": "attempts"
+      },
+      "actions": [
+        "find",
+        "listIndexes"
+      ]
+    },
+    {
+      "resource": {
+        "db": "qw_complex_learning",
+        "collection": ""
+      },
+      "actions": [
+        "listCollections"
+      ]
+    }
+  ],
+  "roles": []
+}

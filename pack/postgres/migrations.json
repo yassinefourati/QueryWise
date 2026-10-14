@@ -1,0 +1,30 @@
+[
+  {
+    "version": 1,
+    "statements": [
+      "CREATE TABLE crews (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tspecialty VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE sites (\n\tid INTEGER NOT NULL, \n\tname VARCHAR(120) NOT NULL, \n\tregion VARCHAR(32) NOT NULL, \n\tlatitude NUMERIC(14, 3) NOT NULL, \n\tlongitude NUMERIC(14, 3) NOT NULL, \n\tPRIMARY KEY (id)\n)",
+      "CREATE TABLE contracts (\n\tid INTEGER NOT NULL, \n\tsite_id INTEGER NOT NULL, \n\tstarts_on DATE NOT NULL, \n\tends_on DATE NOT NULL, \n\trate_micros INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_contracts_0 CHECK (ends_on >= starts_on), \n\tCONSTRAINT ck_contracts_1 CHECK (rate_micros >= 0), \n\tFOREIGN KEY(site_id) REFERENCES sites (id)\n)",
+      "CREATE TABLE turbines (\n\tid INTEGER NOT NULL, \n\tsite_id INTEGER NOT NULL, \n\tserial VARCHAR(32) NOT NULL, \n\tcapacity_kw INTEGER NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_turbines_0 CHECK (capacity_kw > 0), \n\tCONSTRAINT uq_turbines_0 UNIQUE (serial), \n\tFOREIGN KEY(site_id) REFERENCES sites (id)\n)",
+      "CREATE TABLE outages (\n\tid INTEGER NOT NULL, \n\tturbine_id INTEGER NOT NULL, \n\tstarted_on DATE NOT NULL, \n\tduration_minutes INTEGER NOT NULL, \n\treason VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_outages_0 CHECK (duration_minutes >= 0), \n\tFOREIGN KEY(turbine_id) REFERENCES turbines (id)\n)",
+      "CREATE TABLE readings (\n\tid INTEGER NOT NULL, \n\tturbine_id INTEGER NOT NULL, \n\tobserved_on DATE NOT NULL, \n\tenergy_wh BIGINT NOT NULL, \n\tquality VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_readings_0 CHECK (quality IN ('valid','estimated','invalid')), \n\tCONSTRAINT ck_readings_1 CHECK (energy_wh >= 0), \n\tCONSTRAINT uq_readings_0 UNIQUE (turbine_id, observed_on), \n\tFOREIGN KEY(turbine_id) REFERENCES turbines (id)\n)",
+      "CREATE TABLE settlements (\n\tid INTEGER NOT NULL, \n\tcontract_id INTEGER NOT NULL, \n\tperiod_on DATE NOT NULL, \n\tpaid_cents BIGINT NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT uq_settlements_0 UNIQUE (contract_id, period_on), \n\tFOREIGN KEY(contract_id) REFERENCES contracts (id)\n)",
+      "CREATE TABLE work_orders (\n\tid INTEGER NOT NULL, \n\toutage_id INTEGER NOT NULL, \n\tcrew_id INTEGER NOT NULL, \n\tcost_cents BIGINT NOT NULL, \n\tstatus VARCHAR(32) NOT NULL, \n\tPRIMARY KEY (id), \n\tCONSTRAINT ck_work_orders_0 CHECK (cost_cents >= 0), \n\tFOREIGN KEY(outage_id) REFERENCES outages (id), \n\tFOREIGN KEY(crew_id) REFERENCES crews (id)\n)",
+      "CREATE INDEX ix_contracts_site_id ON contracts (site_id)",
+      "CREATE INDEX ix_turbines_site_id ON turbines (site_id)",
+      "CREATE INDEX ix_outages_turbine_id ON outages (turbine_id)",
+      "CREATE INDEX ix_readings_turbine_id ON readings (turbine_id)",
+      "CREATE INDEX ix_settlements_contract_id ON settlements (contract_id)",
+      "CREATE INDEX ix_work_orders_crew_id ON work_orders (crew_id)",
+      "CREATE INDEX ix_work_orders_outage_id ON work_orders (outage_id)"
+    ]
+  },
+  {
+    "version": 2,
+    "statements": [
+      "ALTER TABLE readings ADD COLUMN review_flag INTEGER DEFAULT 0 NOT NULL",
+      "UPDATE readings SET review_flag=CASE WHEN quality = 'invalid' OR energy_wh = 0 THEN 1 ELSE 0 END",
+      "CREATE INDEX ix_readings_flag ON readings (review_flag)"
+    ]
+  }
+]

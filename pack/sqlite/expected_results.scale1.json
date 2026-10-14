@@ -1,0 +1,66 @@
+{
+  "outstanding_fines": {
+    "columns": [
+      "name",
+      "outstanding_cents"
+    ],
+    "rows": [
+      [
+        "Branch 1",
+        3000
+      ],
+      [
+        "Branch 2",
+        2000
+      ],
+      [
+        "Branch 3",
+        3000
+      ],
+      [
+        "Branch 4",
+        4000
+      ]
+    ]
+  },
+  "circulation": {
+    "columns": [
+      "genre",
+      "loans",
+      "popularity_rank"
+    ],
+    "rows": [
+      [
+        "history",
+        42,
+        1
+      ],
+      [
+        "fiction",
+        39,
+        2
+      ],
+      [
+        "science",
+        39,
+        2
+      ]
+    ]
+  },
+  "upgrade_flags": {
+    "columns": [
+      "overdue_flag",
+      "records"
+    ],
+    "rows": [
+      [
+        0,
+        96
+      ],
+      [
+        1,
+        24
+      ]
+    ]
+  }
+}

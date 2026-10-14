@@ -1,0 +1,14 @@
+[
+  {
+    "question": "What is the average calibrated temperature by region and day?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "What fraction of readings are missing per sensor?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "Where are outliers concentrated?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  }
+]

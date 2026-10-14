@@ -1,0 +1,45 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        CONNECTORS: ${CONNECTORS:-}
+    ports:
+      - "127.0.0.1:8000:8000"
+    # Empty values mean "not set": the app falls back to settings saved in the UI, then defaults.
+    environment:
+      AI_PROVIDER: ${AI_PROVIDER:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
+      ANTHROPIC_EFFORT: ${ANTHROPIC_EFFORT:-}
+      ANTHROPIC_WORKSPACE_ID: ${ANTHROPIC_WORKSPACE_ID:-}
+      ANTHROPIC_FALLBACKS: ${ANTHROPIC_FALLBACKS:-}
+      OLLAMA_URL: ${OLLAMA_URL:-}
+      OLLAMA_DEFAULT_URL: ${OLLAMA_DEFAULT_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-}
+      DATABASE_URL: ${DATABASE_URL:-}
+      QUERYWISE_SECRET_KEY: ${QUERYWISE_SECRET_KEY:-}
+      QUERYWISE_SOURCES_FILE: ${QUERYWISE_SOURCES_FILE:-}
+      QUERYWISE_DEFAULT_SOURCE: ${QUERYWISE_DEFAULT_SOURCE:-}
+      QUERYWISE_STATE_DIR: /app/state
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      # Only writable location: encrypted app-state DB and its key file.
+      - querywise-state:/app/state
+      # To query local files (SQLite/Excel/Parquet), mount them read-only and use container paths, e.g.:
+      # - ./pack/output:/app/user-data/pack:ro
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 20s
+      timeout: 5s
+      retries: 3
+volumes:
+  querywise-state:

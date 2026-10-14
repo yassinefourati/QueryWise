@@ -1,0 +1,1 @@
+-- SQLite has no SQL users/roles. Use OS permissions and read-only URI mode.

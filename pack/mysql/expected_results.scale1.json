@@ -1,0 +1,46 @@
+{
+  "net_sales": {
+    "columns": [
+      "category",
+      "net_cents"
+    ],
+    "rows": [
+      [
+        "electronics",
+        173400
+      ],
+      [
+        "home",
+        190100
+      ],
+      [
+        "outdoors",
+        174400
+      ]
+    ]
+  },
+  "payment_reconciliation": {
+    "columns": [
+      "id",
+      "charged",
+      "paid"
+    ],
+    "rows": []
+  },
+  "upgrade_flags": {
+    "columns": [
+      "review_flag",
+      "records"
+    ],
+    "rows": [
+      [
+        0,
+        108
+      ],
+      [
+        1,
+        12
+      ]
+    ]
+  }
+}

@@ -1,0 +1,1976 @@
+{
+  "requests": [
+    {
+      "event_id": "1",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-02T12:00:00Z",
+      "duration_ms": 1,
+      "status_code": 200,
+      "trace_id": "trace-00000001",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "2",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-03T12:00:00Z",
+      "duration_ms": 2,
+      "status_code": 200,
+      "trace_id": "trace-00000002",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "3",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-04T12:00:00Z",
+      "duration_ms": 3,
+      "status_code": 200,
+      "trace_id": "trace-00000003",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "4",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-05T12:00:00Z",
+      "duration_ms": 4,
+      "status_code": 200,
+      "trace_id": "trace-00000004",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "5",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-06T12:00:00Z",
+      "duration_ms": 5,
+      "status_code": 200,
+      "trace_id": "trace-00000005",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "6",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-07T12:00:00Z",
+      "duration_ms": 6,
+      "status_code": 200,
+      "trace_id": "trace-00000006",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "7",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-08T12:00:00Z",
+      "duration_ms": 7,
+      "status_code": 200,
+      "trace_id": "trace-00000007",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "8",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-09T12:00:00Z",
+      "duration_ms": 8,
+      "status_code": 200,
+      "trace_id": "trace-00000008",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "9",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-10T12:00:00Z",
+      "duration_ms": 9,
+      "status_code": 200,
+      "trace_id": "trace-00000009",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "10",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-11T12:00:00Z",
+      "duration_ms": 10,
+      "status_code": 200,
+      "trace_id": "trace-00000010",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "11",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-12T12:00:00Z",
+      "duration_ms": 11,
+      "status_code": 500,
+      "trace_id": "trace-00000011",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "12",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-13T12:00:00Z",
+      "duration_ms": 12,
+      "status_code": 200,
+      "trace_id": "trace-00000012",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "13",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-14T12:00:00Z",
+      "duration_ms": 13,
+      "status_code": 200,
+      "trace_id": "trace-00000013",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "14",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-15T12:00:00Z",
+      "duration_ms": 14,
+      "status_code": 200,
+      "trace_id": "trace-00000014",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "15",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-16T12:00:00Z",
+      "duration_ms": 15,
+      "status_code": 200,
+      "trace_id": "trace-00000015",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "16",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-17T12:00:00Z",
+      "duration_ms": 16,
+      "status_code": 200,
+      "trace_id": "trace-00000016",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "17",
+      "service": "gateway",
+      "environment": "staging",
+      "observed_at": "2026-09-18T12:00:00Z",
+      "duration_ms": 17,
+      "status_code": 200,
+      "trace_id": "trace-00000017",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "18",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-19T12:00:00Z",
+      "duration_ms": 18,
+      "status_code": 200,
+      "trace_id": "trace-00000018",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "19",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-20T12:00:00Z",
+      "duration_ms": 19,
+      "status_code": 200,
+      "trace_id": "trace-00000019",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "20",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-21T12:00:00Z",
+      "duration_ms": 20,
+      "status_code": 200,
+      "trace_id": "trace-00000020",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "21",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-22T12:00:00Z",
+      "duration_ms": 21,
+      "status_code": 200,
+      "trace_id": "trace-00000021",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "22",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-23T12:00:00Z",
+      "duration_ms": 22,
+      "status_code": 500,
+      "trace_id": "trace-00000022",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "23",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-24T12:00:00Z",
+      "duration_ms": 23,
+      "status_code": 200,
+      "trace_id": "trace-00000023",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "24",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-25T12:00:00Z",
+      "duration_ms": 24,
+      "status_code": 200,
+      "trace_id": "trace-00000024",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "25",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-26T12:00:00Z",
+      "duration_ms": 25,
+      "status_code": 200,
+      "trace_id": "trace-00000025",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "26",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-27T12:00:00Z",
+      "duration_ms": 26,
+      "status_code": 200,
+      "trace_id": "trace-00000026",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "27",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-28T12:00:00Z",
+      "duration_ms": 27,
+      "status_code": 200,
+      "trace_id": "trace-00000027",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "28",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-01T12:00:00Z",
+      "duration_ms": 28,
+      "status_code": 200,
+      "trace_id": "trace-00000028",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "29",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-02T12:00:00Z",
+      "duration_ms": 29,
+      "status_code": 200,
+      "trace_id": "trace-00000029",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "30",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-03T12:00:00Z",
+      "duration_ms": 30,
+      "status_code": 200,
+      "trace_id": "trace-00000030",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "31",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-04T12:00:00Z",
+      "duration_ms": 31,
+      "status_code": 200,
+      "trace_id": "trace-00000031",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "32",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-05T12:00:00Z",
+      "duration_ms": 32,
+      "status_code": 200,
+      "trace_id": "trace-00000032",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "33",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-06T12:00:00Z",
+      "duration_ms": 33,
+      "status_code": 500,
+      "trace_id": "trace-00000033",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "34",
+      "service": "worker",
+      "environment": "staging",
+      "observed_at": "2026-09-07T12:00:00Z",
+      "duration_ms": 34,
+      "status_code": 200,
+      "trace_id": "trace-00000034",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "35",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-08T12:00:00Z",
+      "duration_ms": 35,
+      "status_code": 200,
+      "trace_id": "trace-00000035",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "36",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-09T12:00:00Z",
+      "duration_ms": 36,
+      "status_code": 200,
+      "trace_id": "trace-00000036",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "37",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-10T12:00:00Z",
+      "duration_ms": 37,
+      "status_code": 200,
+      "trace_id": "trace-00000037",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "38",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-11T12:00:00Z",
+      "duration_ms": 38,
+      "status_code": 200,
+      "trace_id": "trace-00000038",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "39",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-12T12:00:00Z",
+      "duration_ms": 39,
+      "status_code": 200,
+      "trace_id": "trace-00000039",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "40",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-13T12:00:00Z",
+      "duration_ms": 40,
+      "status_code": 200,
+      "trace_id": "trace-00000040",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "41",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-14T12:00:00Z",
+      "duration_ms": 41,
+      "status_code": 200,
+      "trace_id": "trace-00000041",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "42",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-15T12:00:00Z",
+      "duration_ms": 42,
+      "status_code": 200,
+      "trace_id": "trace-00000042",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "43",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-16T12:00:00Z",
+      "duration_ms": 43,
+      "status_code": 200,
+      "trace_id": "trace-00000043",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "44",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-17T12:00:00Z",
+      "duration_ms": 44,
+      "status_code": 500,
+      "trace_id": "trace-00000044",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "45",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-18T12:00:00Z",
+      "duration_ms": 45,
+      "status_code": 200,
+      "trace_id": "trace-00000045",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "46",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-19T12:00:00Z",
+      "duration_ms": 46,
+      "status_code": 200,
+      "trace_id": "trace-00000046",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "47",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-20T12:00:00Z",
+      "duration_ms": 47,
+      "status_code": 200,
+      "trace_id": "trace-00000047",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "48",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-21T12:00:00Z",
+      "duration_ms": 48,
+      "status_code": 200,
+      "trace_id": "trace-00000048",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "49",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-22T12:00:00Z",
+      "duration_ms": 49,
+      "status_code": 200,
+      "trace_id": "trace-00000049",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "50",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-23T12:00:00Z",
+      "duration_ms": 50,
+      "status_code": 200,
+      "trace_id": "trace-00000050",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "51",
+      "service": "api",
+      "environment": "staging",
+      "observed_at": "2026-09-24T12:00:00Z",
+      "duration_ms": 51,
+      "status_code": 200,
+      "trace_id": "trace-00000051",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "52",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-25T12:00:00Z",
+      "duration_ms": 52,
+      "status_code": 200,
+      "trace_id": "trace-00000052",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "53",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-26T12:00:00Z",
+      "duration_ms": 53,
+      "status_code": 200,
+      "trace_id": "trace-00000053",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "54",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-27T12:00:00Z",
+      "duration_ms": 54,
+      "status_code": 200,
+      "trace_id": "trace-00000054",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "55",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-28T12:00:00Z",
+      "duration_ms": 55,
+      "status_code": 500,
+      "trace_id": "trace-00000055",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "56",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-01T12:00:00Z",
+      "duration_ms": 56,
+      "status_code": 200,
+      "trace_id": "trace-00000056",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "57",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-02T12:00:00Z",
+      "duration_ms": 57,
+      "status_code": 200,
+      "trace_id": "trace-00000057",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "58",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-03T12:00:00Z",
+      "duration_ms": 58,
+      "status_code": 200,
+      "trace_id": "trace-00000058",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "59",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-04T12:00:00Z",
+      "duration_ms": 59,
+      "status_code": 200,
+      "trace_id": "trace-00000059",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "60",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-05T12:00:00Z",
+      "duration_ms": 60,
+      "status_code": 200,
+      "trace_id": "trace-00000060",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "61",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-06T12:00:00Z",
+      "duration_ms": 61,
+      "status_code": 200,
+      "trace_id": "trace-00000061",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "62",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-07T12:00:00Z",
+      "duration_ms": 62,
+      "status_code": 200,
+      "trace_id": "trace-00000062",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "63",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-08T12:00:00Z",
+      "duration_ms": 63,
+      "status_code": 200,
+      "trace_id": "trace-00000063",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "64",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-09T12:00:00Z",
+      "duration_ms": 64,
+      "status_code": 200,
+      "trace_id": "trace-00000064",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "65",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-10T12:00:00Z",
+      "duration_ms": 65,
+      "status_code": 200,
+      "trace_id": "trace-00000065",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "66",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-11T12:00:00Z",
+      "duration_ms": 66,
+      "status_code": 500,
+      "trace_id": "trace-00000066",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "67",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-12T12:00:00Z",
+      "duration_ms": 67,
+      "status_code": 200,
+      "trace_id": "trace-00000067",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "68",
+      "service": "gateway",
+      "environment": "staging",
+      "observed_at": "2026-09-13T12:00:00Z",
+      "duration_ms": 68,
+      "status_code": 200,
+      "trace_id": "trace-00000068",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "69",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-14T12:00:00Z",
+      "duration_ms": 69,
+      "status_code": 200,
+      "trace_id": "trace-00000069",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "70",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-15T12:00:00Z",
+      "duration_ms": 70,
+      "status_code": 200,
+      "trace_id": "trace-00000070",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "71",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-16T12:00:00Z",
+      "duration_ms": 71,
+      "status_code": 200,
+      "trace_id": "trace-00000071",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "72",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-17T12:00:00Z",
+      "duration_ms": 72,
+      "status_code": 200,
+      "trace_id": "trace-00000072",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "73",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-18T12:00:00Z",
+      "duration_ms": 73,
+      "status_code": 200,
+      "trace_id": "trace-00000073",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "74",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-19T12:00:00Z",
+      "duration_ms": 74,
+      "status_code": 200,
+      "trace_id": "trace-00000074",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "75",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-20T12:00:00Z",
+      "duration_ms": 75,
+      "status_code": 200,
+      "trace_id": "trace-00000075",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "76",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-21T12:00:00Z",
+      "duration_ms": 76,
+      "status_code": 200,
+      "trace_id": "trace-00000076",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "77",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-22T12:00:00Z",
+      "duration_ms": 77,
+      "status_code": 500,
+      "trace_id": "trace-00000077",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "78",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-23T12:00:00Z",
+      "duration_ms": 78,
+      "status_code": 200,
+      "trace_id": "trace-00000078",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "79",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-24T12:00:00Z",
+      "duration_ms": 79,
+      "status_code": 200,
+      "trace_id": "trace-00000079",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "80",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-25T12:00:00Z",
+      "duration_ms": 80,
+      "status_code": 200,
+      "trace_id": "trace-00000080",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "81",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-26T12:00:00Z",
+      "duration_ms": 81,
+      "status_code": 200,
+      "trace_id": "trace-00000081",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "82",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-27T12:00:00Z",
+      "duration_ms": 82,
+      "status_code": 200,
+      "trace_id": "trace-00000082",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "83",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-28T12:00:00Z",
+      "duration_ms": 83,
+      "status_code": 200,
+      "trace_id": "trace-00000083",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "84",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-01T12:00:00Z",
+      "duration_ms": 84,
+      "status_code": 200,
+      "trace_id": "trace-00000084",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "85",
+      "service": "worker",
+      "environment": "staging",
+      "observed_at": "2026-09-02T12:00:00Z",
+      "duration_ms": 85,
+      "status_code": 200,
+      "trace_id": "trace-00000085",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "86",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-03T12:00:00Z",
+      "duration_ms": 86,
+      "status_code": 200,
+      "trace_id": "trace-00000086",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "87",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-04T12:00:00Z",
+      "duration_ms": 87,
+      "status_code": 200,
+      "trace_id": "trace-00000087",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "88",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-05T12:00:00Z",
+      "duration_ms": 88,
+      "status_code": 500,
+      "trace_id": "trace-00000088",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "89",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-06T12:00:00Z",
+      "duration_ms": 89,
+      "status_code": 200,
+      "trace_id": "trace-00000089",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "90",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-07T12:00:00Z",
+      "duration_ms": 90,
+      "status_code": 200,
+      "trace_id": "trace-00000090",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "91",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-08T12:00:00Z",
+      "duration_ms": 91,
+      "status_code": 200,
+      "trace_id": "trace-00000091",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "92",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-09T12:00:00Z",
+      "duration_ms": 92,
+      "status_code": 200,
+      "trace_id": "trace-00000092",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "93",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-10T12:00:00Z",
+      "duration_ms": 93,
+      "status_code": 200,
+      "trace_id": "trace-00000093",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "94",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-11T12:00:00Z",
+      "duration_ms": 94,
+      "status_code": 200,
+      "trace_id": "trace-00000094",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "95",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-12T12:00:00Z",
+      "duration_ms": 95,
+      "status_code": 200,
+      "trace_id": "trace-00000095",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "96",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-13T12:00:00Z",
+      "duration_ms": 96,
+      "status_code": 200,
+      "trace_id": "trace-00000096",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "97",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-14T12:00:00Z",
+      "duration_ms": 97,
+      "status_code": 200,
+      "trace_id": "trace-00000097",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "98",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-15T12:00:00Z",
+      "duration_ms": 98,
+      "status_code": 200,
+      "trace_id": "trace-00000098",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "99",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-16T12:00:00Z",
+      "duration_ms": 99,
+      "status_code": 500,
+      "trace_id": "trace-00000099",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "100",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-17T12:00:00Z",
+      "duration_ms": 100,
+      "status_code": 200,
+      "trace_id": "trace-00000100",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "101",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-18T12:00:00Z",
+      "duration_ms": 101,
+      "status_code": 200,
+      "trace_id": "trace-00000101",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "102",
+      "service": "api",
+      "environment": "staging",
+      "observed_at": "2026-09-19T12:00:00Z",
+      "duration_ms": 102,
+      "status_code": 200,
+      "trace_id": "trace-00000102",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "103",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-20T12:00:00Z",
+      "duration_ms": 103,
+      "status_code": 200,
+      "trace_id": "trace-00000103",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "104",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-21T12:00:00Z",
+      "duration_ms": 104,
+      "status_code": 200,
+      "trace_id": "trace-00000104",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "105",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-22T12:00:00Z",
+      "duration_ms": 105,
+      "status_code": 200,
+      "trace_id": "trace-00000105",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "106",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-23T12:00:00Z",
+      "duration_ms": 106,
+      "status_code": 200,
+      "trace_id": "trace-00000106",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "107",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-24T12:00:00Z",
+      "duration_ms": 107,
+      "status_code": 200,
+      "trace_id": "trace-00000107",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "108",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-25T12:00:00Z",
+      "duration_ms": 108,
+      "status_code": 200,
+      "trace_id": "trace-00000108",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "109",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-26T12:00:00Z",
+      "duration_ms": 109,
+      "status_code": 200,
+      "trace_id": "trace-00000109",
+      "deployment_id": "2",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "110",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-27T12:00:00Z",
+      "duration_ms": 110,
+      "status_code": 500,
+      "trace_id": "trace-00000110",
+      "deployment_id": "3",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "111",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-28T12:00:00Z",
+      "duration_ms": 111,
+      "status_code": 200,
+      "trace_id": "trace-00000111",
+      "deployment_id": "4",
+      "location": {
+        "lat": 45.1,
+        "lon": -73.1
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "112",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-01T12:00:00Z",
+      "duration_ms": 112,
+      "status_code": 200,
+      "trace_id": "trace-00000112",
+      "deployment_id": "5",
+      "location": {
+        "lat": 45.2,
+        "lon": -73.2
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "113",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-02T12:00:00Z",
+      "duration_ms": 113,
+      "status_code": 200,
+      "trace_id": "trace-00000113",
+      "deployment_id": "6",
+      "location": {
+        "lat": 45.3,
+        "lon": -73.3
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "114",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-03T12:00:00Z",
+      "duration_ms": 114,
+      "status_code": 200,
+      "trace_id": "trace-00000114",
+      "deployment_id": "7",
+      "location": {
+        "lat": 45.4,
+        "lon": -73.4
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "115",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-04T12:00:00Z",
+      "duration_ms": 115,
+      "status_code": 200,
+      "trace_id": "trace-00000115",
+      "deployment_id": "8",
+      "location": {
+        "lat": 45.5,
+        "lon": -73.5
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "116",
+      "service": "gateway",
+      "environment": "production",
+      "observed_at": "2026-09-05T12:00:00Z",
+      "duration_ms": 116,
+      "status_code": 200,
+      "trace_id": "trace-00000116",
+      "deployment_id": "9",
+      "location": {
+        "lat": 45.6,
+        "lon": -73.6
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "117",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-06T12:00:00Z",
+      "duration_ms": 117,
+      "status_code": 200,
+      "trace_id": "trace-00000117",
+      "deployment_id": "10",
+      "location": {
+        "lat": 45.7,
+        "lon": -73.7
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "118",
+      "service": "worker",
+      "environment": "production",
+      "observed_at": "2026-09-07T12:00:00Z",
+      "duration_ms": 118,
+      "status_code": 200,
+      "trace_id": "trace-00000118",
+      "deployment_id": "11",
+      "location": {
+        "lat": 45.8,
+        "lon": -73.8
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "119",
+      "service": "gateway",
+      "environment": "staging",
+      "observed_at": "2026-09-08T12:00:00Z",
+      "duration_ms": 119,
+      "status_code": 200,
+      "trace_id": "trace-00000119",
+      "deployment_id": "12",
+      "location": {
+        "lat": 45.9,
+        "lon": -73.9
+      },
+      "schema_version": 1
+    },
+    {
+      "event_id": "120",
+      "service": "api",
+      "environment": "production",
+      "observed_at": "2026-09-09T12:00:00Z",
+      "duration_ms": 120,
+      "status_code": 200,
+      "trace_id": "trace-00000120",
+      "deployment_id": "1",
+      "location": {
+        "lat": 45.0,
+        "lon": -73.0
+      },
+      "schema_version": 1
+    }
+  ],
+  "deployments": [
+    {
+      "deployment_id": "1",
+      "service": "worker",
+      "version": "1.1.0",
+      "observed_at": "2026-09-01T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "2",
+      "service": "gateway",
+      "version": "1.2.0",
+      "observed_at": "2026-09-02T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "3",
+      "service": "api",
+      "version": "1.3.0",
+      "observed_at": "2026-09-03T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "4",
+      "service": "worker",
+      "version": "1.4.0",
+      "observed_at": "2026-09-04T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "5",
+      "service": "gateway",
+      "version": "1.5.0",
+      "observed_at": "2026-09-05T00:00:00Z",
+      "result": "failed"
+    },
+    {
+      "deployment_id": "6",
+      "service": "api",
+      "version": "1.6.0",
+      "observed_at": "2026-09-06T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "7",
+      "service": "worker",
+      "version": "1.7.0",
+      "observed_at": "2026-09-07T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "8",
+      "service": "gateway",
+      "version": "1.8.0",
+      "observed_at": "2026-09-08T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "9",
+      "service": "api",
+      "version": "1.9.0",
+      "observed_at": "2026-09-09T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "10",
+      "service": "worker",
+      "version": "1.10.0",
+      "observed_at": "2026-09-10T00:00:00Z",
+      "result": "failed"
+    },
+    {
+      "deployment_id": "11",
+      "service": "gateway",
+      "version": "1.11.0",
+      "observed_at": "2026-09-11T00:00:00Z",
+      "result": "successful"
+    },
+    {
+      "deployment_id": "12",
+      "service": "api",
+      "version": "1.12.0",
+      "observed_at": "2026-09-12T00:00:00Z",
+      "result": "successful"
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "1",
+      "service": "worker",
+      "severity": "sev2",
+      "observed_at": "2026-09-01T13:00:00Z",
+      "recovery_minutes": 21
+    },
+    {
+      "incident_id": "2",
+      "service": "gateway",
+      "severity": "sev1",
+      "observed_at": "2026-09-02T13:00:00Z",
+      "recovery_minutes": 22
+    },
+    {
+      "incident_id": "3",
+      "service": "api",
+      "severity": "sev2",
+      "observed_at": "2026-09-03T13:00:00Z",
+      "recovery_minutes": 23
+    },
+    {
+      "incident_id": "4",
+      "service": "worker",
+      "severity": "sev1",
+      "observed_at": "2026-09-04T13:00:00Z",
+      "recovery_minutes": 24
+    },
+    {
+      "incident_id": "5",
+      "service": "gateway",
+      "severity": "sev2",
+      "observed_at": "2026-09-05T13:00:00Z",
+      "recovery_minutes": null
+    },
+    {
+      "incident_id": "6",
+      "service": "api",
+      "severity": "sev1",
+      "observed_at": "2026-09-06T13:00:00Z",
+      "recovery_minutes": 26
+    },
+    {
+      "incident_id": "7",
+      "service": "worker",
+      "severity": "sev2",
+      "observed_at": "2026-09-07T13:00:00Z",
+      "recovery_minutes": 27
+    },
+    {
+      "incident_id": "8",
+      "service": "gateway",
+      "severity": "sev1",
+      "observed_at": "2026-09-08T13:00:00Z",
+      "recovery_minutes": 28
+    },
+    {
+      "incident_id": "9",
+      "service": "api",
+      "severity": "sev2",
+      "observed_at": "2026-09-09T13:00:00Z",
+      "recovery_minutes": 29
+    },
+    {
+      "incident_id": "10",
+      "service": "worker",
+      "severity": "sev1",
+      "observed_at": "2026-09-10T13:00:00Z",
+      "recovery_minutes": null
+    },
+    {
+      "incident_id": "11",
+      "service": "gateway",
+      "severity": "sev2",
+      "observed_at": "2026-09-11T13:00:00Z",
+      "recovery_minutes": 31
+    },
+    {
+      "incident_id": "12",
+      "service": "api",
+      "severity": "sev1",
+      "observed_at": "2026-09-12T13:00:00Z",
+      "recovery_minutes": 32
+    }
+  ]
+}

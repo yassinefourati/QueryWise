@@ -1,0 +1,20 @@
+{
+  "dynamic": "strict",
+  "properties": {
+    "observed_at": {
+      "type": "date"
+    },
+    "service": {
+      "type": "keyword"
+    },
+    "incident_id": {
+      "type": "keyword"
+    },
+    "severity": {
+      "type": "keyword"
+    },
+    "recovery_minutes": {
+      "type": "integer"
+    }
+  }
+}

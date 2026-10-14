@@ -1,0 +1,35 @@
+{
+  "size": 0,
+  "query": {
+    "term": {
+      "environment": "production"
+    }
+  },
+  "aggs": {
+    "services": {
+      "terms": {
+        "field": "service",
+        "size": 20
+      },
+      "aggs": {
+        "p95_latency_seconds": {
+          "percentiles": {
+            "field": "latency_seconds",
+            "percents": [
+              95
+            ]
+          }
+        },
+        "errors": {
+          "filter": {
+            "range": {
+              "status_code": {
+                "gte": 500
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

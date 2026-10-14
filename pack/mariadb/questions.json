@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cold_chain",
+    "question": "Which shipments have a temperature above 8 C?",
+    "sql": "SELECT s.id,MAX(t.temperature_c) peak_c FROM shipments s JOIN legs l ON l.shipment_id=s.id JOIN temperature_scans t ON t.leg_id=l.id GROUP BY s.id HAVING MAX(t.temperature_c)>8 ORDER BY s.id",
+    "querywise_compatible": true
+  },
+  {
+    "id": "delivery_sla",
+    "question": "Delivered and late counts by origin depot.",
+    "sql": "SELECT d.name,COUNT(*) delivered,SUM(CASE WHEN s.delivered_on>s.promised_on THEN 1 ELSE 0 END) late FROM shipments s JOIN depots d ON d.id=s.origin_id WHERE s.delivered_on IS NOT NULL GROUP BY d.name ORDER BY d.name",
+    "querywise_compatible": true
+  },
+  {
+    "id": "upgrade_flags",
+    "question": "Count records marked by late_flag after migration.",
+    "sql": "SELECT late_flag,COUNT(*) records FROM shipments GROUP BY late_flag ORDER BY late_flag",
+    "querywise_compatible": true
+  }
+]

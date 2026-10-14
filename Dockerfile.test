@@ -1,0 +1,26 @@
+# Test-runner image with every connector driver. Used only by compose.test.yaml (live tests against all engines).
+FROM python:3.12-slim-bookworm
+ARG ACCEPT_LICENSES=""
+ENV DEBIAN_FRONTEND=noninteractive PIP_NO_CACHE_DIR=1 PYTHONUNBUFFERED=1
+# Microsoft ODBC Driver 18 (SQL Server) requires accepting its EULA; the build refuses without ACCEPT_LICENSES=yes.
+RUN test "$ACCEPT_LICENSES" = "yes" || (echo "Set ACCEPT_LICENSES=yes (scripts/run_live_tests.ps1 -AcceptLicenses) to accept the Microsoft ODBC Driver 18 EULA." && exit 1) \
+ && apt-get update && apt-get install -y --no-install-recommends curl gnupg ca-certificates unixodbc libxml2 nodejs \
+ && curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg \
+ && curl -fsSL https://packages.microsoft.com/config/debian/12/prod.list -o /etc/apt/sources.list.d/mssql-release.list \
+ && apt-get update && ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 \
+ && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY requirements.txt requirements-dev.txt requirements-connectors.txt ./
+RUN pip install -r requirements-dev.txt -r requirements-connectors.txt
+# Headless Chromium for the frontend tests (system-wide so the non-root user can launch it).
+ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+RUN pip install playwright==1.64.0 && playwright install --with-deps chromium && chmod -R a+rx /ms-playwright
+COPY . .
+# Shell scripts run in Linux: strip carriage returns in case a Windows checkout converted line endings.
+RUN for f in scripts/live/*.sh scripts/live/db2-custom/*.sh; do tr -d '\r' < "$f" > /tmp/lf && cat /tmp/lf > "$f"; done
+# /state: app-state volume (app service). pack/output: generated pack data shared between runner and app.
+# Northstar sample DB (data/ is excluded from the build context), as in the production image.
+RUN python scripts/seed.py
+RUN useradd --create-home tester && mkdir -p /results /state /app/pack/output && chown -R tester:tester /app /results /state && chmod 700 /state
+USER tester
+CMD ["bash", "scripts/live/run_all.sh"]

@@ -1,0 +1,14 @@
+[
+  {
+    "question": "How many active learning minutes are recorded per course?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "Which courses have the highest mean non-null assessment score?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  },
+  {
+    "question": "How many enrollments have no assessment attempts?",
+    "execution": "native examples; check docs/QUERYWISE.md for app limits"
+  }
+]

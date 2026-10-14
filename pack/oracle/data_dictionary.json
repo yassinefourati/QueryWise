@@ -1,0 +1,292 @@
+[
+  {
+    "table": "airports",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "airports",
+    "column": "iata",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "airports",
+    "column": "latitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "airports",
+    "column": "longitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "aircraft",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "aircraft",
+    "column": "tail_number",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "aircraft",
+    "column": "seats",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "routes",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "routes",
+    "column": "origin_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "airports.id"
+    ]
+  },
+  {
+    "table": "routes",
+    "column": "destination_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "airports.id"
+    ]
+  },
+  {
+    "table": "routes",
+    "column": "distance_km",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "gates",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "gates",
+    "column": "airport_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "airports.id"
+    ]
+  },
+  {
+    "table": "gates",
+    "column": "gate_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "flights",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "flights",
+    "column": "route_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "routes.id"
+    ]
+  },
+  {
+    "table": "flights",
+    "column": "aircraft_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "aircraft.id"
+    ]
+  },
+  {
+    "table": "flights",
+    "column": "departed_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "flights",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "flights",
+    "column": "passengers",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "flights",
+    "column": "delay_minutes",
+    "type": "INTEGER",
+    "nullable": true,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "turnarounds",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "turnarounds",
+    "column": "flight_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "flights.id"
+    ]
+  },
+  {
+    "table": "turnarounds",
+    "column": "gate_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "gates.id"
+    ]
+  },
+  {
+    "table": "turnarounds",
+    "column": "ground_minutes",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "turnarounds",
+    "column": "target_minutes",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "disruptions",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "disruptions",
+    "column": "flight_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "flights.id"
+    ]
+  },
+  {
+    "table": "disruptions",
+    "column": "reason",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "disruptions",
+    "column": "cost_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "crew_assignments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "crew_assignments",
+    "column": "flight_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "flights.id"
+    ]
+  },
+  {
+    "table": "crew_assignments",
+    "column": "crew_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "crew_assignments",
+    "column": "role_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]

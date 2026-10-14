@@ -1,0 +1,41 @@
+{
+  "incurred": {
+    "columns": [
+      "peril",
+      "incurred_cents"
+    ],
+    "rows": [
+      [
+        "fire",
+        11000000
+      ],
+      [
+        "water",
+        10250000
+      ]
+    ]
+  },
+  "closed_reserves": {
+    "columns": [
+      "id",
+      "remaining_cents"
+    ],
+    "rows": []
+  },
+  "upgrade_flags": {
+    "columns": [
+      "large_loss_flag",
+      "records"
+    ],
+    "rows": [
+      [
+        0,
+        99
+      ],
+      [
+        1,
+        21
+      ]
+    ]
+  }
+}

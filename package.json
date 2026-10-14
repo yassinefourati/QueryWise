@@ -1,0 +1,19 @@
+{
+  "name": "querywise",
+  "version": "1.0.0",
+  "description": "Natural-language database analysis with Python, Ollama, and browser SQLite",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:browser-sql": "node scripts/test_browser_sql.cjs",
+    "check": "node --check dist/app.js && node --check dist/db-worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "commonjs",
+  "dependencies": {
+    "sql.js": "1.14.2"
+  },
+  "private": true
+}

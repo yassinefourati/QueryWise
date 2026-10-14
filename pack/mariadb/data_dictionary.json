@@ -1,0 +1,258 @@
+[
+  {
+    "table": "depots",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "depots",
+    "column": "name",
+    "type": "VARCHAR(120)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "depots",
+    "column": "latitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "depots",
+    "column": "longitude",
+    "type": "NUMERIC(14, 3)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "vehicles",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "vehicles",
+    "column": "registration",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "vehicles",
+    "column": "capacity_kg",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "drivers",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "drivers",
+    "column": "driver_code",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "drivers",
+    "column": "home_depot_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "depots.id"
+    ]
+  },
+  {
+    "table": "shipments",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "shipments",
+    "column": "origin_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "depots.id"
+    ]
+  },
+  {
+    "table": "shipments",
+    "column": "destination_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "depots.id"
+    ]
+  },
+  {
+    "table": "shipments",
+    "column": "promised_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "shipments",
+    "column": "delivered_on",
+    "type": "DATE",
+    "nullable": true,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "shipments",
+    "column": "weight_kg",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "shipments",
+    "column": "status",
+    "type": "VARCHAR(32)",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "legs",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "legs",
+    "column": "shipment_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "shipments.id"
+    ]
+  },
+  {
+    "table": "legs",
+    "column": "vehicle_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "vehicles.id"
+    ]
+  },
+  {
+    "table": "legs",
+    "column": "driver_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "drivers.id"
+    ]
+  },
+  {
+    "table": "legs",
+    "column": "distance_km",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "temperature_scans",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "temperature_scans",
+    "column": "leg_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "legs.id"
+    ]
+  },
+  {
+    "table": "temperature_scans",
+    "column": "observed_on",
+    "type": "DATE",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "temperature_scans",
+    "column": "temperature_c",
+    "type": "NUMERIC(14, 3)",
+    "nullable": true,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "invoices",
+    "column": "id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": true,
+    "references": []
+  },
+  {
+    "table": "invoices",
+    "column": "shipment_id",
+    "type": "INTEGER",
+    "nullable": false,
+    "primary_key": false,
+    "references": [
+      "shipments.id"
+    ]
+  },
+  {
+    "table": "invoices",
+    "column": "billed_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  },
+  {
+    "table": "invoices",
+    "column": "fuel_cents",
+    "type": "BIGINT",
+    "nullable": false,
+    "primary_key": false,
+    "references": []
+  }
+]
