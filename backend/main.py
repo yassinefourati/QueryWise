@@ -12,7 +12,7 @@ from .sources import registry, SourceUnavailable, catalog as source_catalog, des
 from . import providers
 from .providers import ProviderError
 
-app=FastAPI(title='Querywise',version='2.0.0',description='Natural-language database analysis with a read-only query gateway.')
+app=FastAPI(title='Querywise',version='1.0.0',description='Natural-language database analysis with a read-only query gateway.')
 model_lock=asyncio.Semaphore(1)
 state=registry.state
 # Local single-user app: refuse other Host headers (DNS rebinding) and require a custom header on writes (CSRF).

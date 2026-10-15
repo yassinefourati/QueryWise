@@ -1,20 +1,75 @@
-# Querywise — Natural Language Database Analyst
+# Querywise
 
-An executable learning project: ask business questions, inspect the SQL, visualize actual results, and export CSV. A Python/FastAPI backend generates SQL with **Anthropic Claude** or a local **Ollama** model and runs it read-only against the data source you choose in the UI. The repository also contains a browser-only SQLite demo and, in `pack/`, a migration pack with eleven synthetic business databases to connect to.
+**Ask your databases questions in plain language and get back the SQL, the real rows and a chart, read-only.**
 
-## What works
+Querywise is a self-hosted analytics assistant. You type a business question ("Which routes carried the most passengers?"). A language model (Anthropic Claude or a local Ollama model) writes SQL for the database you've connected. Querywise checks that SQL against the database's real schema and runs it read-only, then shows the actual result as a chart, a table and the SQL itself. The model only ever sees the schema and your question, never your data.
 
-- **Switch the active database from the UI.** Querywise first tests the connection with the supplied URL and credentials and returns a clear success or error. Only after a successful test does it discover every table, column, type and key. The schema view, the suggested questions, the table allowlist and the AI prompt all use that discovered schema.
-- **Connectors:** SQLite, PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, Db2, MongoDB, Elasticsearch, Excel/CSV and Parquet. Each has its own read-only and timeout controls ([table below](#data-sources-and-connectors)). Drivers are optional and fail with an install hint.
-- **AI providers:** `demo` (no model), `ollama`, `anthropic`. All three return the same structured answer: SQL, title, explanation, chart and clarification. Only one AI question runs at a time (HTTP 429). Unanswerable questions return a clarification (HTTP 422).
-- **Settings UI:** choose the provider, paste an Anthropic key, and add, test, edit, switch and remove connections. Secrets are encrypted at rest. The browser only ever sees a mask such as `••••abcd`.
-- **Local app-state database** (`.querywise/state.db`, git-ignored) stores sources, provider settings, encrypted secrets, query history and saved queries. Existing browser history is migrated into it once; the browser copy remains as a fallback.
-- **Results UI:** editable SQL, charts, CSV export and the schema explorer, as before.
-- **Tests:** 89 pytest tests and the Node WASM check. A model-evaluation harness for the Northstar sample is also included.
+It connects to **11 kinds of data sources**: SQLite, PostgreSQL, MySQL, MariaDB, SQL Server, Oracle, Db2, MongoDB, Elasticsearch, Excel/CSV and Parquet. It also ships with sample databases from a small store up to two 40-table, 10-million-row histories, so you can try it immediately.
 
-**Hosted demo:** with no backend, the page runs the Northstar sample in SQLite/WASM in the browser, using predefined SQL for the eight suggested questions. It does not pretend to have a model or your databases.
+![Querywise answering a question about the sample database](docs/images/ask-light.png)
 
-**Scope:** this is a local, single-user learning MVP with no login. Do not expose it to the internet. Each AI question is independent; there is no follow-up chat context.
+| Dark mode | Multi-series charts | Data sources |
+|---|---|---|
+| ![Dark mode](docs/images/ask-dark.png) | ![Heatmap chart](docs/images/chart-heatmap.png) | ![Settings: data sources](docs/images/settings.png) |
+
+**Version:** 1.0.0 — see the [changelog](CHANGELOG.md). **License:** [MIT](LICENSE).
+
+## Contents
+
+- [Features](#features)
+- [Quick start](#quick-start)
+- [How it works](#how-it-works)
+- [1. Run with Docker Desktop](#1-run-with-docker-desktop)
+- [2. Choose a model and connect data](#2-choose-a-model-and-connect-data-settings)
+- [3. Run Python directly](#3-run-python-directly)
+- [Secrets](#secrets-where-they-live-and-why-they-cannot-be-pushed) · [Environment variables](#environment-variables) · [Data sources and connectors](#data-sources-and-connectors)
+- [Sample data](#large-sample-databases) · [Migration pack](#the-migration-pack-pack) · [What each database contains](docs/DATABASES.md)
+- [Read-only execution policy](#read-only-execution-policy) · [Testing](#test-and-measure) · [Project structure](#project-structure) · [License](#license)
+
+## Features
+
+- **Plain-language questions → read-only SQL → real results.** Every answer shows the generated SQL, the result rows and a chart. You can edit the SQL and run it again.
+- **Bring your own database.** Add a connection in Settings. Querywise tests it, discovers every table, column, type and key, and uses that schema both to guide the model and as a strict table allowlist.
+- **11 connectors,** each with its own read-only and timeout controls. MongoDB questions are translated to aggregation pipelines, and Elasticsearch questions run through its SQL API.
+- **Choice of model:** Anthropic Claude (structured output, optional workspace ID) or any local Ollama model. Demo mode works with no model at all.
+- **Safe by design:**
+  - one SELECT per request, allowlisted functions, at most six joins and a 500-row cap;
+  - each engine's own read-only transaction and timeout, with every query rolled back;
+  - local-only access with protection against cross-site requests (CSRF) and DNS rebinding.
+- **Secrets stay on your machine.** API keys and passwords are encrypted at rest in a git-ignored local database, and the browser only ever sees `••••abcd`-style masks.
+- **Visualizations that fit the data:** bars, columns, line, area, share, stacked, heatmap, scatter, map and single value, with hover details, CSV export, saved queries and history.
+- **Light and dark themes,** a responsive layout, and a browser-only demo (SQLite compiled to WebAssembly) that needs no server.
+- **Tested against real engines.** One script starts every supported database, the backend and the frontend in Docker and runs all test suites against them.
+
+## Quick start
+
+You need [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+
+```bash
+git clone https://github.com/yassinefourati/QueryWise.git
+cd QueryWise
+docker compose up --build
+```
+
+Open **http://localhost:8000**. The suggested sample questions work right away. To ask your own questions, open **Settings → AI provider**: paste an Anthropic API key, or point it at a local Ollama model. Then try *"How is revenue trending by month?"*
+
+To explore larger data, see [Large sample databases](#large-sample-databases) or [docs/DATABASES.md](docs/DATABASES.md). That guide has example questions for every sample database, from easy to hard.
+
+## How it works
+
+```
+Your question ──► FastAPI backend ──► AI provider (Claude / Ollama): sees the schema and the question, never row data
+                       │                         │
+                       │      ◄── structured answer: SQL + title + chart type (or a clarification)
+                       ▼
+          SQL validator (one SELECT, discovered tables only, allowlisted functions, ≤ 6 joins)
+                       ▼
+          Connector for the active source (read-only transaction, timeout, rollback, 500-row cap)
+                       ▼
+          Rows ──► UI: chart · table · SQL · CSV export
+```
+
+**Scope:** a local, single-user tool with no login. Don't expose it to the internet. Each question is answered independently; there is no follow-up chat context.
 
 ## 1. Run with Docker Desktop
 
@@ -130,6 +185,22 @@ Discovery hides `sqlite_*` tables and the pack's `qw_pack_history` ledger, and c
 - otherwise, generated row-count and preview queries.
 
 Every suggestion is validated against the source before it is shown.
+
+## Large sample databases
+
+`sample-databases/` holds two large synthetic databases for realistic, harder questions. Each has 40 tables and data running from 1999 to today:
+
+| Database | Engine | Rows (scale 1) |
+|---|---|---|
+| Telecom & supply chain | PostgreSQL | about 11.2 million |
+| Banking & insurance | Oracle Free | about 15.3 million |
+
+```powershell
+.\scripts\bigdb.ps1 up      # builds and starts Querywise with both databases registered as sources
+.\scripts\bigdb.ps1 down    # stops them (the data is kept; add -Purge to delete it)
+```
+
+Each database generates its own data on first start: about 7 minutes for PostgreSQL and 20 for Oracle. `-Scale 0.05` gives a quick small version. Credentials are created randomly in `sample-databases/.env.bigdb`, which is git-ignored. See [docs/DATABASES.md](docs/DATABASES.md#13-telecom--supply-chain--postgresql-large) for the tables, business rules and example questions.
 
 ## The migration pack (`pack/`)
 
@@ -280,3 +351,29 @@ The evaluation compares the model's result rows with independently executed refe
 - SQLite authorizer: https://www.sqlite.org/c3ref/set_authorizer.html
 - Elasticsearch SQL: https://www.elastic.co/docs/explore-analyze/query-filter/languages/sql
 - SQL.js: https://github.com/sql-js/sql.js
+
+## Project structure
+
+```
+backend/            FastAPI app: API, SQL validator, connectors, source registry, AI providers, encrypted app state
+dist/               Frontend (plain HTML/CSS/JS, no build step) and the in-browser SQLite/WASM demo
+docs/               Database guide (DATABASES.md) and README images
+pack/               Migration pack: 11 synthetic business databases with migrations, seeds and verification
+sample-databases/   Two large PostgreSQL / Oracle sample databases with Docker images
+scripts/            Seeding, evaluation, packaging, live test stack, big-database launcher
+tests/              Unit tests and live tests (live tests run inside compose.test.yaml)
+frontend/           nginx configuration for serving the UI as a standalone container
+evals/              Question/answer cases for measuring model accuracy
+```
+
+## Contributing
+
+Issues and pull requests are welcome. Before opening a pull request:
+
+1. Run `python -m pytest -q` (unit and pack tests) and `node scripts/test_browser_sql.cjs`.
+2. For connector changes, run the full engine suite with `.\scripts\run_live_tests.ps1 -AcceptLicenses`.
+3. Never commit secrets. `.env`, `.querywise/` and generated data are git-ignored, and a test fails if the ignore rules regress.
+
+## License
+
+[MIT](LICENSE) © 2026 Yassine Fourati. Sample data is synthetic. Third-party components keep their own licenses: SQL.js (`dist/vendor/`) and Leaflet (`dist/vendor/leaflet/`).

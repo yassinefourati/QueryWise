@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bigdb_telecom",
+    "kind": "postgres",
+    "name": "Telecom & supply chain (PostgreSQL, large)",
+    "description": "Synthetic mobile operator and procurement history, 40 tables, 1999 to today",
+    "url_env": "BIGDB_TELECOM_URL",
+    "schema": "telecom",
+    "definitions": "Dates run from 1999-01-01 to today. Money is decimal, not cents. Usage charges (charge_usd), plan fees, device prices and all procurement amounts are USD. Invoices, invoice lines and customer payments are in invoices.currency_code (the customer's local currency); convert by dividing by exchange_rates.units_per_usd for that currency and date (business days only, USD has no rows). Never add amounts in different currencies. A subscription is active when end_date IS NULL. invoices.total_amount = subtotal + tax_amount. inventory_movements.quantity is signed (outflows negative). Pre-aggregate invoice_lines and payments per invoice, and purchase_order_lines per order, before joining. Missing values are not zero."
+  },
+  {
+    "id": "bigdb_bank",
+    "kind": "oracle",
+    "name": "Banking & insurance (Oracle, large)",
+    "description": "Synthetic bancassurance history, 40 tables, 1999 to today",
+    "url_env": "BIGDB_BANK_URL",
+    "schema": "BANK",
+    "definitions": "Dates run from 1999-01-01 to today; DATE columns include a time of day. Money is decimal, not cents. Accounts, loans and policies are in their own currency_code; fx_rates.units_per_eur converts to euros (divide; EUR has no rows); *_eur columns are already euros. Never add amounts in different currencies. accounts.current_balance = SUM(account_transactions.amount). Card spend = approved card_transactions only; billing_amount is in the account currency. A past-due loan_schedules row with no loan_payments row is in arrears. Only settled claims have claim_payments. Use FETCH FIRST n ROWS ONLY, not LIMIT. Missing values are not zero."
+  }
+]

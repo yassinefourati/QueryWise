@@ -100,7 +100,7 @@ def test_static_hosting_falls_back_to_wasm_demo():
         browser = p.chromium.launch(headless=True); page = browser.new_page()
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.goto(STATIC); page.wait_for_selector('#query-status:has-text("rows")', timeout=30000)
-        assert 'No model connected' in page.inner_text('#mode-description') and page.inner_text('#stat-revenue').startswith('$')
+        assert 'No model connected' in page.inner_text('#mode-description') and page.locator('.suggestion').count() == 8
         page.click('.suggestion >> nth=2'); page.wait_for_selector('#result-title:has-text("customers")', timeout=30000)
         page.screenshot(path=str(SHOTS/'static-wasm-demo.png')); browser.close()
     assert errors == []

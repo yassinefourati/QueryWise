@@ -7,7 +7,7 @@
 --          1999-01-01 and CURRENT_DATE, child dates never precede parent dates.
 --          Natural keys (phone numbers, ICCID, IMSI, IMEI, e-mails, invoice/PO numbers,
 --          VAT numbers ...) are unique and enforced by UNIQUE constraints.
---  Size  : scale 1 is about 11 million rows (~2 GB with indexes). Change telecom.scale
+--  Size  : scale 1 is about 11 million rows (~2 GB, ~7 min). Change telecom.scale
 --          below: 0.01 = quick smoke test, 1 = default, 5 = about 55 million rows.
 --  Run   : createdb telecom_db
 --          psql -v ON_ERROR_STOP=1 -d telecom_db -f postgres_telecom_supply.sql

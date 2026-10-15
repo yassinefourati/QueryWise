@@ -8,7 +8,7 @@
 --          1999-01-01 and SYSDATE, child dates never precede parent dates.
 --          Natural keys (IBANs with valid mod-97 check digits, card tokens, tax ids,
 --          e-mails, loan/policy/claim numbers, VINs, plates ...) are unique and enforced.
---  Size  : scale 1 is about 12 million rows (~2.5 GB). Change c_scale in gen_rows_for
+--  Size  : scale 1 is about 15 million rows (~2 GB, ~15 min). Change c_scale in gen_rows_for
 --          right below: 0.01 = quick smoke test, 1 = default, 3 = about 36 million rows.
 --  Run   : sqlplus bank/<password>@//localhost:1521/FREEPDB1 @oracle_bank_insurance.sql
 --          (SQLcl and SQL Developer "Run Script" work too). Run it in a dedicated schema:

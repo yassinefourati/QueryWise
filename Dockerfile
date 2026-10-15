@@ -9,6 +9,8 @@ COPY backend ./backend
 COPY scripts/seed.py ./scripts/seed.py
 COPY dist ./dist
 COPY pack ./pack
+# Secret-free registry for the two large sample databases (used only when QUERYWISE_SOURCES_FILE points to it).
+COPY sample-databases/docker/sources.bigdb.json ./sample-databases/docker/sources.bigdb.json
 # /app/state is the only writable app path; compose mounts a named volume there (app-state DB + key file).
 RUN python scripts/seed.py && useradd --create-home appuser && mkdir -p /app/state && chown -R appuser:appuser /app/state && chmod 700 /app/state
 USER appuser

@@ -1,0 +1,73 @@
+# Querywise + the two large sample databases (sample-databases/). Use it on top of compose.yaml:
+#   docker compose -p querywise-bigdb -f compose.yaml -f compose.bigdb.yaml --env-file sample-databases/.env.bigdb up -d
+# scripts/bigdb.ps1 does this for you (build, push, up, down) and creates sample-databases/.env.bigdb if it is missing.
+# First start generates the data inside each database: about 7 minutes (PostgreSQL) and 20 minutes (Oracle) at scale 1.
+# Data lives in the named volumes bigdb_pg_data and bigdb_ora_data, so later starts are immediate.
+x-hardening: &hardening
+  security_opt:
+    - no-new-privileges:true
+
+services:
+  app:
+    image: ${BIGDB_IMAGE_PREFIX:-querywise}/querywise-app:${BIGDB_TAG:-latest}
+    build:
+      args:
+        # The Oracle source needs the oracledb driver (thin mode, no Instant Client).
+        CONNECTORS: ${CONNECTORS:-oracledb==26.0.1}
+    environment:
+      QUERYWISE_SOURCES_FILE: sample-databases/docker/sources.bigdb.json
+      BIGDB_TELECOM_URL: postgresql+psycopg://telecom_reader:${BIGDB_PG_READER_PASSWORD:?Run scripts/bigdb.ps1 or pass --env-file sample-databases/.env.bigdb}@bigdb-postgres:5432/telecom_db
+      BIGDB_BANK_URL: oracle+oracledb://QW_READER:${BIGDB_ORA_READER_PASSWORD:?Run scripts/bigdb.ps1 or pass --env-file sample-databases/.env.bigdb}@bigdb-oracle:1521/?service_name=FREEPDB1
+    depends_on:
+      bigdb-postgres: {condition: service_started}
+      bigdb-oracle: {condition: service_started}
+
+  bigdb-postgres:
+    image: ${BIGDB_IMAGE_PREFIX:-querywise}/querywise-telecom-postgres:${BIGDB_TAG:-latest}
+    build:
+      context: .
+      dockerfile: sample-databases/docker/postgres/Dockerfile
+    container_name: bigdb-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${BIGDB_PG_OWNER_PASSWORD:?Missing BIGDB_PG_OWNER_PASSWORD}
+      BIGDB_PG_READER_PASSWORD: ${BIGDB_PG_READER_PASSWORD:?Missing BIGDB_PG_READER_PASSWORD}
+      BIGDB_SCALE: ${BIGDB_SCALE:-1}
+    ports:
+      - "127.0.0.1:${BIGDB_PG_PORT:-5433}:5432"
+    volumes:
+      - bigdb_pg_data:/var/lib/postgresql/data
+    shm_size: 512m
+    <<: *hardening
+    healthcheck:
+      # TCP check: during the first-start load the server only listens on its Unix socket, so this stays unhealthy until the data is ready.
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U telecom_owner -d telecom_db"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20m
+
+  bigdb-oracle:
+    image: ${BIGDB_IMAGE_PREFIX:-querywise}/querywise-bank-oracle:${BIGDB_TAG:-latest}
+    build:
+      context: .
+      dockerfile: sample-databases/docker/oracle/Dockerfile
+    container_name: bigdb-oracle
+    restart: unless-stopped
+    environment:
+      ORACLE_PASSWORD: ${BIGDB_ORA_SYSTEM_PASSWORD:?Missing BIGDB_ORA_SYSTEM_PASSWORD}
+      APP_USER_PASSWORD: ${BIGDB_ORA_OWNER_PASSWORD:?Missing BIGDB_ORA_OWNER_PASSWORD}
+      BIGDB_ORA_READER_PASSWORD: ${BIGDB_ORA_READER_PASSWORD:?Missing BIGDB_ORA_READER_PASSWORD}
+      BIGDB_SCALE: ${BIGDB_SCALE:-1}
+    ports:
+      - "127.0.0.1:${BIGDB_ORA_PORT:-1522}:1521"
+    volumes:
+      - bigdb_ora_data:/opt/oracle/oradata
+    <<: *hardening
+
+volumes:
+  # Fixed names so the data survives "down" and is shared with containers started earlier by hand.
+  bigdb_pg_data:
+    name: bigdb_pg_data
+  bigdb_ora_data:
+    name: bigdb_ora_data
