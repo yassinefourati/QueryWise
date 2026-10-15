@@ -89,8 +89,9 @@ const loadLeaflet=()=>leafletReady||(leafletReady=Promise.all([['link','vendor/l
 async function drawMap(el,c){if(!el)return;try{await loadLeaflet();}catch(err){el.outerHTML='<div class="empty">The map library could not load.<br>Pick another chart type.</div>';return;}if(!el.isConnected)return;if(geoMap)geoMap.remove();
  const pts=geoPoints(c).sort((a,b)=>Math.abs(b[3])-Math.abs(a[3])),ll=geoCols(c.r),sized=!(ll&&ll.includes(c.m)),max=Math.max(...pts.map(p=>Math.abs(p[3])),1);
  geoMap=L.map(el,{scrollWheelZoom:false});
- L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(geoMap);
- pts.forEach(p=>L.circleMarker([p[0],p[1]],{radius:sized?5+Math.sqrt(Math.abs(p[3])/max)*Math.min(22,el.clientWidth/28):6,color:'#fff',weight:2,fillColor:ACCENT,fillOpacity:.8}).bindTooltip(`${esc(p[2])}: ${esc(c.fmt(p[3]))}`).addTo(geoMap));
+ // OSM's tile policy requires a Referer; the app sends no-referrer, so tiles alone send the bare origin (no path).
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,referrerPolicy:'strict-origin',attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(geoMap);
+ pts.forEach(p=>L.circleMarker([p[0],p[1]],{radius:sized?4+Math.sqrt(Math.abs(p[3])/max)*Math.min(22,el.clientWidth/28,70/Math.sqrt(pts.length)):6,color:'#fff',weight:2,fillColor:ACCENT,fillOpacity:.8}).bindTooltip(`${esc(p[2])}: ${esc(c.fmt(p[3]))}`).addTo(geoMap));
  if(pts.length)geoMap.fitBounds(L.latLngBounds(pts.map(p=>[p[0],p[1]])).pad(.3),{maxZoom:ll?12:6});else geoMap.setView([20,0],2);
  const miss=c.r.rows.length-pts.length;if(miss>0)el.insertAdjacentHTML('afterend',`<p class="geo-note">${miss} ${miss===1?'row has':'rows have'} no recognised location and ${miss===1?'is':'are'} not shown.</p>`);}
 function renderChart(r,e,keep){const target=$('#chart');if(!r.rows.length){target.innerHTML='<div class="empty">No results to visualize.</div>';return;}const s=chartShape(r);if(!s.measures.length){target.innerHTML='<div class="empty">This result has no numeric column.<br>Open the Results tab to explore the data.</div>';return;}
